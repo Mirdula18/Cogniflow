@@ -116,9 +116,9 @@
       "nulls": 0,
       "unique": 6,
       "sample": [
-        "None",
-        "None",
-        "None"
+        "No cause logged",
+        "No cause logged",
+        "No cause logged"
       ],
       "issues": []
     }
@@ -133,7 +133,7 @@
       "planned_start": "04/02/2026",
       "planned_end": "2026-02-17",
       "actual_end": "2026-02-18",
-      "delay_cause": "None"
+      "delay_cause": "No cause logged"
     },
     {
       "task_id": "T-0002",
@@ -144,7 +144,7 @@
       "planned_start": "2026-02-26",
       "planned_end": "04/03/2026",
       "actual_end": "2026-03-03",
-      "delay_cause": "None"
+      "delay_cause": "No cause logged"
     },
     {
       "task_id": "T-0003",
@@ -155,7 +155,7 @@
       "planned_start": "2026-01-03",
       "planned_end": "09/01/2026",
       "actual_end": "2026-01-07",
-      "delay_cause": "None"
+      "delay_cause": "No cause logged"
     },
     {
       "task_id": "T-0004",
@@ -166,7 +166,7 @@
       "planned_start": "25/01/2026",
       "planned_end": "2026-02-02",
       "actual_end": "2026-01-31",
-      "delay_cause": "None"
+      "delay_cause": "No cause logged"
     },
     {
       "task_id": "T-0005",
@@ -177,7 +177,7 @@
       "planned_start": "07/03/2026",
       "planned_end": "16/03/2026",
       "actual_end": "14/03/2026",
-      "delay_cause": "None"
+      "delay_cause": "No cause logged"
     }
   ]
 }
