@@ -2,21 +2,23 @@
 
 import { Component, useState, type ReactNode } from "react";
 import { AlertCircle, BarChart3, Loader2 } from "lucide-react";
-import type { ArtifactEventOfKind } from "./artifacts";
+import type { ArtifactEventOfKind } from "@/lib/findings/artifacts";
 import { ArtifactFrame } from "./ArtifactFrame";
 import { PlotlyChart } from "./PlotlyChart";
-import { figureToTable } from "./plotTheme";
+import { figureToTable } from "@/lib/findings/figureTable";
+import type { NumberSource } from "@/lib/findings/numbers";
 import { TableView } from "./TableView";
 
 export interface ChartCanvasProps {
   charts: ArtifactEventOfKind<"chart">[];
   /** A run is in progress, so a chart may still arrive. */
   pending: boolean;
-  highlightedSeq?: number;
+  /** Summary number selected in the findings; its chart is marked and its data row shown. */
+  highlight?: NumberSource;
 }
 
 /** UI_SPEC ChartCanvas: empty hint, loading, chart, render error. */
-export function ChartCanvas({ charts, pending, highlightedSeq }: ChartCanvasProps) {
+export function ChartCanvas({ charts, pending, highlight }: ChartCanvasProps) {
   if (charts.length === 0) {
     return pending ? (
       <p role="status" className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -34,15 +36,15 @@ export function ChartCanvas({ charts, pending, highlightedSeq }: ChartCanvasProp
   return (
     <div className="flex flex-col gap-3">
       {charts.map((chart) => (
-        <ArtifactFrame key={chart.seq} artifact={chart} highlighted={highlightedSeq === chart.seq}>
-          <ChartBody chart={chart} />
+        <ArtifactFrame key={chart.seq} artifact={chart} highlighted={highlight?.seq === chart.seq}>
+          <ChartBody chart={chart} cell={highlight?.seq === chart.seq && highlight.kind === "chart" ? highlight : undefined} />
         </ArtifactFrame>
       ))}
     </div>
   );
 }
 
-function ChartBody({ chart }: { chart: ArtifactEventOfKind<"chart"> }) {
+function ChartBody({ chart, cell }: { chart: ArtifactEventOfKind<"chart">; cell?: { row: number; col: number } }) {
   const [plotError, setPlotError] = useState<string>();
   const table = figureToTable(chart.payload);
   const label = chart.title || "Chart";
@@ -59,12 +61,12 @@ function ChartBody({ chart }: { chart: ArtifactEventOfKind<"chart"> }) {
         </ChartErrorBoundary>
       )}
       {table && (
-        <details className="rounded-lg">
+        <details className="rounded-lg" open={cell ? true : undefined}>
           <summary className="cursor-pointer rounded-md text-xs font-medium outline-none focus-visible:ring-3 focus-visible:ring-ring/50">
             View chart data
           </summary>
           <div className="pt-2">
-            <TableView table={table} label={`${label} data`} />
+            <TableView table={table} label={`${label} data`} highlight={cell} />
           </div>
         </details>
       )}

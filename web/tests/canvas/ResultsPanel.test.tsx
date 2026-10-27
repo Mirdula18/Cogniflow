@@ -49,7 +49,7 @@ describe("ResultsPanel", () => {
   it("shows a loading state while a run is in progress", () => {
     load(start);
     render(<ResultsPanel />);
-    expect(screen.getByRole("status")).toHaveTextContent("Waiting for a chart");
+    expect(screen.getByText("Waiting for a chart from the analysis…")).toHaveAttribute("role", "status");
   });
 
   it("renders chart, metric and table artifacts with their titles and source step", async () => {

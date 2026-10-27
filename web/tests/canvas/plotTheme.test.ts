@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { COLORWAY, figureToTable, themedLayout } from "@/components/canvas/plotTheme";
+import { COLORWAY, themedLayout } from "@/components/canvas/plotTheme";
+import { figureToTable } from "@/lib/findings/figureTable";
 
 describe("themedLayout", () => {
   it("keeps scenario layout but forces theme colours and a transparent surface", () => {

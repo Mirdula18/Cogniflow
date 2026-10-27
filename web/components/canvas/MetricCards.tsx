@@ -1,8 +1,9 @@
-import type { ArtifactEventOfKind } from "./artifacts";
+import type { ArtifactEventOfKind } from "@/lib/findings/artifacts";
 import { ArtifactFrame } from "./ArtifactFrame";
 
 export interface MetricCardsProps {
   metrics: ArtifactEventOfKind<"metric">[];
+  /** Seq of the metric whose value is selected in the findings. */
   highlightedSeq?: number;
 }
 
