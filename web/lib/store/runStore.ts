@@ -11,10 +11,13 @@ export interface RunMeta {
 
 export interface RunStoreState {
   activeDatasetId: string | null;
+  /** The run shown in the run view. */
+  activeRunId: string | null;
   runs: Record<string, Run>;
   /** Derived from `runs[id].events`; kept in the store so selectors return stable references. */
   views: Record<string, RunView>;
   setActiveDataset: (datasetId: string | null) => void;
+  setActiveRun: (runId: string | null) => void;
   /** Registers a new, empty run (status "queued"). */
   registerRun: (meta: RunMeta) => void;
   /** Appends one event; duplicate or stale `seq` values are ignored. */
@@ -44,11 +47,12 @@ export function appendEventToState(
   };
 }
 
-const empty = { activeDatasetId: null, runs: {}, views: {} };
+const empty = { activeDatasetId: null, activeRunId: null, runs: {}, views: {} };
 
 export const useRunStore = create<RunStoreState>()((set) => ({
   ...empty,
   setActiveDataset: (activeDatasetId) => set({ activeDatasetId }),
+  setActiveRun: (activeRunId) => set({ activeRunId }),
   registerRun: (meta) =>
     set((s) => ({
       runs: { ...s.runs, [meta.id]: { ...meta, status: "queued", events: [] } },

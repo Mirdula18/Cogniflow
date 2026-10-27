@@ -111,5 +111,13 @@ export function createMockDataSource(options: MockDataSourceOptions = {}): DataS
     async getRun(runId) {
       return structuredClone(findRun(runId).run);
     },
+
+    /** The scripted scenario questions for the dataset; these match exactly when asked. */
+    async suggestQuestions(datasetId) {
+      return catalog()
+        .scenarios.filter((s) => s.dataset_id === datasetId)
+        .sort((a, b) => a.scenario_id.localeCompare(b.scenario_id))
+        .map((s) => s.question);
+    },
   };
 }

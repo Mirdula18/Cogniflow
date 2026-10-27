@@ -24,7 +24,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 - [ ] **T08** Notebook check that every scenario's code produces its shown output — Arunaw
 - [x] **T09** Event-sourced `runStore` reducer + tests (retry, not_verified paths) — Joe (a41916e)
 - [ ] **T10** DatasetPicker, UploadDropzone (mock accepts file, maps to closest demo), ProfilePanel — Mirdula
-- [ ] **T11** QueryBox + SuggestedQuestions — Joe
+- [x] **T11** QueryBox + SuggestedQuestions — Joe (7854637)
 - [ ] **T12** StepTimeline, StepCard, CodeBlock, RetryBadge, Terminal (xterm) — Joe
 - [ ] **T13** ChartCanvas (Plotly), TableView, metric cards — Mirdula
 - [ ] **T14** FindingsPanel, VerifiedBadge, number-to-source highlight — Mirdula
