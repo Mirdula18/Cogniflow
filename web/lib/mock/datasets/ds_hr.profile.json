@@ -1,0 +1,126 @@
+{
+  "name": "team_allocation.csv",
+  "dataset_id": "ds_hr",
+  "rows": 150,
+  "duplicates": 0,
+  "columns": [
+    {
+      "name": "person_id",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 53,
+      "sample": [
+        "E001",
+        "E002",
+        "E003"
+      ],
+      "issues": [
+        "5 names appear under two different person IDs"
+      ]
+    },
+    {
+      "name": "name",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 48,
+      "sample": [
+        "Dev Reddy",
+        "Dev Menon",
+        "Jai Nair"
+      ],
+      "issues": []
+    },
+    {
+      "name": "team",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 4,
+      "sample": [
+        "Mobile",
+        "Mobile",
+        "Mobile"
+      ],
+      "issues": []
+    },
+    {
+      "name": "project",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 5,
+      "sample": [
+        "Echo",
+        "Cedar",
+        "Echo"
+      ],
+      "issues": []
+    },
+    {
+      "name": "sprint",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 2,
+      "sample": [
+        "S11",
+        "S11",
+        "S11"
+      ],
+      "issues": []
+    },
+    {
+      "name": "allocation_pct",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 11,
+      "sample": [
+        30,
+        80,
+        70
+      ],
+      "issues": [
+        "6 allocations above 100%"
+      ]
+    }
+  ],
+  "head": [
+    {
+      "person_id": "E001",
+      "name": "Dev Reddy",
+      "team": "Mobile",
+      "project": "Echo",
+      "sprint": "S11",
+      "allocation_pct": 30
+    },
+    {
+      "person_id": "E002",
+      "name": "Dev Menon",
+      "team": "Mobile",
+      "project": "Cedar",
+      "sprint": "S11",
+      "allocation_pct": 80
+    },
+    {
+      "person_id": "E003",
+      "name": "Jai Nair",
+      "team": "Mobile",
+      "project": "Echo",
+      "sprint": "S11",
+      "allocation_pct": 70
+    },
+    {
+      "person_id": "E004",
+      "name": "Kavya Shah",
+      "team": "Mobile",
+      "project": "Cedar",
+      "sprint": "S11",
+      "allocation_pct": 80
+    },
+    {
+      "person_id": "E005",
+      "name": "Dev Verma",
+      "team": "Data",
+      "project": "Beacon",
+      "sprint": "S11",
+      "allocation_pct": 50
+    }
+  ]
+}
