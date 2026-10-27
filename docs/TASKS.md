@@ -15,7 +15,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 - [x] **T02** Zod schemas for every type and event in API_CONTRACT.md + tests — Joe (4205ebe)
 - [x] **T03** `DataSource` interface, `index.ts` mode switch, `.env.example` — Joe (2f57dee)
 - [x] **T04** Design tokens, layout shell, 3-panel workspace, responsive tabs, dark mode — Mirdula (b1b1f5d)
-- [ ] **T05** Seeded synthetic dataset generator + 5 datasets + profile JSON — Arunaw
+- [x] **T05** Seeded synthetic dataset generator + 5 datasets + profile JSON — Arunaw (9eeed44)
 
 ## Phase B — mock end-to-end (days 2–3)
 
