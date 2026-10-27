@@ -26,7 +26,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 - [x] **T10** DatasetPicker, UploadDropzone (mock accepts file, maps to closest demo), ProfilePanel — Mirdula (8eb8a25)
 - [x] **T11** QueryBox + SuggestedQuestions — Joe (7854637)
 - [x] **T12** StepTimeline, StepCard, CodeBlock, RetryBadge, Terminal (xterm) — Joe (91c2fe1)
-- [ ] **T13** ChartCanvas (Plotly), TableView, metric cards — Mirdula
+- [x] **T13** ChartCanvas (Plotly), TableView, metric cards — Mirdula (d4d29c2)
 - [ ] **T14** FindingsPanel, VerifiedBadge, number-to-source highlight — Mirdula
 - [ ] **T15** Test: every number in each scenario's report exists in its artifacts — Arunaw
 
