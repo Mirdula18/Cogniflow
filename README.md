@@ -15,6 +15,18 @@ cp .env.example .env.local      # NEXT_PUBLIC_DATA_MODE=mock
 npm run dev                     # http://localhost:3000
 ```
 
+## Screenshots
+
+> Captured from the **test-fixture scenarios** (`web/tests/fixtures`) on synthetic data, before the demo scenarios (T07) existed. Scripted demo output, not results.
+
+| Run with number-to-source highlight (dark) | Run ends "Not verified" after 3 attempts (light) |
+| --- | --- |
+| ![Workspace after a run: profile, steps, terminal, chart, table and findings; the selected summary number highlights its source table cell](docs/screenshots/workspace-run-dark.jpg) | ![Workspace after a run that failed three attempts: step marked Failed, Not verified badge and analyst fallback note](docs/screenshots/workspace-not-verified.jpg) |
+
+| Landing | History |
+| --- | --- |
+| ![Landing page with the demo badge, Open workspace button and the four how-it-works steps](docs/screenshots/landing.png) | ![Run history table with status, duration and Replay buttons](docs/screenshots/history.jpg) |
+
 ## Docs
 
 | File | What it covers |
@@ -27,6 +39,8 @@ npm run dev                     # http://localhost:3000
 | [docs/UI_SPEC.md](docs/UI_SPEC.md) | Screens, components, states, layout |
 | [docs/POC_TEST_PLAN.md](docs/POC_TEST_PLAN.md) | P3 hypothesis, measures, thresholds, stop rule |
 | [docs/TASKS.md](docs/TASKS.md) | Work split per team member, in build order |
+| [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md) | Pre-Demo Day walkthrough, checklist and recovery steps |
+| [docs/ACCESSIBILITY.md](docs/ACCESSIBILITY.md) | Lighthouse scores and manual accessibility checks |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Branches, commits, authorship, PR rules |
 
 ## Status

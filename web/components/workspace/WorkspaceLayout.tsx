@@ -67,7 +67,7 @@ export function WorkspaceLayout({ data, run, results, initialTab = "run" }: Work
           </button>
         ))}
       </div>
-      <div className="grid min-h-0 flex-1 lg:grid-cols-[280px_minmax(0,1fr)_420px] lg:divide-x">
+      <div className="grid min-h-0 flex-1 grid-cols-[minmax(0,1fr)] lg:grid-cols-[280px_minmax(0,1fr)_420px] lg:divide-x">
         {PANELS.map(({ id, label }) => (
           <section
             key={id}

@@ -41,6 +41,8 @@ export function Terminal({ lines, height = 200 }: TerminalProps) {
       const fit = new FitAddon();
       term.loadAddon(fit);
       term.open(hostRef.current);
+      // Output only: keep xterm's hidden input out of the tab order (the host is aria-hidden; the log below is read instead).
+      term.textarea?.setAttribute("tabindex", "-1");
       fit.fit();
       const observer = new ResizeObserver(() => fit.fit());
       observer.observe(hostRef.current);
@@ -83,7 +85,7 @@ export function Terminal({ lines, height = 200 }: TerminalProps) {
         ref={hostRef}
         aria-hidden
         style={{ height }}
-        className="overflow-hidden rounded-lg bg-slate-950 p-2"
+        className="overflow-hidden rounded-lg border bg-slate-950 p-2"
         data-testid="xterm-host"
       />
       <ol role="log" aria-live="polite" aria-label="Run output" className="sr-only">

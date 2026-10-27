@@ -8,8 +8,11 @@ const xterm = vi.hoisted(() => ({ writes: [] as string[], resets: 0, disposed: 0
 
 vi.mock("@xterm/xterm", () => ({
   Terminal: class {
+    textarea = document.createElement("textarea");
     loadAddon() {}
-    open() {}
+    open(host: HTMLElement) {
+      host.appendChild(this.textarea);
+    }
     write(data: string) {
       xterm.writes.push(data);
     }
@@ -66,6 +69,16 @@ describe("Terminal", () => {
     rerender(<Terminal lines={[...first, err(2, "Error KeyError: x")]} />);
     expect(xterm.writes).toEqual(["Parsed 1200 values\r\n", "\x1b[31mError KeyError: x\x1b[0m\r\n"]);
     expect(xterm.resets).toBe(0);
+  });
+
+  it("keeps xterm's hidden input out of the tab order", async () => {
+    render(<Terminal lines={[]} />);
+    const textarea = await waitFor(() => {
+      const el = screen.getByTestId("xterm-host").querySelector("textarea");
+      if (!el) throw new Error("xterm not mounted yet");
+      return el;
+    });
+    expect(textarea).toHaveAttribute("tabindex", "-1");
   });
 
   it("resets when the lines are replaced by a new run", async () => {
