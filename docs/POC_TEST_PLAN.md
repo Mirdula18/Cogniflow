@@ -15,6 +15,7 @@ On held-out messy public datasets, the plan–code–retry assistant answers mor
 - 5 public datasets (e.g. from UCI / Kaggle open licences) with mess injected by script: duplicates, mixed date formats, blanks, currency-as-text.
 - 30 questions; reference answers computed **independently by two team members**; disagreements resolved and logged before testing.
 - Split: 10 development (tuning prompts) / **20 held-out (never used for tuning)**. Freeze the held-out set and reference answers in `eval/heldout.json` with a commit hash before the first run.
+- **Frozen** in `eval/heldout.json` at commit `53a43ba` (2026-10-27). Both members' independent references agreed on 30/30 questions; no disagreements to log. Run the harness with `--references eval/heldout.json`.
 
 ## Comparator
 

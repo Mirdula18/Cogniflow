@@ -41,7 +41,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 ## Phase D — PoC evaluation prep (days 4–5)
 
 - [x] **T21** Pick 5 public datasets, mess-injection script, licences noted — Arunaw (e455e4a)
-- [ ] **T22** 30 questions + independent reference answers (two members) → freeze held-out — Arunaw, Mirdula (Arunaw's part: 6a6fcdf; Mirdula's references and the freeze are still open)
+- [x] **T22** 30 questions + independent reference answers (two members) → freeze held-out — Arunaw, Mirdula (Arunaw's part: 6a6fcdf; Mirdula's references: 5ae8bd8; frozen: 53a43ba, 30/30 agree)
 - [x] **T23** Eval harness skeleton: run agent vs baseline, log to POC_TEST_PLAN results table — Anish (5e756e6)
 - [x] **T24** Accessibility pass (Lighthouse ≥ 90), README screenshots, demo script — Mirdula (bd244d1)
 
