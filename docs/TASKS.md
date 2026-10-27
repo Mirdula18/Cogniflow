@@ -36,7 +36,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 - [x] **T17** LiveDataSource (fetch + EventSource, Last-Event-ID resume) — Anish (b07c040)
 - [x] **T18** Run sc_01 in live mode against the stub; record a screen capture — Anish (e1b360f; screen capture still to be added)
 - [x] **T19** History page + session persistence — Mirdula (94444b2)
-- [ ] **T20** Sandbox design doc + Dockerfile skeleton (`--network none`, limits) — Anish
+- [x] **T20** Sandbox design doc + Dockerfile skeleton (`--network none`, limits) — Anish (9e3161f)
 
 ## Phase D — PoC evaluation prep (days 4–5)
 
