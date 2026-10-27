@@ -32,7 +32,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 
 ## Phase C — live-ready (days 3–4)
 
-- [ ] **T16** FastAPI stub: `/datasets`, `/runs`, `/runs/{id}/stream` replaying scenarios over SSE — Anish
+- [x] **T16** FastAPI stub: `/datasets`, `/runs`, `/runs/{id}/stream` replaying scenarios over SSE — Anish (402f958)
 - [ ] **T17** LiveDataSource (fetch + EventSource, Last-Event-ID resume) — Anish
 - [ ] **T18** Run sc_01 in live mode against the stub; record a screen capture — Anish
 - [x] **T19** History page + session persistence — Mirdula (94444b2)
