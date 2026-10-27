@@ -17,11 +17,11 @@ npm run dev                     # http://localhost:3000
 
 ## Screenshots
 
-> Captured from the **test-fixture scenarios** (`web/tests/fixtures`) on synthetic data, before the demo scenarios (T07) existed. Scripted demo output, not results.
+> Demo scenarios sc_02 and sc_05 on synthetic data. Scripted demo output, not results.
 
-| Run with number-to-source highlight (dark) | Run ends "Not verified" after 3 attempts (light) |
+| sc_02: retry, then a summary number traced to its table cell | sc_05: "Not verified" after 3 failed attempts |
 | --- | --- |
-| ![Workspace after a run: profile, steps, terminal, chart, table and findings; the selected summary number highlights its source table cell](docs/screenshots/workspace-run-dark.jpg) | ![Workspace after a run that failed three attempts: step marked Failed, Not verified badge and analyst fallback note](docs/screenshots/workspace-not-verified.jpg) |
+| ![sc_02 run: step 1 failed on the rupee text and succeeded on attempt 2; the selected summary number highlights its source cell in the revenue table](docs/screenshots/sc02-source-highlight.jpg) | ![sc_05 run: step 1 failed three times on duplicate person IDs, Not verified badge and analyst fallback note](docs/screenshots/sc05-not-verified.jpg) |
 
 | Landing | History |
 | --- | --- |

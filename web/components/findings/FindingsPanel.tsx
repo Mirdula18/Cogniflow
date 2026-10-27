@@ -1,7 +1,7 @@
 import { FileText, Loader2, ShieldAlert } from "lucide-react";
 import type { RunView } from "@/lib/store/runView";
 import type { NumberSource } from "@/lib/findings/numbers";
-import { untracedNumbers } from "@/lib/findings/numbers";
+import { extractNumbers, untracedNumbers } from "@/lib/findings/numbers";
 import { FindingsText } from "./FindingsText";
 import { VerifiedBadge } from "./VerifiedBadge";
 
@@ -15,6 +15,7 @@ export interface FindingsPanelProps {
 export function FindingsPanel({ view, selectedKey, onSelect }: FindingsPanelProps) {
   const running = view?.status === "queued" || view?.status === "running";
   const report = view?.report;
+  const numberCount = report ? extractNumbers(report.markdown).length : 0;
   const untraced = report && view ? untracedNumbers(report.markdown, view.artifacts).length : 0;
 
   return (
@@ -40,10 +41,14 @@ export function FindingsPanel({ view, selectedKey, onSelect }: FindingsPanelProp
       {report && view && (
         <>
           <FindingsText markdown={report.markdown} artifacts={view.artifacts} selectedKey={selectedKey} onSelect={onSelect} />
-          <p className="text-xs text-muted-foreground">
-            Select a number to see the step output it comes from.
-            {untraced > 0 && ` ${untraced} number${untraced === 1 ? " is" : "s are"} not found in any step output and marked.`}
-          </p>
+          {numberCount > untraced && (
+            <p className="text-xs text-muted-foreground">Select a number to see the step output it comes from.</p>
+          )}
+          {untraced > 0 && (
+            <p className="text-xs text-muted-foreground">
+              {untraced} number{untraced === 1 ? " is" : "s are"} not found in any step output and marked.
+            </p>
+          )}
           {report.citedMetrics.length > 0 && (
             <p className="text-xs text-muted-foreground">
               Based on: <span className="font-mono">{report.citedMetrics.join(", ")}</span>

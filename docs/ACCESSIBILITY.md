@@ -14,7 +14,7 @@ Lighthouse 13.5.0, accessibility category only, production build (`npm run build
 
 The first run scored `/workspace` at 97. Its one failure was `aria-hidden-focus`: xterm's hidden helper textarea could take focus inside the `aria-hidden` terminal. It is now removed from the tab order. Screen readers read the visually hidden `role="log"` mirror instead.
 
-These scores are for the empty workspace, because no demo scenarios exist yet (T05 and T07). Re-run once sc_01–sc_05 land:
+Re-run after T05/T07 landed (five demo datasets, sc_01–sc_05 loaded): `/workspace` still scores 100 on mobile and desktop. Lighthouse audits the page as loaded, so states after a run (steps, chart, findings) were checked by hand below, playing sc_02 and sc_05. To re-run:
 
 ```bash
 cd web && npm run build && npx next start -p 3123
@@ -23,7 +23,7 @@ npx lighthouse http://localhost:3123/workspace --only-categories=accessibility -
 
 ## Manual checks
 
-Checked in Chrome with the test-fixture scenarios staged locally:
+Checked in Chrome while playing sc_02 (retry → chart → number-to-source highlight) and sc_05 (not verified):
 
 | Check | How it is met |
 | --- | --- |

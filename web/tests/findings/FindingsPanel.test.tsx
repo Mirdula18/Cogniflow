@@ -74,8 +74,9 @@ describe("FindingsPanel", () => {
   });
 
   it("shows Not verified and the analyst fallback after 3 failed attempts", () => {
-    load("r_nv", notVerifiedInputs);
+    load("r_nv", [...notVerifiedInputs.slice(0, -1), { type: "report", markdown: "I could not verify this.", cited_metrics: [] }, ...notVerifiedInputs.slice(-1)]);
     render(<ResultsPanel />);
+    expect(screen.queryByText(/Select a number/)).not.toBeInTheDocument();
     expect(screen.getByText("Not verified — send to analyst")).toBeInTheDocument();
     expect(screen.getByRole("note")).toHaveTextContent(/could not be completed after 3 attempts.*Send the question/);
   });
