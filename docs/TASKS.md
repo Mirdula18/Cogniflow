@@ -23,7 +23,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 - [ ] **T07** Scenarios sc_01–sc_05 JSON, validated by Zod in a test — Arunaw
 - [ ] **T08** Notebook check that every scenario's code produces its shown output — Arunaw
 - [x] **T09** Event-sourced `runStore` reducer + tests (retry, not_verified paths) — Joe (a41916e)
-- [ ] **T10** DatasetPicker, UploadDropzone (mock accepts file, maps to closest demo), ProfilePanel — Mirdula
+- [x] **T10** DatasetPicker, UploadDropzone (mock accepts file, maps to closest demo), ProfilePanel — Mirdula (8eb8a25)
 - [x] **T11** QueryBox + SuggestedQuestions — Joe (7854637)
 - [x] **T12** StepTimeline, StepCard, CodeBlock, RetryBadge, Terminal (xterm) — Joe (91c2fe1)
 - [ ] **T13** ChartCanvas (Plotly), TableView, metric cards — Mirdula
