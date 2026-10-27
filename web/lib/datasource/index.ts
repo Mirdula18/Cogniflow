@@ -2,7 +2,8 @@ import { createLiveDataSource } from "./live";
 import { createMockDataSource } from "./mock";
 import type { DataMode, DataSource } from "./types";
 
-export type { DataMode, DataSource, StartRunInput } from "./types";
+export { DataSourceError, UPLOAD_LIMITS } from "./types";
+export type { DataMode, DataSource, DataSourceErrorCode, StartRunInput, StartRunResult } from "./types";
 
 /** Parses a NEXT_PUBLIC_DATA_MODE value. Unset means mock; anything else unknown is a config error. */
 export function parseDataMode(value: string | undefined): DataMode {

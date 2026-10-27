@@ -1,0 +1,37 @@
+{
+  "scenario_id": "fx_happy",
+  "dataset_id": "ds_fixture_tasks",
+  "question": "How many tasks are late per team?",
+  "events": [
+    { "seq": 1, "type": "run_started", "delay_ms": 0, "question": "How many tasks are late per team?" },
+    { "seq": 2, "type": "profile", "delay_ms": 400, "profile": {
+      "dataset_id": "ds_fixture_tasks", "rows": 40, "duplicates": 2,
+      "columns": [
+        { "name": "task_id", "dtype": "string", "nulls": 0, "unique": 38, "sample": ["T-001", "T-002"], "issues": ["2 duplicate rows"] },
+        { "name": "team", "dtype": "string", "nulls": 0, "unique": 2, "sample": ["A", "B"], "issues": [] },
+        { "name": "due", "dtype": "mixed", "nulls": 0, "unique": 31, "sample": ["03/02/2026", "2026-02-05"], "issues": ["Mixed date formats"] }
+      ],
+      "head": [{ "task_id": "T-001", "team": "A", "due": "03/02/2026" }]
+    } },
+    { "seq": 3, "type": "plan", "delay_ms": 500, "steps": [
+      { "id": "s1", "goal": "Clean dates and remove duplicate tasks" },
+      { "id": "s2", "goal": "Count late tasks by team" }
+    ] },
+    { "seq": 4, "type": "step_started", "delay_ms": 300, "step_id": "s1", "attempt": 1 },
+    { "seq": 5, "type": "code", "delay_ms": 400, "step_id": "s1", "attempt": 1, "language": "python",
+      "source": "df['due'] = pd.to_datetime(df['due'], format='mixed', dayfirst=True)\ndf = df.drop_duplicates()\nprint(f'Rows after cleaning: {len(df)}')" },
+    { "seq": 6, "type": "stdout", "delay_ms": 300, "step_id": "s1", "text": "Rows after cleaning: 38" },
+    { "seq": 7, "type": "step_finished", "delay_ms": 200, "step_id": "s1", "status": "ok" },
+    { "seq": 8, "type": "step_started", "delay_ms": 300, "step_id": "s2", "attempt": 1 },
+    { "seq": 9, "type": "code", "delay_ms": 400, "step_id": "s2", "attempt": 1, "language": "python",
+      "source": "late = df[df['due'] < '2026-02-10'].groupby('team').size()\nprint(late.to_string())" },
+    { "seq": 10, "type": "stdout", "delay_ms": 300, "step_id": "s2", "text": "team\nA    3\nB    7" },
+    { "seq": 11, "type": "artifact", "delay_ms": 300, "step_id": "s2", "kind": "table", "title": "Late tasks by team",
+      "payload": { "columns": ["team", "late_tasks"], "rows": [["A", 3], ["B", 7]] } },
+    { "seq": 12, "type": "artifact", "delay_ms": 300, "step_id": "s2", "kind": "chart", "title": "Late tasks by team",
+      "payload": { "data": [{ "type": "bar", "x": ["A", "B"], "y": [3, 7] }], "layout": { "yaxis": { "title": { "text": "Late tasks" } } } } },
+    { "seq": 13, "type": "step_finished", "delay_ms": 200, "step_id": "s2", "status": "ok" },
+    { "seq": 14, "type": "report", "delay_ms": 400, "markdown": "Team B has **7** late tasks and team A has **3**.", "cited_metrics": ["Late tasks by team"] },
+    { "seq": 15, "type": "run_finished", "delay_ms": 200, "status": "succeeded" }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "scenario_id": "fx_not_verified",
+  "dataset_id": "ds_fixture_tasks",
+  "question": "Which owner has the most tasks?",
+  "events": [
+    { "seq": 1, "type": "run_started", "delay_ms": 0, "question": "Which owner has the most tasks?" },
+    { "seq": 2, "type": "plan", "delay_ms": 500, "steps": [
+      { "id": "s1", "goal": "Fill in blank owners" },
+      { "id": "s2", "goal": "Count tasks per owner" }
+    ] },
+    { "seq": 3, "type": "step_started", "delay_ms": 300, "step_id": "s1", "attempt": 1 },
+    { "seq": 4, "type": "code", "delay_ms": 400, "step_id": "s1", "attempt": 1, "language": "python",
+      "source": "df['owner'] = df['owner'].fillna(df.groupby('team')['owner'].transform('first'))\nassert df['owner'].notna().all()" },
+    { "seq": 5, "type": "error", "delay_ms": 400, "step_id": "s1", "attempt": 1, "error_type": "AssertionError",
+      "message": "3 owners still blank after filling by team" },
+    { "seq": 6, "type": "retry", "delay_ms": 300, "step_id": "s1", "next_attempt": 2, "reason": "Fill from the previous task owner instead" },
+    { "seq": 7, "type": "step_started", "delay_ms": 300, "step_id": "s1", "attempt": 2 },
+    { "seq": 8, "type": "code", "delay_ms": 400, "step_id": "s1", "attempt": 2, "language": "python",
+      "source": "df['owner'] = df.sort_values('task_id')['owner'].ffill()\nassert df['owner'].notna().all()" },
+    { "seq": 9, "type": "error", "delay_ms": 400, "step_id": "s1", "attempt": 2, "error_type": "AssertionError",
+      "message": "1 owner still blank: the first task has no previous owner" },
+    { "seq": 10, "type": "retry", "delay_ms": 300, "step_id": "s1", "next_attempt": 3, "reason": "Match owners from duplicate task rows" },
+    { "seq": 11, "type": "step_started", "delay_ms": 300, "step_id": "s1", "attempt": 3 },
+    { "seq": 12, "type": "code", "delay_ms": 400, "step_id": "s1", "attempt": 3, "language": "python",
+      "source": "owners = df.dropna(subset=['owner']).set_index('task_id')['owner']\ndf['owner'] = df['owner'].fillna(df['task_id'].map(owners))\nassert df['owner'].notna().all()" },
+    { "seq": 13, "type": "error", "delay_ms": 400, "step_id": "s1", "attempt": 3, "error_type": "AssertionError",
+      "message": "3 owners still blank: no duplicate rows carry an owner" },
+    { "seq": 14, "type": "step_finished", "delay_ms": 200, "step_id": "s1", "status": "failed" },
+    { "seq": 15, "type": "run_finished", "delay_ms": 300, "status": "not_verified" }
+  ]
+}
