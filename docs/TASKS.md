@@ -15,20 +15,20 @@ Each member runs their own tasks (with or without the coding agent) on their own
 - [x] **T02** Zod schemas for every type and event in API_CONTRACT.md + tests — Joe (4205ebe)
 - [x] **T03** `DataSource` interface, `index.ts` mode switch, `.env.example` — Joe (2f57dee)
 - [x] **T04** Design tokens, layout shell, 3-panel workspace, responsive tabs, dark mode — Mirdula (b1b1f5d)
-- [x] **T05** Seeded synthetic dataset generator + 5 datasets + profile JSON — Arunaw (9eeed44)
+- [x] **T05** Seeded synthetic dataset generator + 5 datasets + profile JSON — Arunaw (cea6973)
 
 ## Phase B — mock end-to-end (days 2–3)
 
 - [x] **T06** Scenario player (async generator honouring `delay_ms`) + MockDataSource — Joe (9b8f949)
-- [x] **T07** Scenarios sc_01–sc_05 JSON, validated by Zod in a test — Arunaw (60a83b4)
-- [x] **T08** Notebook check that every scenario's code produces its shown output — Arunaw (13d7e02)
+- [x] **T07** Scenarios sc_01–sc_05 JSON, validated by Zod in a test — Arunaw (91e81bf)
+- [x] **T08** Notebook check that every scenario's code produces its shown output — Arunaw (18eba33)
 - [x] **T09** Event-sourced `runStore` reducer + tests (retry, not_verified paths) — Joe (a41916e)
 - [x] **T10** DatasetPicker, UploadDropzone (mock accepts file, maps to closest demo), ProfilePanel — Mirdula (8eb8a25)
 - [x] **T11** QueryBox + SuggestedQuestions — Joe (7854637)
 - [x] **T12** StepTimeline, StepCard, CodeBlock, RetryBadge, Terminal (xterm) — Joe (91c2fe1)
 - [x] **T13** ChartCanvas (Plotly), TableView, metric cards — Mirdula (d4d29c2)
 - [x] **T14** FindingsPanel, VerifiedBadge, number-to-source highlight — Mirdula (b4c6b36)
-- [x] **T15** Test: every number in each scenario's report exists in its artifacts — Arunaw (beefdaa)
+- [x] **T15** Test: every number in each scenario's report exists in its artifacts — Arunaw (a065680)
 
 ## Phase C — live-ready (days 3–4)
 
@@ -40,8 +40,8 @@ Each member runs their own tasks (with or without the coding agent) on their own
 
 ## Phase D — PoC evaluation prep (days 4–5)
 
-- [x] **T21** Pick 5 public datasets, mess-injection script, licences noted — Arunaw (1349e7d)
-- [ ] **T22** 30 questions + independent reference answers (two members) → freeze held-out — Arunaw, Mirdula (Arunaw's part: b6f82b9; Mirdula's references and the freeze are still open)
+- [x] **T21** Pick 5 public datasets, mess-injection script, licences noted — Arunaw (937e820)
+- [ ] **T22** 30 questions + independent reference answers (two members) → freeze held-out — Arunaw, Mirdula (Arunaw's part: 09eb347; Mirdula's references and the freeze are still open)
 - [ ] **T23** Eval harness skeleton: run agent vs baseline, log to POC_TEST_PLAN results table — Anish
 - [x] **T24** Accessibility pass (Lighthouse ≥ 90), README screenshots, demo script — Mirdula (bd244d1)
 
