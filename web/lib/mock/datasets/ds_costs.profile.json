@@ -1,0 +1,126 @@
+{
+  "name": "project_costs.csv",
+  "dataset_id": "ds_costs",
+  "rows": 300,
+  "duplicates": 0,
+  "columns": [
+    {
+      "name": "project",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 10,
+      "sample": [
+        "Alpha",
+        "Alpha",
+        "Alpha"
+      ],
+      "issues": [
+        "Title row above the header (merged cells in the export)"
+      ]
+    },
+    {
+      "name": "month",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 6,
+      "sample": [
+        "2025-07",
+        "2025-07",
+        "2025-07"
+      ],
+      "issues": []
+    },
+    {
+      "name": "category",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 5,
+      "sample": [
+        "Labour",
+        "Materials",
+        "Equipment"
+      ],
+      "issues": []
+    },
+    {
+      "name": "budget",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 240,
+      "sample": [
+        122400,
+        83200,
+        47500
+      ],
+      "issues": []
+    },
+    {
+      "name": "actual_cost",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 298,
+      "sample": [
+        116280,
+        -76544,
+        46550
+      ],
+      "issues": [
+        "7 negative costs (likely sign typos)"
+      ]
+    },
+    {
+      "name": "vendor",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 8,
+      "sample": [
+        "Vendor 7",
+        "Vendor 5",
+        "Vendor 7"
+      ],
+      "issues": []
+    }
+  ],
+  "head": [
+    {
+      "project": "Alpha",
+      "month": "2025-07",
+      "category": "Labour",
+      "budget": 122400,
+      "actual_cost": 116280,
+      "vendor": "Vendor 7"
+    },
+    {
+      "project": "Alpha",
+      "month": "2025-07",
+      "category": "Materials",
+      "budget": 83200,
+      "actual_cost": -76544,
+      "vendor": "Vendor 5"
+    },
+    {
+      "project": "Alpha",
+      "month": "2025-07",
+      "category": "Equipment",
+      "budget": 47500,
+      "actual_cost": 46550,
+      "vendor": "Vendor 7"
+    },
+    {
+      "project": "Alpha",
+      "month": "2025-07",
+      "category": "Travel",
+      "budget": 14900,
+      "actual_cost": 13857,
+      "vendor": "Vendor 8"
+    },
+    {
+      "project": "Alpha",
+      "month": "2025-07",
+      "category": "Software",
+      "budget": 31500,
+      "actual_cost": 29295,
+      "vendor": "Vendor 2"
+    }
+  ]
+}

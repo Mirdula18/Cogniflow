@@ -1,0 +1,183 @@
+{
+  "name": "project_delivery.csv",
+  "dataset_id": "ds_delivery",
+  "rows": 480,
+  "duplicates": 14,
+  "columns": [
+    {
+      "name": "task_id",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 466,
+      "sample": [
+        "T-0001",
+        "T-0002",
+        "T-0003"
+      ],
+      "issues": [
+        "14 duplicate rows"
+      ]
+    },
+    {
+      "name": "project",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 4,
+      "sample": [
+        "Atlas",
+        "Cedar",
+        "Atlas"
+      ],
+      "issues": []
+    },
+    {
+      "name": "team",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 5,
+      "sample": [
+        "QA",
+        "DevOps",
+        "Frontend"
+      ],
+      "issues": []
+    },
+    {
+      "name": "owner",
+      "dtype": "string",
+      "nulls": 22,
+      "unique": 12,
+      "sample": [
+        "Owner 4",
+        "Owner 8",
+        "Owner 7"
+      ],
+      "issues": [
+        "22 blank owners"
+      ]
+    },
+    {
+      "name": "priority",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 3,
+      "sample": [
+        "Medium",
+        "Low",
+        "Low"
+      ],
+      "issues": []
+    },
+    {
+      "name": "planned_start",
+      "dtype": "mixed",
+      "nulls": 0,
+      "unique": 144,
+      "sample": [
+        "04/02/2026",
+        "2026-02-26",
+        "2026-01-03"
+      ],
+      "issues": [
+        "Mixed date formats (DD/MM/YYYY and YYYY-MM-DD)"
+      ]
+    },
+    {
+      "name": "planned_end",
+      "dtype": "mixed",
+      "nulls": 0,
+      "unique": 151,
+      "sample": [
+        "2026-02-17",
+        "04/03/2026",
+        "09/01/2026"
+      ],
+      "issues": [
+        "Mixed date formats (DD/MM/YYYY and YYYY-MM-DD)"
+      ]
+    },
+    {
+      "name": "actual_end",
+      "dtype": "mixed",
+      "nulls": 0,
+      "unique": 160,
+      "sample": [
+        "2026-02-18",
+        "2026-03-03",
+        "2026-01-07"
+      ],
+      "issues": [
+        "Mixed date formats (DD/MM/YYYY and YYYY-MM-DD)"
+      ]
+    },
+    {
+      "name": "delay_cause",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 6,
+      "sample": [
+        "None",
+        "None",
+        "None"
+      ],
+      "issues": []
+    }
+  ],
+  "head": [
+    {
+      "task_id": "T-0001",
+      "project": "Atlas",
+      "team": "QA",
+      "owner": "Owner 4",
+      "priority": "Medium",
+      "planned_start": "04/02/2026",
+      "planned_end": "2026-02-17",
+      "actual_end": "2026-02-18",
+      "delay_cause": "None"
+    },
+    {
+      "task_id": "T-0002",
+      "project": "Cedar",
+      "team": "DevOps",
+      "owner": "Owner 8",
+      "priority": "Low",
+      "planned_start": "2026-02-26",
+      "planned_end": "04/03/2026",
+      "actual_end": "2026-03-03",
+      "delay_cause": "None"
+    },
+    {
+      "task_id": "T-0003",
+      "project": "Atlas",
+      "team": "Frontend",
+      "owner": "Owner 7",
+      "priority": "Low",
+      "planned_start": "2026-01-03",
+      "planned_end": "09/01/2026",
+      "actual_end": "2026-01-07",
+      "delay_cause": "None"
+    },
+    {
+      "task_id": "T-0004",
+      "project": "Atlas",
+      "team": "DevOps",
+      "owner": "Owner 8",
+      "priority": "Low",
+      "planned_start": "25/01/2026",
+      "planned_end": "2026-02-02",
+      "actual_end": "2026-01-31",
+      "delay_cause": "None"
+    },
+    {
+      "task_id": "T-0005",
+      "project": "Beacon",
+      "team": "QA",
+      "owner": "Owner 1",
+      "priority": "Medium",
+      "planned_start": "07/03/2026",
+      "planned_end": "16/03/2026",
+      "actual_end": "14/03/2026",
+      "delay_cause": "None"
+    }
+  ]
+}

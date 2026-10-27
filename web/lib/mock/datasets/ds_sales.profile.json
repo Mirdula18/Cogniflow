@@ -1,0 +1,160 @@
+{
+  "name": "regional_sales.xlsx",
+  "dataset_id": "ds_sales",
+  "rows": 1200,
+  "duplicates": 0,
+  "columns": [
+    {
+      "name": "order_id",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 1200,
+      "sample": [
+        "ORD-00001",
+        "ORD-00002",
+        "ORD-00003"
+      ],
+      "issues": []
+    },
+    {
+      "name": "order_date",
+      "dtype": "date",
+      "nulls": 0,
+      "unique": 181,
+      "sample": [
+        "2026-01-18",
+        "2025-11-19",
+        "2025-11-25"
+      ],
+      "issues": []
+    },
+    {
+      "name": "region",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 7,
+      "sample": [
+        "Karnataka",
+        "Maharashtra",
+        "TN"
+      ],
+      "issues": [
+        "Tamil Nadu spelt 3 ways (TN, Tamil Nadu, tamilnadu)"
+      ]
+    },
+    {
+      "name": "product",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 4,
+      "sample": [
+        "Licence",
+        "Licence",
+        "Gateway"
+      ],
+      "issues": []
+    },
+    {
+      "name": "channel",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 3,
+      "sample": [
+        "Direct",
+        "Online",
+        "Partner"
+      ],
+      "issues": []
+    },
+    {
+      "name": "sales_rep",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 15,
+      "sample": [
+        "Rep 8",
+        "Rep 12",
+        "Rep 13"
+      ],
+      "issues": []
+    },
+    {
+      "name": "units",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 10,
+      "sample": [
+        7,
+        5,
+        7
+      ],
+      "issues": []
+    },
+    {
+      "name": "revenue",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 973,
+      "sample": [
+        "₹1,20,000",
+        "₹1,19,600",
+        "₹68,495"
+      ],
+      "issues": [
+        "Numbers stored as text (₹ and commas)"
+      ]
+    }
+  ],
+  "head": [
+    {
+      "order_id": "ORD-00001",
+      "order_date": "2026-01-18",
+      "region": "Karnataka",
+      "product": "Licence",
+      "channel": "Direct",
+      "sales_rep": "Rep 8",
+      "units": 7,
+      "revenue": "₹1,20,000"
+    },
+    {
+      "order_id": "ORD-00002",
+      "order_date": "2025-11-19",
+      "region": "Maharashtra",
+      "product": "Licence",
+      "channel": "Online",
+      "sales_rep": "Rep 12",
+      "units": 5,
+      "revenue": "₹1,19,600"
+    },
+    {
+      "order_id": "ORD-00003",
+      "order_date": "2025-11-25",
+      "region": "TN",
+      "product": "Gateway",
+      "channel": "Partner",
+      "sales_rep": "Rep 13",
+      "units": 7,
+      "revenue": "₹68,495"
+    },
+    {
+      "order_id": "ORD-00004",
+      "order_date": "2025-10-10",
+      "region": "Kerala",
+      "product": "Controller",
+      "channel": "Direct",
+      "sales_rep": "Rep 12",
+      "units": 3,
+      "revenue": "₹46,440"
+    },
+    {
+      "order_id": "ORD-00005",
+      "order_date": "2026-01-05",
+      "region": "tamilnadu",
+      "product": "Controller",
+      "channel": "Direct",
+      "sales_rep": "Rep 7",
+      "units": 9,
+      "revenue": "₹1,16,640"
+    }
+  ]
+}
