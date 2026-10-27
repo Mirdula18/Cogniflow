@@ -5,7 +5,8 @@
 <dataset> is a key of DATASETS below. Writes <messy.csv> and <messy.csv>.mess.json (what was injected).
 
 Mess types: exact duplicate rows, mixed date formats, blanks, currency stored as text, spelling variants.
-Everything except blanks can be undone by a careful analyst. Blanks are confined to columns that no
+The clean base is the file with its own exact duplicate rows removed (wine-red has 240), so injected
+duplicates are the only ones left. Everything except blanks can be undone by a careful analyst. Blanks are confined to columns that no
 evaluation question uses, so reference answers computed on the clean file stay valid.
 """
 import argparse
@@ -45,8 +46,8 @@ DATASETS = {
 def inject(df: pd.DataFrame, cfg: dict, seed: int = 42) -> tuple[pd.DataFrame, dict]:
     """Returns the messy copy of `df` and a log of exactly what was changed. Same seed, same output."""
     rng = np.random.default_rng(seed)
-    out = df.copy()
-    log: dict = {"seed": seed, "rows_clean": len(df)}
+    out = df.drop_duplicates().reset_index(drop=True)  # clean base: reference answers use this too
+    log: dict = {"seed": seed, "natural_duplicates_removed": len(df) - len(out), "rows_clean": len(out)}
 
     for col in cfg.get("mixed_date_cols", []):
         dates = pd.to_datetime(out[col])
@@ -100,7 +101,7 @@ def main() -> None:
     args.messy_csv.parent.mkdir(parents=True, exist_ok=True)
     messy.to_csv(args.messy_csv, index=False)
     Path(f"{args.messy_csv}.mess.json").write_text(json.dumps(log, indent=2) + "\n", encoding="utf8")
-    print(f"{args.dataset}: {log['rows_clean']} -> {log['rows_messy']} rows, wrote {args.messy_csv}")
+    print(f"{args.dataset}: {len(cfg['read'](args.clean_file))} raw -> {log['rows_clean']} clean -> {log['rows_messy']} messy rows, wrote {args.messy_csv}")
 
 
 if __name__ == "__main__":

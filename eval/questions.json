@@ -1,0 +1,39 @@
+{
+  "note": "30 questions over the five datasets in datasets.md. Answers are computed on the clean base (file with exact duplicate rows removed). `split` is a proposal: 10 development, 20 held-out, 2 + 4 per dataset; the held-out set is frozen later in heldout.json. Numbers must match within `tolerance` (absolute); text answers match ignoring case and surrounding spaces.",
+  "questions": [
+    { "id": "q01", "dataset": "bike", "split": "dev", "type": "number", "tolerance": 0, "question": "What was the total number of bike rentals (cnt) in 2012?" },
+    { "id": "q02", "dataset": "bike", "split": "dev", "type": "number", "tolerance": 0, "question": "How many casual rentals were there in total in July 2011?" },
+    { "id": "q03", "dataset": "bike", "split": "heldout", "type": "text", "tolerance": 0, "question": "On which date were the most bikes rented? Answer as YYYY-MM-DD." },
+    { "id": "q04", "dataset": "bike", "split": "heldout", "type": "number", "tolerance": 0, "question": "Which season code (1 to 4 in the data) had the highest average daily rentals?" },
+    { "id": "q05", "dataset": "bike", "split": "heldout", "type": "number", "tolerance": 0, "question": "On how many days did total rentals exceed 6,000?" },
+    { "id": "q06", "dataset": "bike", "split": "heldout", "type": "number", "tolerance": 0.01, "question": "What percentage of days were holidays? Give it to 2 decimal places." },
+
+    { "id": "q07", "dataset": "wine", "split": "dev", "type": "number", "tolerance": 0, "question": "How many wines have a quality rating of 7 or higher?" },
+    { "id": "q08", "dataset": "wine", "split": "dev", "type": "number", "tolerance": 0.01, "question": "What is the average alcohol content of wines with quality 8? Give it to 2 decimal places." },
+    { "id": "q09", "dataset": "wine", "split": "heldout", "type": "number", "tolerance": 0, "question": "Which quality rating is the most common?" },
+    { "id": "q10", "dataset": "wine", "split": "heldout", "type": "number", "tolerance": 0, "question": "What is the highest alcohol content in the data?" },
+    { "id": "q11", "dataset": "wine", "split": "heldout", "type": "number", "tolerance": 0.01, "question": "What is the average pH of wines with quality 5? Give it to 2 decimal places." },
+    { "id": "q12", "dataset": "wine", "split": "heldout", "type": "number", "tolerance": 0, "question": "How many wines have volatile acidity above 1.0?" },
+
+    { "id": "q13", "dataset": "realestate", "split": "dev", "type": "number", "tolerance": 0, "question": "How many properties are in the data?" },
+    { "id": "q14", "dataset": "realestate", "split": "dev", "type": "number", "tolerance": 0.01, "question": "What is the average house price of unit area? Give it to 2 decimal places." },
+    { "id": "q15", "dataset": "realestate", "split": "heldout", "type": "number", "tolerance": 0, "question": "What is the highest house price of unit area?" },
+    { "id": "q16", "dataset": "realestate", "split": "heldout", "type": "number", "tolerance": 0, "question": "How many houses are 30 years old or older?" },
+    { "id": "q17", "dataset": "realestate", "split": "heldout", "type": "number", "tolerance": 0.01, "question": "What is the average house price of unit area for houses with 5 or more convenience stores nearby? Give it to 2 decimal places." },
+    { "id": "q18", "dataset": "realestate", "split": "heldout", "type": "number", "tolerance": 0, "question": "How many houses are within 500 metres of the nearest MRT station?" },
+
+    { "id": "q19", "dataset": "autompg", "split": "dev", "type": "number", "tolerance": 0.01, "question": "What is the average mpg of 4-cylinder cars? Give it to 2 decimal places." },
+    { "id": "q20", "dataset": "autompg", "split": "dev", "type": "number", "tolerance": 0, "question": "How many cars have 8 cylinders?" },
+    { "id": "q21", "dataset": "autompg", "split": "heldout", "type": "text", "tolerance": 0, "question": "Which car (by car_name) has the best mpg?" },
+    { "id": "q22", "dataset": "autompg", "split": "heldout", "type": "number", "tolerance": 0.01, "question": "What is the average weight of cars from model year 70? Give it to 2 decimal places." },
+    { "id": "q23", "dataset": "autompg", "split": "heldout", "type": "number", "tolerance": 0, "question": "How many cars have horsepower above 200?" },
+    { "id": "q24", "dataset": "autompg", "split": "heldout", "type": "number", "tolerance": 0, "question": "Which origin code has the highest average mpg?" },
+
+    { "id": "q25", "dataset": "energy", "split": "dev", "type": "number", "tolerance": 0.01, "question": "What is the average heating load (Y1)? Give it to 2 decimal places." },
+    { "id": "q26", "dataset": "energy", "split": "dev", "type": "number", "tolerance": 0, "question": "What is the highest cooling load (Y2)?" },
+    { "id": "q27", "dataset": "energy", "split": "heldout", "type": "number", "tolerance": 0, "question": "How many buildings have an overall height (X5) of 7?" },
+    { "id": "q28", "dataset": "energy", "split": "heldout", "type": "number", "tolerance": 0.01, "question": "What is the average heating load (Y1) of buildings with an overall height (X5) of 3.5? Give it to 2 decimal places." },
+    { "id": "q29", "dataset": "energy", "split": "heldout", "type": "number", "tolerance": 0, "question": "How many buildings have a heating load (Y1) above 30?" },
+    { "id": "q30", "dataset": "energy", "split": "heldout", "type": "number", "tolerance": 0.01, "question": "What is the average cooling load (Y2) of buildings with a surface area (X2) of 514.5? Give it to 2 decimal places." }
+  ]
+}
