@@ -1,5 +1,7 @@
 import { create } from "zustand";
+import { createJSONStorage, persist } from "zustand/middleware";
 import type { Run, RunEvent } from "@/lib/contract";
+import { fromStored, HISTORY_STORAGE_KEY, HISTORY_VERSION, toStored } from "./history";
 import { deriveRunView, initialRunView, reduceRunEvent, type RunView } from "./runView";
 
 export interface RunMeta {
@@ -24,6 +26,12 @@ export interface RunStoreState {
   appendEvent: (runId: string, event: RunEvent) => void;
   /** Loads a stored run and rebuilds its view from its events. */
   loadRun: (run: Run) => void;
+  /** Replay: empties the run's view; the stored run and its events are untouched. */
+  resetView: (runId: string) => void;
+  /** Replay: folds one stored event into the view only. */
+  replayEvent: (runId: string, event: RunEvent) => void;
+  /** Removes all runs (history) but keeps the selected dataset. */
+  clearRuns: () => void;
   reset: () => void;
 }
 
@@ -49,26 +57,53 @@ export function appendEventToState(
 
 const empty = { activeDatasetId: null, activeRunId: null, runs: {}, views: {} };
 
-export const useRunStore = create<RunStoreState>()((set) => ({
-  ...empty,
-  setActiveDataset: (activeDatasetId) => set({ activeDatasetId }),
-  setActiveRun: (activeRunId) => set({ activeRunId }),
-  registerRun: (meta) =>
-    set((s) => ({
-      runs: { ...s.runs, [meta.id]: { ...meta, status: "queued", events: [] } },
-      views: { ...s.views, [meta.id]: initialRunView(meta.id) },
-    })),
-  appendEvent: (runId, event) => set((s) => appendEventToState(s, runId, event)),
-  loadRun: (run) =>
-    set((s) => {
-      const view = deriveRunView(run.id, run.events);
-      return {
-        runs: { ...s.runs, [run.id]: { ...run, status: run.events.length ? view.status : run.status } },
-        views: { ...s.views, [run.id]: view },
-      };
+/**
+ * Finished runs and the selected dataset persist in sessionStorage (T19), so
+ * history survives a reload but not closing the tab. Hydration is manual
+ * (`useRunStore.persist.rehydrate()` after mount) to keep SSR output stable.
+ */
+export const useRunStore = create<RunStoreState>()(
+  persist(
+    (set) => ({
+      ...empty,
+      setActiveDataset: (activeDatasetId) => set({ activeDatasetId }),
+      setActiveRun: (activeRunId) => set({ activeRunId }),
+      registerRun: (meta) =>
+        set((s) => ({
+          runs: { ...s.runs, [meta.id]: { ...meta, status: "queued", events: [] } },
+          views: { ...s.views, [meta.id]: initialRunView(meta.id) },
+        })),
+      appendEvent: (runId, event) => set((s) => appendEventToState(s, runId, event)),
+      loadRun: (run) =>
+        set((s) => {
+          const view = deriveRunView(run.id, run.events);
+          return {
+            runs: { ...s.runs, [run.id]: { ...run, status: run.events.length ? view.status : run.status } },
+            views: { ...s.views, [run.id]: view },
+          };
+        }),
+      resetView: (runId) =>
+        set((s) => (s.runs[runId] ? { views: { ...s.views, [runId]: initialRunView(runId) } } : s)),
+      replayEvent: (runId, event) =>
+        set((s) => {
+          const view = s.views[runId];
+          if (!view) return s;
+          const next = reduceRunEvent(view, event);
+          return next === view ? s : { views: { ...s.views, [runId]: next } };
+        }),
+      clearRuns: () => set({ activeRunId: null, runs: {}, views: {} }),
+      reset: () => set(empty),
     }),
-  reset: () => set(empty),
-}));
+    {
+      name: HISTORY_STORAGE_KEY,
+      version: HISTORY_VERSION,
+      storage: createJSONStorage(() => sessionStorage),
+      skipHydration: true,
+      partialize: (s) => toStored(s),
+      merge: (persisted, current) => ({ ...current, ...fromStored(persisted) }),
+    },
+  ),
+);
 
 export const selectRunView =
   (runId: string | null | undefined) =>

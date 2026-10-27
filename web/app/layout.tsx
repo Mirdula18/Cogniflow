@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { AppHeader } from "@/components/layout/AppHeader";
+import { RunHistorySync } from "@/components/layout/RunHistorySync";
 import { themeInitScript } from "@/components/layout/theme";
 import "./globals.css";
 
@@ -37,6 +38,7 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
+        <RunHistorySync />
         <AppHeader />
         {children}
       </body>

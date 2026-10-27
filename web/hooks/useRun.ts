@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { cancelReplay } from "@/lib/store/replay";
 import { selectRunView, useRunStore } from "@/lib/store/runStore";
 import type { RunView } from "@/lib/store/runView";
 import { useDataSource } from "./useDataSource";
@@ -42,6 +43,7 @@ export function useRun(): UseRunResult {
   const start = useCallback(
     async (datasetId: string, question: string) => {
       controllerRef.current?.abort();
+      cancelReplay();
       const controller = new AbortController();
       controllerRef.current = controller;
       setError(undefined);
