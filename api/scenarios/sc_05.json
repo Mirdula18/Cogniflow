@@ -1,0 +1,294 @@
+{
+ "scenario_id": "sc_05",
+ "dataset_id": "ds_hr",
+ "question": "Who is over-allocated next sprint?",
+ "events": [
+  {
+   "seq": 1,
+   "type": "run_started",
+   "delay_ms": 0,
+   "question": "Who is over-allocated next sprint?"
+  },
+  {
+   "seq": 2,
+   "type": "profile",
+   "delay_ms": 500,
+   "profile": {
+    "dataset_id": "ds_hr",
+    "rows": 150,
+    "duplicates": 0,
+    "columns": [
+     {
+      "name": "person_id",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 53,
+      "sample": [
+       "E001",
+       "E002",
+       "E003"
+      ],
+      "issues": [
+       "5 names appear under two different person IDs"
+      ]
+     },
+     {
+      "name": "name",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 48,
+      "sample": [
+       "Dev Reddy",
+       "Dev Menon",
+       "Jai Nair"
+      ],
+      "issues": []
+     },
+     {
+      "name": "team",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 4,
+      "sample": [
+       "Mobile",
+       "Mobile",
+       "Mobile"
+      ],
+      "issues": []
+     },
+     {
+      "name": "project",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 5,
+      "sample": [
+       "Echo",
+       "Cedar",
+       "Echo"
+      ],
+      "issues": []
+     },
+     {
+      "name": "sprint",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 2,
+      "sample": [
+       "S11",
+       "S11",
+       "S11"
+      ],
+      "issues": []
+     },
+     {
+      "name": "allocation_pct",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 11,
+      "sample": [
+       30,
+       80,
+       70
+      ],
+      "issues": [
+       "6 allocations above 100%"
+      ]
+     }
+    ],
+    "head": [
+     {
+      "person_id": "E001",
+      "name": "Dev Reddy",
+      "team": "Mobile",
+      "project": "Echo",
+      "sprint": "S11",
+      "allocation_pct": 30
+     },
+     {
+      "person_id": "E002",
+      "name": "Dev Menon",
+      "team": "Mobile",
+      "project": "Cedar",
+      "sprint": "S11",
+      "allocation_pct": 80
+     },
+     {
+      "person_id": "E003",
+      "name": "Jai Nair",
+      "team": "Mobile",
+      "project": "Echo",
+      "sprint": "S11",
+      "allocation_pct": 70
+     },
+     {
+      "person_id": "E004",
+      "name": "Kavya Shah",
+      "team": "Mobile",
+      "project": "Cedar",
+      "sprint": "S11",
+      "allocation_pct": 80
+     },
+     {
+      "person_id": "E005",
+      "name": "Dev Verma",
+      "team": "Data",
+      "project": "Beacon",
+      "sprint": "S11",
+      "allocation_pct": 50
+     }
+    ]
+   }
+  },
+  {
+   "seq": 3,
+   "type": "plan",
+   "delay_ms": 600,
+   "steps": [
+    {
+     "id": "s1",
+     "goal": "Match each person to one ID"
+    },
+    {
+     "id": "s2",
+     "goal": "Add up allocation for each person in the next sprint"
+    },
+    {
+     "id": "s3",
+     "goal": "List people above 100%"
+    }
+   ]
+  },
+  {
+   "seq": 4,
+   "type": "step_started",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "attempt": 1
+  },
+  {
+   "seq": 5,
+   "type": "code",
+   "delay_ms": 800,
+   "step_id": "s1",
+   "attempt": 1,
+   "language": "python",
+   "source": "s12 = df[df['sprint'] == 'S12']\ntotals = s12.groupby('name')['allocation_pct'].sum().reset_index()\nroster = df[['person_id', 'name', 'team']].drop_duplicates()\nprint(f\"{roster['person_id'].nunique()} person IDs, {roster['name'].nunique()} distinct names\")\npeople = totals.merge(roster, on='name', validate='one_to_one')"
+  },
+  {
+   "seq": 6,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "text": "53 person IDs, 48 distinct names"
+  },
+  {
+   "seq": 7,
+   "type": "error",
+   "delay_ms": 600,
+   "step_id": "s1",
+   "attempt": 1,
+   "error_type": "MergeError",
+   "message": "Merge keys are not unique in right dataset; not a one-to-one merge\nDuplicates in right:\n         name\n Kavya Reddy\n    Jai Bose\n  Farid Iyer\nChitra Reddy\n Lalit Singh ..."
+  },
+  {
+   "seq": 8,
+   "type": "retry",
+   "delay_ms": 400,
+   "step_id": "s1",
+   "next_attempt": 2,
+   "reason": "Keep one ID per name, then check that no name has two IDs"
+  },
+  {
+   "seq": 9,
+   "type": "step_started",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "attempt": 2
+  },
+  {
+   "seq": 10,
+   "type": "code",
+   "delay_ms": 800,
+   "step_id": "s1",
+   "attempt": 2,
+   "language": "python",
+   "source": "roster = roster.drop_duplicates('name', keep='first')\nprint(f\"{len(roster)} people left after keeping one ID per name\")\nids_per_name = df.groupby('name')['person_id'].nunique()\nassert ids_per_name.max() == 1, f\"{(ids_per_name > 1).sum()} names map to more than one person_id\""
+  },
+  {
+   "seq": 11,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "text": "48 people left after keeping one ID per name"
+  },
+  {
+   "seq": 12,
+   "type": "error",
+   "delay_ms": 600,
+   "step_id": "s1",
+   "attempt": 2,
+   "error_type": "AssertionError",
+   "message": "5 names map to more than one person_id"
+  },
+  {
+   "seq": 13,
+   "type": "retry",
+   "delay_ms": 400,
+   "step_id": "s1",
+   "next_attempt": 3,
+   "reason": "Add the team to tell people with the same name apart"
+  },
+  {
+   "seq": 14,
+   "type": "step_started",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "attempt": 3
+  },
+  {
+   "seq": 15,
+   "type": "code",
+   "delay_ms": 800,
+   "step_id": "s1",
+   "attempt": 3,
+   "language": "python",
+   "source": "key = df['name'] + ' | ' + df['team']\nids_per_key = df.groupby(key)['person_id'].nunique()\nprint(f\"{len(ids_per_key)} name and team pairs checked\")\nassert ids_per_key.max() == 1, f\"{(ids_per_key > 1).sum()} name and team pairs still map to more than one person_id\""
+  },
+  {
+   "seq": 16,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "text": "48 name and team pairs checked"
+  },
+  {
+   "seq": 17,
+   "type": "error",
+   "delay_ms": 600,
+   "step_id": "s1",
+   "attempt": 3,
+   "error_type": "AssertionError",
+   "message": "5 name and team pairs still map to more than one person_id"
+  },
+  {
+   "seq": 18,
+   "type": "step_finished",
+   "delay_ms": 250,
+   "step_id": "s1",
+   "status": "failed"
+  },
+  {
+   "seq": 19,
+   "type": "report",
+   "delay_ms": 700,
+   "markdown": "I could not verify who is over-allocated next sprint, so I am not giving a list.\n\n- Some names appear under two different person IDs, with the same team on both.\n- The file does not say whether each pair is one person or two, and adding up the wrong way would give wrong totals.\n- Please send this to an analyst to confirm which IDs belong to the same person.",
+   "cited_metrics": []
+  },
+  {
+   "seq": 20,
+   "type": "run_finished",
+   "delay_ms": 300,
+   "status": "not_verified"
+  }
+ ]
+}

@@ -1,0 +1,505 @@
+{
+ "scenario_id": "sc_04",
+ "dataset_id": "ds_costs",
+ "question": "What is the cost overrun per project?",
+ "events": [
+  {
+   "seq": 1,
+   "type": "run_started",
+   "delay_ms": 0,
+   "question": "What is the cost overrun per project?"
+  },
+  {
+   "seq": 2,
+   "type": "profile",
+   "delay_ms": 500,
+   "profile": {
+    "dataset_id": "ds_costs",
+    "rows": 300,
+    "duplicates": 0,
+    "columns": [
+     {
+      "name": "project",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 10,
+      "sample": [
+       "Alpha",
+       "Alpha",
+       "Alpha"
+      ],
+      "issues": [
+       "Title row above the header (merged cells in the export)"
+      ]
+     },
+     {
+      "name": "month",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 6,
+      "sample": [
+       "2025-07",
+       "2025-07",
+       "2025-07"
+      ],
+      "issues": []
+     },
+     {
+      "name": "category",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 5,
+      "sample": [
+       "Labour",
+       "Materials",
+       "Equipment"
+      ],
+      "issues": []
+     },
+     {
+      "name": "budget",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 240,
+      "sample": [
+       122400,
+       83200,
+       47500
+      ],
+      "issues": []
+     },
+     {
+      "name": "actual_cost",
+      "dtype": "number",
+      "nulls": 0,
+      "unique": 298,
+      "sample": [
+       116280,
+       -76544,
+       46550
+      ],
+      "issues": [
+       "7 negative costs (likely sign typos)"
+      ]
+     },
+     {
+      "name": "vendor",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 8,
+      "sample": [
+       "Vendor 7",
+       "Vendor 5",
+       "Vendor 7"
+      ],
+      "issues": []
+     }
+    ],
+    "head": [
+     {
+      "project": "Alpha",
+      "month": "2025-07",
+      "category": "Labour",
+      "budget": 122400,
+      "actual_cost": 116280,
+      "vendor": "Vendor 7"
+     },
+     {
+      "project": "Alpha",
+      "month": "2025-07",
+      "category": "Materials",
+      "budget": 83200,
+      "actual_cost": -76544,
+      "vendor": "Vendor 5"
+     },
+     {
+      "project": "Alpha",
+      "month": "2025-07",
+      "category": "Equipment",
+      "budget": 47500,
+      "actual_cost": 46550,
+      "vendor": "Vendor 7"
+     },
+     {
+      "project": "Alpha",
+      "month": "2025-07",
+      "category": "Travel",
+      "budget": 14900,
+      "actual_cost": 13857,
+      "vendor": "Vendor 8"
+     },
+     {
+      "project": "Alpha",
+      "month": "2025-07",
+      "category": "Software",
+      "budget": 31500,
+      "actual_cost": 29295,
+      "vendor": "Vendor 2"
+     }
+    ]
+   }
+  },
+  {
+   "seq": 3,
+   "type": "plan",
+   "delay_ms": 600,
+   "steps": [
+    {
+     "id": "s1",
+     "goal": "Fix the header row"
+    },
+    {
+     "id": "s2",
+     "goal": "Flag negative costs"
+    },
+    {
+     "id": "s3",
+     "goal": "Work out the overrun for each project"
+    }
+   ]
+  },
+  {
+   "seq": 4,
+   "type": "step_started",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "attempt": 1
+  },
+  {
+   "seq": 5,
+   "type": "code",
+   "delay_ms": 800,
+   "step_id": "s1",
+   "attempt": 1,
+   "language": "python",
+   "source": "df.columns = df.iloc[0]\ndf = df.iloc[1:].reset_index(drop=True)\ndf.columns.name = None\ndf[['budget', 'actual_cost']] = df[['budget', 'actual_cost']].apply(pd.to_numeric)\nprint(f\"Columns: {', '.join(df.columns)}\")\nprint(f\"{len(df)} cost rows, title row removed\")"
+  },
+  {
+   "seq": 6,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "text": "Columns: project, month, category, budget, actual_cost, vendor"
+  },
+  {
+   "seq": 7,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "text": "300 cost rows, title row removed"
+  },
+  {
+   "seq": 8,
+   "type": "step_finished",
+   "delay_ms": 250,
+   "step_id": "s1",
+   "status": "ok"
+  },
+  {
+   "seq": 9,
+   "type": "step_started",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "attempt": 1
+  },
+  {
+   "seq": 10,
+   "type": "code",
+   "delay_ms": 800,
+   "step_id": "s2",
+   "attempt": 1,
+   "language": "python",
+   "source": "neg = df[df['actual_cost'] < 0]\nprint(f\"{len(neg)} negative actual costs, likely sign typos:\")\nprint(neg[['project', 'month', 'category', 'actual_cost']].to_string(index=False))\ndf['actual_cost'] = df['actual_cost'].abs()\nprint(\"Treated as sign typos: replaced with the absolute value\")"
+  },
+  {
+   "seq": 11,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "7 negative actual costs, likely sign typos:"
+  },
+  {
+   "seq": 12,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "project   month  category  actual_cost"
+  },
+  {
+   "seq": 13,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "  Alpha 2025-07 Materials       -76544"
+  },
+  {
+   "seq": 14,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "Charlie 2025-11    Labour      -102569"
+  },
+  {
+   "seq": 15,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "  Delta 2025-09  Software       -60630"
+  },
+  {
+   "seq": 16,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "Foxtrot 2025-11 Materials      -107388"
+  },
+  {
+   "seq": 17,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "Foxtrot 2025-11    Travel       -16092"
+  },
+  {
+   "seq": 18,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "   Golf 2025-08    Labour      -113464"
+  },
+  {
+   "seq": 19,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": " Juliet 2025-11  Software       -22140"
+  },
+  {
+   "seq": 20,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "Treated as sign typos: replaced with the absolute value"
+  },
+  {
+   "seq": 21,
+   "type": "artifact",
+   "delay_ms": 400,
+   "step_id": "s2",
+   "kind": "metric",
+   "title": "Negative costs flagged",
+   "payload": {
+    "name": "negative_costs_flagged",
+    "value": 7
+   }
+  },
+  {
+   "seq": 22,
+   "type": "step_finished",
+   "delay_ms": 250,
+   "step_id": "s2",
+   "status": "ok"
+  },
+  {
+   "seq": 23,
+   "type": "step_started",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "attempt": 1
+  },
+  {
+   "seq": 24,
+   "type": "code",
+   "delay_ms": 800,
+   "step_id": "s3",
+   "attempt": 1,
+   "language": "python",
+   "source": "by_project = df.groupby('project')[['budget', 'actual_cost']].sum()\nby_project['overrun_pct'] = ((by_project['actual_cost'] - by_project['budget']) / by_project['budget'] * 100).round(1)\nby_project = by_project.sort_values('overrun_pct', ascending=False)\nprint(by_project.to_string())"
+  },
+  {
+   "seq": 25,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "          budget  actual_cost  overrun_pct"
+  },
+  {
+   "seq": 26,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "project"
+  },
+  {
+   "seq": 27,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Juliet   1062100      1377012         29.6"
+  },
+  {
+   "seq": 28,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Delta    2850800      3557176         24.8"
+  },
+  {
+   "seq": 29,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Hotel    2484400      2901619         16.8"
+  },
+  {
+   "seq": 30,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Charlie  1423300      1580872         11.1"
+  },
+  {
+   "seq": 31,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Foxtrot  2000900      2164330          8.2"
+  },
+  {
+   "seq": 32,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "India    2109200      2204019          4.5"
+  },
+  {
+   "seq": 33,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Bravo    2262900      2339407          3.4"
+  },
+  {
+   "seq": 34,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Echo     1216800      1220159          0.3"
+  },
+  {
+   "seq": 35,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Golf     1603900      1585798         -1.1"
+  },
+  {
+   "seq": 36,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Alpha    1759200      1684300         -4.3"
+  },
+  {
+   "seq": 37,
+   "type": "artifact",
+   "delay_ms": 400,
+   "step_id": "s3",
+   "kind": "table",
+   "title": "Cost overrun by project",
+   "payload": {
+    "columns": [
+     "Project",
+     "Budget (₹)",
+     "Actual cost (₹)",
+     "Overrun (%)"
+    ],
+    "rows": [
+     [
+      "Juliet",
+      1062100,
+      1377012,
+      29.6
+     ],
+     [
+      "Delta",
+      2850800,
+      3557176,
+      24.8
+     ],
+     [
+      "Hotel",
+      2484400,
+      2901619,
+      16.8
+     ],
+     [
+      "Charlie",
+      1423300,
+      1580872,
+      11.1
+     ],
+     [
+      "Foxtrot",
+      2000900,
+      2164330,
+      8.2
+     ],
+     [
+      "India",
+      2109200,
+      2204019,
+      4.5
+     ],
+     [
+      "Bravo",
+      2262900,
+      2339407,
+      3.4
+     ],
+     [
+      "Echo",
+      1216800,
+      1220159,
+      0.3
+     ],
+     [
+      "Golf",
+      1603900,
+      1585798,
+      -1.1
+     ],
+     [
+      "Alpha",
+      1759200,
+      1684300,
+      -4.3
+     ]
+    ]
+   }
+  },
+  {
+   "seq": 38,
+   "type": "step_finished",
+   "delay_ms": 250,
+   "step_id": "s3",
+   "status": "ok"
+  },
+  {
+   "seq": 39,
+   "type": "report",
+   "delay_ms": 700,
+   "markdown": "**Juliet** has the largest overrun: **29.6%** over budget (**13,77,012** spent against **10,62,100**).\n\n- Next: **Delta** at **24.8%**, then **Hotel** at **16.8%**.\n- **7** negative cost entries were treated as sign typos and counted as positive.",
+   "cited_metrics": [
+    "negative_costs_flagged",
+    "Cost overrun by project"
+   ]
+  },
+  {
+   "seq": 40,
+   "type": "run_finished",
+   "delay_ms": 300,
+   "status": "succeeded"
+  }
+ ]
+}
