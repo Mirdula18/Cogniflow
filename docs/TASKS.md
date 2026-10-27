@@ -43,7 +43,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 - [ ] **T21** Pick 5 public datasets, mess-injection script, licences noted — Arunaw
 - [ ] **T22** 30 questions + independent reference answers (two members) → freeze held-out — Arunaw, Mirdula
 - [ ] **T23** Eval harness skeleton: run agent vs baseline, log to POC_TEST_PLAN results table — Anish
-- [ ] **T24** Accessibility pass (Lighthouse ≥ 90), README screenshots, demo script — Mirdula
+- [x] **T24** Accessibility pass (Lighthouse ≥ 90), README screenshots, demo script — Mirdula (bd244d1)
 
 ## Demo script (Pre-Demo Day)
 
