@@ -1,5 +1,6 @@
 "use client";
 
+import { ResultsPanel } from "@/components/canvas/ResultsPanel";
 import { DataPanel } from "@/components/dataset/DataPanel";
 import { QueryPanel } from "@/components/query/QueryPanel";
 import { RunPanel } from "@/components/run/RunPanel";
@@ -19,7 +20,7 @@ export function Workspace() {
           <RunPanel />
         </>
       }
-      results={<p className="text-sm text-muted-foreground">Charts, tables and the findings summary appear here.</p>}
+      results={<ResultsPanel />}
     />
   );
 }
