@@ -3,12 +3,13 @@
 import { useState } from "react";
 import { FlaskConical } from "lucide-react";
 import { QueryPanel } from "@/components/query/QueryPanel";
+import { RunPanel } from "@/components/run/RunPanel";
 import { DataSourceProvider } from "@/hooks/useDataSource";
 import { createFixtureDataSource, FIXTURE_DATASET_ID } from "@/tests/fixtures/dataSource";
 
 /**
  * Temporary dev-only preview of the run components on the test fixtures.
- * Remove once the workspace shell (T04) mounts them.
+ * Remove once the workspace shell (T04) mounts QueryPanel and RunPanel.
  */
 export function RunPreview() {
   const [source] = useState(() => createFixtureDataSource());
@@ -27,6 +28,7 @@ export function RunPreview() {
           Test fixture dataset <code className="font-mono">{FIXTURE_DATASET_ID}</code>. Not real results.
         </p>
         <QueryPanel datasetId={FIXTURE_DATASET_ID} />
+        <RunPanel />
       </main>
     </DataSourceProvider>
   );
