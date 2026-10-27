@@ -56,7 +56,7 @@ export function delivery(): Built {
       planned_start: fmt(start),
       planned_end: fmt(plannedEnd),
       actual_end: fmt(addDays(plannedEnd, delay)),
-      delay_cause: delay >= 2 ? rng.weighted(causes, weights[team] as number[]) : "None",
+      delay_cause: delay >= 2 ? rng.weighted(causes, weights[team] as number[]) : "No cause logged",
     };
   });
   const originals = rows.slice();

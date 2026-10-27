@@ -1,252 +1,252 @@
 task_id,project,team,owner,priority,planned_start,planned_end,actual_end,delay_cause
-T-0001,Atlas,QA,Owner 4,Medium,04/02/2026,2026-02-17,2026-02-18,None
-T-0002,Cedar,DevOps,Owner 8,Low,2026-02-26,04/03/2026,2026-03-03,None
-T-0003,Atlas,Frontend,Owner 7,Low,2026-01-03,09/01/2026,2026-01-07,None
-T-0004,Atlas,DevOps,Owner 8,Low,25/01/2026,2026-02-02,2026-01-31,None
-T-0005,Beacon,QA,Owner 1,Medium,07/03/2026,16/03/2026,14/03/2026,None
+T-0001,Atlas,QA,Owner 4,Medium,04/02/2026,2026-02-17,2026-02-18,No cause logged
+T-0002,Cedar,DevOps,Owner 8,Low,2026-02-26,04/03/2026,2026-03-03,No cause logged
+T-0003,Atlas,Frontend,Owner 7,Low,2026-01-03,09/01/2026,2026-01-07,No cause logged
+T-0004,Atlas,DevOps,Owner 8,Low,25/01/2026,2026-02-02,2026-01-31,No cause logged
+T-0005,Beacon,QA,Owner 1,Medium,07/03/2026,16/03/2026,14/03/2026,No cause logged
 T-0006,Atlas,Design,Owner 1,Medium,2026-03-13,21/03/2026,24/03/2026,Vendor delay
-T-0007,Atlas,QA,Owner 10,Low,13/03/2026,19/03/2026,20/03/2026,None
+T-0007,Atlas,QA,Owner 10,Low,13/03/2026,19/03/2026,20/03/2026,No cause logged
 T-0008,Beacon,Frontend,Owner 4,Medium,13/02/2026,20/02/2026,22/02/2026,Rework
-T-0009,Cedar,Frontend,Owner 10,High,2026-02-11,2026-02-17,15/02/2026,None
-T-0010,Cedar,Design,Owner 5,Low,15/03/2026,2026-03-20,2026-03-21,None
+T-0009,Cedar,Frontend,Owner 10,High,2026-02-11,2026-02-17,15/02/2026,No cause logged
+T-0010,Cedar,Design,Owner 5,Low,15/03/2026,2026-03-20,2026-03-21,No cause logged
 T-0011,Beacon,QA,Owner 11,Medium,2026-03-09,15/03/2026,17/03/2026,Rework
-T-0012,Atlas,DevOps,,Medium,16/01/2026,2026-01-26,2026-01-27,None
+T-0012,Atlas,DevOps,,Medium,16/01/2026,2026-01-26,2026-01-27,No cause logged
 T-0013,Cedar,Backend,Owner 2,Low,03/01/2026,2026-01-08,2026-01-13,Vendor delay
-T-0014,Delta,Frontend,Owner 6,Medium,22/02/2026,01/03/2026,2026-03-01,None
+T-0014,Delta,Frontend,Owner 6,Medium,22/02/2026,01/03/2026,2026-03-01,No cause logged
 T-0015,Atlas,Backend,Owner 9,Medium,2026-01-23,2026-01-29,2026-02-01,Scope change
 T-0016,Delta,Backend,Owner 6,Low,06/02/2026,13/02/2026,16/02/2026,Rework
 T-0017,Atlas,Frontend,Owner 7,High,2026-01-12,22/01/2026,25/01/2026,Client approval
-T-0018,Cedar,Design,Owner 12,High,06/01/2026,11/01/2026,11/01/2026,None
+T-0018,Cedar,Design,Owner 12,High,06/01/2026,11/01/2026,11/01/2026,No cause logged
 T-0019,Cedar,Frontend,Owner 12,Medium,2026-01-27,04/02/2026,2026-02-08,Scope change
 T-0020,Delta,Design,Owner 6,Medium,2026-01-07,2026-01-17,2026-01-19,Vendor delay
 T-0021,Delta,Backend,Owner 3,Medium,03/02/2026,2026-02-12,2026-02-16,Vendor delay
-T-0022,Cedar,Frontend,Owner 7,Medium,26/01/2026,2026-02-01,2026-01-31,None
-T-0023,Delta,Design,Owner 7,Low,12/01/2026,2026-01-26,2026-01-23,None
+T-0022,Cedar,Frontend,Owner 7,Medium,26/01/2026,2026-02-01,2026-01-31,No cause logged
+T-0023,Delta,Design,Owner 7,Low,12/01/2026,2026-01-26,2026-01-23,No cause logged
 T-0024,Delta,Backend,Owner 8,Medium,23/02/2026,04/03/2026,06/03/2026,Vendor delay
-T-0025,Cedar,Design,Owner 7,High,2026-01-08,2026-01-11,2026-01-09,None
+T-0025,Cedar,Design,Owner 7,High,2026-01-08,2026-01-11,2026-01-09,No cause logged
 T-0026,Delta,Backend,Owner 4,Medium,05/03/2026,14/03/2026,17/03/2026,Scope change
 T-0027,Cedar,DevOps,Owner 7,Medium,24/01/2026,01/02/2026,04/02/2026,Scope change
-T-0028,Delta,QA,Owner 11,Medium,2026-02-20,05/03/2026,04/03/2026,None
-T-0029,Beacon,QA,Owner 6,Low,07/03/2026,18/03/2026,16/03/2026,None
+T-0028,Delta,QA,Owner 11,Medium,2026-02-20,05/03/2026,04/03/2026,No cause logged
+T-0029,Beacon,QA,Owner 6,Low,07/03/2026,18/03/2026,16/03/2026,No cause logged
 T-0030,Cedar,QA,Owner 1,Medium,15/01/2026,28/01/2026,2026-01-31,Resource shortage
-T-0031,Atlas,QA,Owner 2,Medium,24/02/2026,05/03/2026,02/03/2026,None
-T-0032,Beacon,Design,Owner 8,High,03/01/2026,2026-01-09,2026-01-10,None
-T-0033,Beacon,QA,Owner 7,Medium,19/01/2026,2026-01-27,25/01/2026,None
-T-0034,Atlas,QA,Owner 3,Low,11/03/2026,15/03/2026,12/03/2026,None
+T-0031,Atlas,QA,Owner 2,Medium,24/02/2026,05/03/2026,02/03/2026,No cause logged
+T-0032,Beacon,Design,Owner 8,High,03/01/2026,2026-01-09,2026-01-10,No cause logged
+T-0033,Beacon,QA,Owner 7,Medium,19/01/2026,2026-01-27,25/01/2026,No cause logged
+T-0034,Atlas,QA,Owner 3,Low,11/03/2026,15/03/2026,12/03/2026,No cause logged
 T-0035,Delta,Backend,Owner 3,Medium,19/02/2026,2026-02-22,2026-02-26,Resource shortage
-T-0036,Delta,Frontend,Owner 2,Medium,08/03/2026,2026-03-20,21/03/2026,None
+T-0036,Delta,Frontend,Owner 2,Medium,08/03/2026,2026-03-20,21/03/2026,No cause logged
 T-0037,Cedar,Backend,Owner 12,Medium,11/01/2026,2026-01-21,24/01/2026,Scope change
 T-0038,Delta,Backend,Owner 11,Medium,2026-01-04,10/01/2026,13/01/2026,Vendor delay
 T-0039,Atlas,DevOps,Owner 7,Medium,2026-01-07,11/01/2026,2026-01-15,Rework
-T-0040,Delta,DevOps,Owner 6,Low,2026-01-27,2026-02-01,02/02/2026,None
+T-0040,Delta,DevOps,Owner 6,Low,2026-01-27,2026-02-01,02/02/2026,No cause logged
 T-0041,Atlas,Backend,Owner 1,High,02/02/2026,08/02/2026,10/02/2026,Vendor delay
-T-0042,Beacon,Frontend,Owner 7,Low,11/02/2026,2026-02-19,20/02/2026,None
+T-0042,Beacon,Frontend,Owner 7,Low,11/02/2026,2026-02-19,20/02/2026,No cause logged
 T-0043,Beacon,Design,Owner 11,Medium,2026-01-29,09/02/2026,2026-02-12,Client approval
 T-0044,Cedar,Frontend,Owner 10,Medium,2026-02-27,03/03/2026,2026-03-06,Resource shortage
 T-0045,Delta,Frontend,Owner 12,High,21/02/2026,02/03/2026,04/03/2026,Client approval
-T-0046,Beacon,Design,Owner 9,Medium,2026-01-07,21/01/2026,2026-01-18,None
-T-0047,Beacon,DevOps,Owner 1,Low,2026-02-19,25/02/2026,2026-02-24,None
-T-0211,Beacon,QA,,Medium,13/01/2026,2026-01-27,2026-01-26,None
+T-0046,Beacon,Design,Owner 9,Medium,2026-01-07,21/01/2026,2026-01-18,No cause logged
+T-0047,Beacon,DevOps,Owner 1,Low,2026-02-19,25/02/2026,2026-02-24,No cause logged
+T-0211,Beacon,QA,,Medium,13/01/2026,2026-01-27,2026-01-26,No cause logged
 T-0048,Cedar,QA,,Medium,16/03/2026,2026-03-23,25/03/2026,Rework
 T-0049,Beacon,Frontend,Owner 7,High,2026-01-29,11/02/2026,2026-02-13,Client approval
 T-0050,Beacon,QA,Owner 3,High,2026-02-02,12/02/2026,14/02/2026,Client approval
 T-0051,Atlas,Frontend,Owner 2,High,2026-02-17,2026-03-02,05/03/2026,Vendor delay
-T-0052,Delta,QA,Owner 3,Medium,18/02/2026,2026-02-21,20/02/2026,None
-T-0053,Cedar,Frontend,Owner 8,Low,2026-03-06,15/03/2026,15/03/2026,None
+T-0052,Delta,QA,Owner 3,Medium,18/02/2026,2026-02-21,20/02/2026,No cause logged
+T-0053,Cedar,Frontend,Owner 8,Low,2026-03-06,15/03/2026,15/03/2026,No cause logged
 T-0054,Cedar,Backend,Owner 8,High,12/03/2026,26/03/2026,2026-03-31,Rework
-T-0055,Beacon,Frontend,Owner 7,High,2026-03-11,16/03/2026,15/03/2026,None
-T-0056,Delta,DevOps,Owner 7,Medium,2026-01-20,2026-02-03,02/02/2026,None
-T-0057,Beacon,QA,Owner 7,High,25/01/2026,03/02/2026,02/02/2026,None
+T-0055,Beacon,Frontend,Owner 7,High,2026-03-11,16/03/2026,15/03/2026,No cause logged
+T-0056,Delta,DevOps,Owner 7,Medium,2026-01-20,2026-02-03,02/02/2026,No cause logged
+T-0057,Beacon,QA,Owner 7,High,25/01/2026,03/02/2026,02/02/2026,No cause logged
 T-0058,Beacon,Frontend,Owner 8,Medium,2026-03-06,2026-03-14,2026-03-16,Client approval
-T-0059,Cedar,Backend,Owner 1,Medium,25/01/2026,2026-01-28,27/01/2026,None
-T-0060,Beacon,Backend,Owner 6,High,2026-01-22,2026-02-01,2026-02-02,None
-T-0061,Atlas,DevOps,Owner 8,Medium,07/03/2026,2026-03-21,2026-03-22,None
-T-0062,Atlas,Design,Owner 2,Medium,10/03/2026,19/03/2026,17/03/2026,None
+T-0059,Cedar,Backend,Owner 1,Medium,25/01/2026,2026-01-28,27/01/2026,No cause logged
+T-0060,Beacon,Backend,Owner 6,High,2026-01-22,2026-02-01,2026-02-02,No cause logged
+T-0061,Atlas,DevOps,Owner 8,Medium,07/03/2026,2026-03-21,2026-03-22,No cause logged
+T-0062,Atlas,Design,Owner 2,Medium,10/03/2026,19/03/2026,17/03/2026,No cause logged
 T-0063,Delta,Frontend,Owner 3,High,2026-02-21,02/03/2026,06/03/2026,Scope change
 T-0064,Delta,Backend,Owner 3,Medium,2026-01-29,05/02/2026,08/02/2026,Scope change
-T-0065,Atlas,Frontend,Owner 1,Low,2026-03-17,22/03/2026,23/03/2026,None
+T-0065,Atlas,Frontend,Owner 1,Low,2026-03-17,22/03/2026,23/03/2026,No cause logged
 T-0066,Beacon,Frontend,Owner 9,Low,29/01/2026,2026-02-12,2026-02-15,Rework
-T-0067,Delta,Backend,Owner 1,Medium,09/01/2026,2026-01-23,22/01/2026,None
+T-0067,Delta,Backend,Owner 1,Medium,09/01/2026,2026-01-23,22/01/2026,No cause logged
 T-0068,Atlas,Backend,Owner 1,Medium,2026-03-15,2026-03-23,2026-03-27,Rework
-T-0069,Cedar,QA,Owner 12,High,18/01/2026,2026-01-22,20/01/2026,None
-T-0070,Delta,Frontend,Owner 12,Low,2026-03-04,2026-03-09,07/03/2026,None
-T-0071,Cedar,QA,Owner 1,High,2026-02-18,22/02/2026,2026-02-23,None
+T-0069,Cedar,QA,Owner 12,High,18/01/2026,2026-01-22,20/01/2026,No cause logged
+T-0070,Delta,Frontend,Owner 12,Low,2026-03-04,2026-03-09,07/03/2026,No cause logged
+T-0071,Cedar,QA,Owner 1,High,2026-02-18,22/02/2026,2026-02-23,No cause logged
 T-0072,Cedar,Design,Owner 1,High,2026-01-21,03/02/2026,2026-02-06,Rework
-T-0073,Beacon,DevOps,Owner 8,Medium,28/02/2026,04/03/2026,04/03/2026,None
-T-0074,Beacon,Design,Owner 3,Medium,2026-03-09,20/03/2026,2026-03-21,None
+T-0073,Beacon,DevOps,Owner 8,Medium,28/02/2026,04/03/2026,04/03/2026,No cause logged
+T-0074,Beacon,Design,Owner 3,Medium,2026-03-09,20/03/2026,2026-03-21,No cause logged
 T-0075,Beacon,Backend,Owner 5,Medium,16/02/2026,2026-02-26,28/02/2026,Scope change
-T-0076,Delta,QA,Owner 6,Medium,2026-03-08,2026-03-21,21/03/2026,None
+T-0076,Delta,QA,Owner 6,Medium,2026-03-08,2026-03-21,21/03/2026,No cause logged
 T-0077,Atlas,DevOps,Owner 11,Low,2026-02-02,16/02/2026,2026-02-20,Resource shortage
 T-0078,Cedar,Backend,Owner 4,Low,2026-03-14,2026-03-17,2026-03-25,Vendor delay
-T-0079,Delta,QA,Owner 9,Medium,2026-01-12,2026-01-18,15/01/2026,None
+T-0079,Delta,QA,Owner 9,Medium,2026-01-12,2026-01-18,15/01/2026,No cause logged
 T-0080,Cedar,Frontend,Owner 6,Medium,23/01/2026,04/02/2026,2026-02-08,Scope change
-T-0081,Atlas,Frontend,Owner 10,Medium,23/01/2026,03/02/2026,03/02/2026,None
+T-0081,Atlas,Frontend,Owner 10,Medium,23/01/2026,03/02/2026,03/02/2026,No cause logged
 T-0082,Beacon,Frontend,Owner 8,Low,2026-02-08,15/02/2026,2026-02-18,Scope change
-T-0083,Cedar,Design,Owner 10,Low,30/01/2026,2026-02-13,2026-02-13,None
+T-0083,Cedar,Design,Owner 10,Low,30/01/2026,2026-02-13,2026-02-13,No cause logged
 T-0084,Beacon,Design,Owner 8,Medium,2026-02-24,08/03/2026,11/03/2026,Client approval
-T-0085,Delta,QA,Owner 2,High,08/02/2026,21/02/2026,2026-02-20,None
-T-0086,Delta,Design,Owner 5,Medium,2026-03-05,2026-03-12,12/03/2026,None
-T-0087,Atlas,DevOps,Owner 4,Low,13/02/2026,22/02/2026,2026-02-21,None
+T-0085,Delta,QA,Owner 2,High,08/02/2026,21/02/2026,2026-02-20,No cause logged
+T-0086,Delta,Design,Owner 5,Medium,2026-03-05,2026-03-12,12/03/2026,No cause logged
+T-0087,Atlas,DevOps,Owner 4,Low,13/02/2026,22/02/2026,2026-02-21,No cause logged
 T-0088,Delta,Backend,Owner 5,Medium,2026-01-16,21/01/2026,2026-01-26,Scope change
 T-0089,Cedar,Backend,Owner 9,High,07/02/2026,2026-02-15,2026-02-17,Vendor delay
 T-0090,Beacon,DevOps,,Medium,2026-01-08,17/01/2026,2026-01-20,Vendor delay
 T-0091,Delta,QA,Owner 1,High,12/02/2026,21/02/2026,2026-02-23,Resource shortage
 T-0092,Beacon,Backend,Owner 9,Medium,03/03/2026,2026-03-11,13/03/2026,Rework
-T-0093,Atlas,QA,Owner 8,Low,06/03/2026,13/03/2026,11/03/2026,None
-T-0094,Beacon,DevOps,Owner 8,High,19/01/2026,31/01/2026,29/01/2026,None
+T-0093,Atlas,QA,Owner 8,Low,06/03/2026,13/03/2026,11/03/2026,No cause logged
+T-0094,Beacon,DevOps,Owner 8,High,19/01/2026,31/01/2026,29/01/2026,No cause logged
 T-0095,Delta,DevOps,Owner 7,Low,2026-03-03,2026-03-16,18/03/2026,Vendor delay
-T-0096,Atlas,QA,Owner 3,High,17/01/2026,2026-01-29,2026-01-28,None
-T-0097,Atlas,DevOps,Owner 11,Medium,26/02/2026,03/03/2026,03/03/2026,None
-T-0098,Atlas,QA,Owner 2,Medium,19/01/2026,2026-01-25,24/01/2026,None
-T-0099,Cedar,DevOps,Owner 5,High,2026-02-24,2026-03-01,28/02/2026,None
+T-0096,Atlas,QA,Owner 3,High,17/01/2026,2026-01-29,2026-01-28,No cause logged
+T-0097,Atlas,DevOps,Owner 11,Medium,26/02/2026,03/03/2026,03/03/2026,No cause logged
+T-0098,Atlas,QA,Owner 2,Medium,19/01/2026,2026-01-25,24/01/2026,No cause logged
+T-0099,Cedar,DevOps,Owner 5,High,2026-02-24,2026-03-01,28/02/2026,No cause logged
 T-0100,Atlas,Backend,Owner 1,Low,2026-01-10,20/01/2026,25/01/2026,Vendor delay
-T-0101,Beacon,Frontend,Owner 6,Medium,26/01/2026,04/02/2026,2026-02-03,None
-T-0102,Atlas,DevOps,Owner 12,Medium,2026-02-08,2026-02-18,2026-02-16,None
-T-0103,Atlas,Frontend,Owner 9,Low,2026-01-26,2026-02-04,2026-02-05,None
+T-0101,Beacon,Frontend,Owner 6,Medium,26/01/2026,04/02/2026,2026-02-03,No cause logged
+T-0102,Atlas,DevOps,Owner 12,Medium,2026-02-08,2026-02-18,2026-02-16,No cause logged
+T-0103,Atlas,Frontend,Owner 9,Low,2026-01-26,2026-02-04,2026-02-05,No cause logged
 T-0104,Beacon,Frontend,Owner 3,High,2026-03-11,24/03/2026,26/03/2026,Resource shortage
-T-0105,Beacon,QA,Owner 3,Medium,2026-01-27,2026-02-06,2026-02-06,None
-T-0106,Atlas,Backend,Owner 1,Medium,19/01/2026,26/01/2026,2026-01-27,None
-T-0107,Delta,Design,Owner 7,Medium,12/02/2026,16/02/2026,2026-02-14,None
-T-0108,Cedar,DevOps,Owner 12,Medium,17/02/2026,24/02/2026,2026-02-23,None
-T-0109,Beacon,Design,Owner 4,Medium,10/01/2026,2026-01-23,2026-01-24,None
-T-0110,Cedar,DevOps,Owner 3,Low,2026-03-08,2026-03-19,2026-03-17,None
-T-0111,Delta,DevOps,Owner 8,Medium,2026-03-07,17/03/2026,15/03/2026,None
-T-0112,Beacon,DevOps,Owner 10,Medium,25/01/2026,30/01/2026,28/01/2026,None
-T-0113,Atlas,QA,Owner 1,Low,2026-01-22,2026-01-26,2026-01-23,None
+T-0105,Beacon,QA,Owner 3,Medium,2026-01-27,2026-02-06,2026-02-06,No cause logged
+T-0106,Atlas,Backend,Owner 1,Medium,19/01/2026,26/01/2026,2026-01-27,No cause logged
+T-0107,Delta,Design,Owner 7,Medium,12/02/2026,16/02/2026,2026-02-14,No cause logged
+T-0108,Cedar,DevOps,Owner 12,Medium,17/02/2026,24/02/2026,2026-02-23,No cause logged
+T-0109,Beacon,Design,Owner 4,Medium,10/01/2026,2026-01-23,2026-01-24,No cause logged
+T-0110,Cedar,DevOps,Owner 3,Low,2026-03-08,2026-03-19,2026-03-17,No cause logged
+T-0111,Delta,DevOps,Owner 8,Medium,2026-03-07,17/03/2026,15/03/2026,No cause logged
+T-0112,Beacon,DevOps,Owner 10,Medium,25/01/2026,30/01/2026,28/01/2026,No cause logged
+T-0113,Atlas,QA,Owner 1,Low,2026-01-22,2026-01-26,2026-01-23,No cause logged
 T-0114,Beacon,Frontend,Owner 5,Low,08/01/2026,19/01/2026,2026-01-23,Scope change
 T-0115,Cedar,Design,Owner 3,Medium,03/01/2026,2026-01-08,2026-01-10,Client approval
-T-0116,Delta,DevOps,Owner 12,Medium,2026-01-31,2026-02-03,2026-02-01,None
+T-0116,Delta,DevOps,Owner 12,Medium,2026-01-31,2026-02-03,2026-02-01,No cause logged
 T-0117,Delta,QA,Owner 6,Low,20/02/2026,2026-02-25,2026-02-28,Rework
-T-0118,Delta,DevOps,Owner 5,Medium,2026-01-29,12/02/2026,11/02/2026,None
-T-0119,Atlas,QA,Owner 7,Low,04/02/2026,07/02/2026,05/02/2026,None
-T-0340,Delta,Design,Owner 7,Low,07/01/2026,15/01/2026,13/01/2026,None
+T-0118,Delta,DevOps,Owner 5,Medium,2026-01-29,12/02/2026,11/02/2026,No cause logged
+T-0119,Atlas,QA,Owner 7,Low,04/02/2026,07/02/2026,05/02/2026,No cause logged
+T-0340,Delta,Design,Owner 7,Low,07/01/2026,15/01/2026,13/01/2026,No cause logged
 T-0120,Atlas,Frontend,Owner 6,Medium,19/02/2026,02/03/2026,06/03/2026,Scope change
 T-0121,Cedar,Frontend,Owner 4,Low,12/01/2026,25/01/2026,2026-01-29,Scope change
 T-0122,Cedar,Frontend,Owner 6,Medium,2026-01-12,2026-01-26,2026-01-30,Scope change
-T-0123,Atlas,DevOps,Owner 6,Medium,11/01/2026,19/01/2026,2026-01-17,None
-T-0124,Beacon,QA,Owner 12,Medium,11/02/2026,19/02/2026,2026-02-16,None
-T-0125,Delta,Backend,Owner 1,Medium,13/02/2026,24/02/2026,2026-02-24,None
+T-0123,Atlas,DevOps,Owner 6,Medium,11/01/2026,19/01/2026,2026-01-17,No cause logged
+T-0124,Beacon,QA,Owner 12,Medium,11/02/2026,19/02/2026,2026-02-16,No cause logged
+T-0125,Delta,Backend,Owner 1,Medium,13/02/2026,24/02/2026,2026-02-24,No cause logged
 T-0126,Atlas,Design,Owner 4,Low,2026-03-03,17/03/2026,2026-03-19,Resource shortage
-T-0127,Delta,Design,Owner 4,Medium,2026-01-15,20/01/2026,18/01/2026,None
-T-0128,Atlas,QA,Owner 8,Low,2026-01-11,2026-01-24,24/01/2026,None
-T-0129,Beacon,QA,Owner 11,Medium,2026-01-29,09/02/2026,2026-02-07,None
+T-0127,Delta,Design,Owner 4,Medium,2026-01-15,20/01/2026,18/01/2026,No cause logged
+T-0128,Atlas,QA,Owner 8,Low,2026-01-11,2026-01-24,24/01/2026,No cause logged
+T-0129,Beacon,QA,Owner 11,Medium,2026-01-29,09/02/2026,2026-02-07,No cause logged
 T-0130,Cedar,Backend,Owner 1,Medium,2026-01-11,21/01/2026,2026-01-24,Client approval
-T-0131,Delta,QA,Owner 1,Medium,2026-02-28,10/03/2026,10/03/2026,None
+T-0131,Delta,QA,Owner 1,Medium,2026-02-28,10/03/2026,10/03/2026,No cause logged
 T-0132,Atlas,Frontend,Owner 12,Medium,2026-01-01,14/01/2026,2026-01-17,Scope change
-T-0133,Delta,Design,Owner 4,Medium,11/03/2026,24/03/2026,21/03/2026,None
+T-0133,Delta,Design,Owner 4,Medium,11/03/2026,24/03/2026,21/03/2026,No cause logged
 T-0134,Atlas,Design,Owner 11,Medium,05/03/2026,2026-03-19,2026-03-21,Rework
-T-0356,Cedar,DevOps,Owner 6,Low,2026-01-05,19/01/2026,17/01/2026,None
+T-0356,Cedar,DevOps,Owner 6,Low,2026-01-05,19/01/2026,17/01/2026,No cause logged
 T-0135,Cedar,DevOps,Owner 2,Medium,2026-01-03,14/01/2026,2026-01-16,Vendor delay
-T-0136,Delta,Design,Owner 8,Low,2026-02-04,08/02/2026,2026-02-07,None
-T-0137,Cedar,QA,Owner 12,Medium,19/01/2026,2026-01-25,23/01/2026,None
+T-0136,Delta,Design,Owner 8,Low,2026-02-04,08/02/2026,2026-02-07,No cause logged
+T-0137,Cedar,QA,Owner 12,Medium,19/01/2026,2026-01-25,23/01/2026,No cause logged
 T-0138,Atlas,Frontend,,High,06/01/2026,2026-01-16,2026-01-20,Client approval
-T-0139,Delta,QA,Owner 2,High,06/02/2026,18/02/2026,15/02/2026,None
-T-0140,Delta,QA,Owner 9,Medium,01/02/2026,2026-02-04,02/02/2026,None
-T-0141,Delta,Frontend,Owner 1,Low,03/03/2026,15/03/2026,2026-03-14,None
-T-0142,Beacon,Frontend,Owner 2,Low,2026-01-25,04/02/2026,2026-02-02,None
-T-0143,Atlas,Design,Owner 8,Medium,2026-02-26,06/03/2026,05/03/2026,None
-T-0144,Beacon,Design,Owner 4,Low,2026-03-02,2026-03-05,04/03/2026,None
+T-0139,Delta,QA,Owner 2,High,06/02/2026,18/02/2026,15/02/2026,No cause logged
+T-0140,Delta,QA,Owner 9,Medium,01/02/2026,2026-02-04,02/02/2026,No cause logged
+T-0141,Delta,Frontend,Owner 1,Low,03/03/2026,15/03/2026,2026-03-14,No cause logged
+T-0142,Beacon,Frontend,Owner 2,Low,2026-01-25,04/02/2026,2026-02-02,No cause logged
+T-0143,Atlas,Design,Owner 8,Medium,2026-02-26,06/03/2026,05/03/2026,No cause logged
+T-0144,Beacon,Design,Owner 4,Low,2026-03-02,2026-03-05,04/03/2026,No cause logged
 T-0145,Cedar,Frontend,Owner 8,Low,16/03/2026,26/03/2026,2026-03-29,Scope change
-T-0146,Beacon,DevOps,Owner 5,High,2026-02-03,2026-02-12,13/02/2026,None
-T-0147,Cedar,Frontend,Owner 12,Medium,2026-01-15,2026-01-26,2026-01-26,None
+T-0146,Beacon,DevOps,Owner 5,High,2026-02-03,2026-02-12,13/02/2026,No cause logged
+T-0147,Cedar,Frontend,Owner 12,Medium,2026-01-15,2026-01-26,2026-01-26,No cause logged
 T-0148,Beacon,QA,,Medium,02/03/2026,10/03/2026,13/03/2026,Rework
-T-0149,Beacon,QA,Owner 2,Medium,22/02/2026,2026-03-02,01/03/2026,None
-T-0150,Beacon,QA,Owner 12,High,2026-01-31,08/02/2026,2026-02-05,None
-T-0151,Delta,DevOps,Owner 1,Low,2026-02-25,07/03/2026,05/03/2026,None
+T-0149,Beacon,QA,Owner 2,Medium,22/02/2026,2026-03-02,01/03/2026,No cause logged
+T-0150,Beacon,QA,Owner 12,High,2026-01-31,08/02/2026,2026-02-05,No cause logged
+T-0151,Delta,DevOps,Owner 1,Low,2026-02-25,07/03/2026,05/03/2026,No cause logged
 T-0152,Cedar,Backend,Owner 12,Medium,04/01/2026,07/01/2026,12/01/2026,Vendor delay
-T-0153,Beacon,QA,Owner 4,Medium,2026-01-06,15/01/2026,15/01/2026,None
-T-0154,Cedar,QA,Owner 2,Low,2026-02-21,2026-03-02,2026-03-03,None
-T-0155,Cedar,Backend,Owner 6,High,09/01/2026,2026-01-22,23/01/2026,None
-T-0156,Beacon,DevOps,Owner 9,Medium,2026-03-06,11/03/2026,2026-03-12,None
-T-0157,Beacon,Frontend,Owner 12,Medium,2026-01-11,14/01/2026,2026-01-13,None
-T-0158,Cedar,QA,Owner 12,Medium,2026-01-12,2026-01-16,2026-01-14,None
-T-0159,Beacon,DevOps,Owner 7,Medium,2026-01-18,2026-01-22,2026-01-20,None
+T-0153,Beacon,QA,Owner 4,Medium,2026-01-06,15/01/2026,15/01/2026,No cause logged
+T-0154,Cedar,QA,Owner 2,Low,2026-02-21,2026-03-02,2026-03-03,No cause logged
+T-0155,Cedar,Backend,Owner 6,High,09/01/2026,2026-01-22,23/01/2026,No cause logged
+T-0156,Beacon,DevOps,Owner 9,Medium,2026-03-06,11/03/2026,2026-03-12,No cause logged
+T-0157,Beacon,Frontend,Owner 12,Medium,2026-01-11,14/01/2026,2026-01-13,No cause logged
+T-0158,Cedar,QA,Owner 12,Medium,2026-01-12,2026-01-16,2026-01-14,No cause logged
+T-0159,Beacon,DevOps,Owner 7,Medium,2026-01-18,2026-01-22,2026-01-20,No cause logged
 T-0160,Atlas,Backend,Owner 10,Medium,11/03/2026,2026-03-18,2026-03-21,Client approval
 T-0161,Atlas,QA,Owner 8,Medium,18/02/2026,26/02/2026,01/03/2026,Resource shortage
-T-0162,Atlas,DevOps,Owner 6,Low,26/01/2026,2026-02-01,2026-01-31,None
+T-0162,Atlas,DevOps,Owner 6,Low,26/01/2026,2026-02-01,2026-01-31,No cause logged
 T-0163,Delta,DevOps,Owner 7,Medium,2026-02-16,2026-02-21,2026-02-24,Vendor delay
 T-0044,Cedar,Frontend,Owner 10,Medium,2026-02-27,03/03/2026,2026-03-06,Resource shortage
 T-0164,Beacon,Frontend,Owner 12,Low,2026-02-12,2026-02-15,2026-02-17,Client approval
-T-0203,Beacon,Design,Owner 10,Low,23/02/2026,04/03/2026,2026-03-01,None
+T-0203,Beacon,Design,Owner 10,Low,23/02/2026,04/03/2026,2026-03-01,No cause logged
 T-0165,Cedar,Design,Owner 8,Low,19/02/2026,2026-03-05,2026-03-08,Client approval
-T-0166,Atlas,QA,Owner 8,Low,14/03/2026,2026-03-17,18/03/2026,None
+T-0166,Atlas,QA,Owner 8,Low,14/03/2026,2026-03-17,18/03/2026,No cause logged
 T-0167,Delta,Frontend,Owner 3,High,06/02/2026,2026-02-20,24/02/2026,Client approval
 T-0168,Delta,Backend,Owner 7,Medium,2026-01-21,2026-01-29,2026-02-03,Vendor delay
-T-0169,Atlas,DevOps,Owner 1,Medium,2026-02-09,22/02/2026,2026-02-22,None
-T-0248,Atlas,QA,Owner 5,Low,2026-01-02,2026-01-07,08/01/2026,None
-T-0170,Atlas,Design,Owner 7,Medium,17/02/2026,2026-02-25,23/02/2026,None
+T-0169,Atlas,DevOps,Owner 1,Medium,2026-02-09,22/02/2026,2026-02-22,No cause logged
+T-0248,Atlas,QA,Owner 5,Low,2026-01-02,2026-01-07,08/01/2026,No cause logged
+T-0170,Atlas,Design,Owner 7,Medium,17/02/2026,2026-02-25,23/02/2026,No cause logged
 T-0171,Beacon,Design,Owner 10,Medium,2026-02-26,01/03/2026,04/03/2026,Client approval
-T-0172,Atlas,QA,Owner 4,Low,09/02/2026,19/02/2026,2026-02-20,None
+T-0172,Atlas,QA,Owner 4,Low,09/02/2026,19/02/2026,2026-02-20,No cause logged
 T-0173,Delta,Backend,Owner 3,High,2026-02-28,04/03/2026,2026-03-12,Vendor delay
 T-0174,Cedar,Design,Owner 5,Medium,16/02/2026,19/02/2026,22/02/2026,Client approval
-T-0175,Cedar,Frontend,Owner 12,High,31/01/2026,03/02/2026,04/02/2026,None
+T-0175,Cedar,Frontend,Owner 12,High,31/01/2026,03/02/2026,04/02/2026,No cause logged
 T-0176,Cedar,DevOps,Owner 6,High,2026-01-06,2026-01-12,2026-01-14,Vendor delay
 T-0177,Cedar,DevOps,Owner 6,Low,2026-01-04,2026-01-14,16/01/2026,Vendor delay
-T-0178,Beacon,Design,Owner 2,Medium,2026-03-07,2026-03-17,2026-03-16,None
+T-0178,Beacon,Design,Owner 2,Medium,2026-03-07,2026-03-17,2026-03-16,No cause logged
 T-0179,Atlas,Design,Owner 5,High,2026-01-18,2026-01-22,24/01/2026,Client approval
 T-0180,Atlas,DevOps,,Medium,2026-01-18,31/01/2026,2026-02-04,Vendor delay
 T-0181,Beacon,Frontend,Owner 1,High,2026-02-10,22/02/2026,26/02/2026,Client approval
 T-0182,Cedar,DevOps,Owner 2,Medium,2026-02-12,2026-02-17,2026-02-20,Resource shortage
-T-0183,Delta,Backend,Owner 9,Medium,24/01/2026,2026-01-28,29/01/2026,None
-T-0184,Delta,Design,Owner 8,Medium,14/02/2026,19/02/2026,2026-02-17,None
+T-0183,Delta,Backend,Owner 9,Medium,24/01/2026,2026-01-28,29/01/2026,No cause logged
+T-0184,Delta,Design,Owner 8,Medium,14/02/2026,19/02/2026,2026-02-17,No cause logged
 T-0185,Beacon,DevOps,Owner 7,Low,07/03/2026,2026-03-16,19/03/2026,Client approval
-T-0186,Atlas,QA,Owner 10,Low,15/03/2026,2026-03-18,18/03/2026,None
+T-0186,Atlas,QA,Owner 10,Low,15/03/2026,2026-03-18,18/03/2026,No cause logged
 T-0187,Cedar,Backend,Owner 8,Low,24/02/2026,10/03/2026,17/03/2026,Vendor delay
 T-0188,Cedar,Backend,Owner 1,Medium,22/02/2026,2026-03-04,2026-03-08,Vendor delay
-T-0189,Cedar,QA,,Medium,11/03/2026,20/03/2026,19/03/2026,None
-T-0190,Delta,DevOps,Owner 2,High,2026-02-21,2026-02-25,2026-02-26,None
-T-0191,Cedar,QA,Owner 1,High,07/01/2026,10/01/2026,11/01/2026,None
-T-0192,Delta,Backend,Owner 2,High,2026-01-20,2026-01-26,2026-01-26,None
-T-0193,Beacon,Design,Owner 2,High,31/01/2026,04/02/2026,2026-02-01,None
+T-0189,Cedar,QA,,Medium,11/03/2026,20/03/2026,19/03/2026,No cause logged
+T-0190,Delta,DevOps,Owner 2,High,2026-02-21,2026-02-25,2026-02-26,No cause logged
+T-0191,Cedar,QA,Owner 1,High,07/01/2026,10/01/2026,11/01/2026,No cause logged
+T-0192,Delta,Backend,Owner 2,High,2026-01-20,2026-01-26,2026-01-26,No cause logged
+T-0193,Beacon,Design,Owner 2,High,31/01/2026,04/02/2026,2026-02-01,No cause logged
 T-0194,Cedar,Design,Owner 8,Medium,23/01/2026,05/02/2026,2026-02-07,Client approval
 T-0195,Cedar,Backend,Owner 2,Low,17/03/2026,28/03/2026,2026-04-05,Scope change
-T-0196,Beacon,Design,Owner 11,Medium,15/03/2026,2026-03-26,2026-03-25,None
+T-0196,Beacon,Design,Owner 11,Medium,15/03/2026,2026-03-26,2026-03-25,No cause logged
 T-0197,Cedar,Backend,Owner 10,High,02/03/2026,11/03/2026,2026-03-18,Vendor delay
 T-0198,Atlas,Backend,Owner 7,Medium,2026-02-19,2026-02-24,26/02/2026,Vendor delay
 T-0199,Cedar,Backend,Owner 6,Medium,2026-01-03,06/01/2026,2026-01-11,Vendor delay
-T-0200,Atlas,Design,Owner 10,Low,2026-01-10,2026-01-15,2026-01-14,None
-T-0201,Beacon,DevOps,Owner 4,Medium,2026-01-08,20/01/2026,19/01/2026,None
+T-0200,Atlas,Design,Owner 10,Low,2026-01-10,2026-01-15,2026-01-14,No cause logged
+T-0201,Beacon,DevOps,Owner 4,Medium,2026-01-08,20/01/2026,19/01/2026,No cause logged
 T-0202,Cedar,DevOps,Owner 3,Medium,05/01/2026,2026-01-10,13/01/2026,Vendor delay
-T-0203,Beacon,Design,Owner 10,Low,23/02/2026,04/03/2026,2026-03-01,None
+T-0203,Beacon,Design,Owner 10,Low,23/02/2026,04/03/2026,2026-03-01,No cause logged
 T-0204,Delta,Frontend,Owner 2,Low,08/02/2026,17/02/2026,20/02/2026,Client approval
-T-0205,Cedar,Design,Owner 5,Medium,2026-01-18,2026-01-30,29/01/2026,None
+T-0205,Cedar,Design,Owner 5,Medium,2026-01-18,2026-01-30,29/01/2026,No cause logged
 T-0206,Beacon,Frontend,Owner 2,Medium,2026-02-20,23/02/2026,25/02/2026,Scope change
 T-0207,Atlas,QA,Owner 8,Low,25/01/2026,02/02/2026,2026-02-04,Resource shortage
-T-0208,Atlas,DevOps,Owner 3,Medium,2026-01-10,15/01/2026,2026-01-15,None
+T-0208,Atlas,DevOps,Owner 3,Medium,2026-01-10,15/01/2026,2026-01-15,No cause logged
 T-0209,Delta,DevOps,Owner 4,Medium,24/02/2026,2026-03-09,2026-03-13,Resource shortage
-T-0210,Delta,DevOps,Owner 2,Medium,2026-02-13,2026-02-27,25/02/2026,None
+T-0210,Delta,DevOps,Owner 2,Medium,2026-02-13,2026-02-27,25/02/2026,No cause logged
 T-0409,Cedar,QA,Owner 3,Low,26/01/2026,2026-02-02,05/02/2026,Resource shortage
-T-0211,Beacon,QA,,Medium,13/01/2026,2026-01-27,2026-01-26,None
-T-0212,Beacon,QA,Owner 7,Medium,2026-01-05,18/01/2026,2026-01-16,None
-T-0213,Delta,Frontend,Owner 11,High,09/03/2026,2026-03-20,2026-03-20,None
-T-0214,Delta,DevOps,Owner 5,Low,2026-01-27,2026-02-03,01/02/2026,None
-T-0215,Delta,QA,Owner 10,Low,24/01/2026,03/02/2026,2026-02-04,None
-T-0216,Atlas,DevOps,Owner 5,Medium,27/02/2026,2026-03-09,2026-03-07,None
-T-0217,Beacon,DevOps,Owner 1,Low,01/02/2026,08/02/2026,2026-02-09,None
-T-0218,Delta,QA,Owner 4,Low,2026-03-03,07/03/2026,07/03/2026,None
-T-0219,Atlas,DevOps,Owner 3,High,10/02/2026,2026-02-22,2026-02-20,None
-T-0220,Delta,Frontend,Owner 5,High,2026-01-19,2026-01-24,23/01/2026,None
+T-0211,Beacon,QA,,Medium,13/01/2026,2026-01-27,2026-01-26,No cause logged
+T-0212,Beacon,QA,Owner 7,Medium,2026-01-05,18/01/2026,2026-01-16,No cause logged
+T-0213,Delta,Frontend,Owner 11,High,09/03/2026,2026-03-20,2026-03-20,No cause logged
+T-0214,Delta,DevOps,Owner 5,Low,2026-01-27,2026-02-03,01/02/2026,No cause logged
+T-0215,Delta,QA,Owner 10,Low,24/01/2026,03/02/2026,2026-02-04,No cause logged
+T-0216,Atlas,DevOps,Owner 5,Medium,27/02/2026,2026-03-09,2026-03-07,No cause logged
+T-0217,Beacon,DevOps,Owner 1,Low,01/02/2026,08/02/2026,2026-02-09,No cause logged
+T-0218,Delta,QA,Owner 4,Low,2026-03-03,07/03/2026,07/03/2026,No cause logged
+T-0219,Atlas,DevOps,Owner 3,High,10/02/2026,2026-02-22,2026-02-20,No cause logged
+T-0220,Delta,Frontend,Owner 5,High,2026-01-19,2026-01-24,23/01/2026,No cause logged
 T-0221,Atlas,Design,Owner 8,High,03/03/2026,2026-03-16,2026-03-18,Client approval
-T-0222,Atlas,Design,Owner 3,High,2026-02-02,2026-02-06,06/02/2026,None
+T-0222,Atlas,Design,Owner 3,High,2026-02-02,2026-02-06,06/02/2026,No cause logged
 T-0223,Delta,Frontend,Owner 2,Medium,2026-02-09,13/02/2026,15/02/2026,Scope change
 T-0224,Delta,Backend,Owner 12,Medium,2026-03-08,2026-03-13,2026-03-21,Vendor delay
-T-0225,Beacon,Design,Owner 10,High,08/01/2026,2026-01-22,19/01/2026,None
-T-0226,Cedar,QA,Owner 7,Low,2026-03-10,19/03/2026,2026-03-18,None
+T-0225,Beacon,Design,Owner 10,High,08/01/2026,2026-01-22,19/01/2026,No cause logged
+T-0226,Cedar,QA,Owner 7,Low,2026-03-10,19/03/2026,2026-03-18,No cause logged
 T-0227,Atlas,Design,Owner 2,Low,2026-03-07,12/03/2026,2026-03-15,Vendor delay
 T-0228,Delta,DevOps,Owner 1,Low,25/02/2026,07/03/2026,09/03/2026,Rework
 T-0229,Cedar,Backend,Owner 10,High,2026-01-17,2026-01-28,30/01/2026,Rework
-T-0230,Atlas,Backend,Owner 1,Medium,2026-01-09,2026-01-21,20/01/2026,None
-T-0231,Cedar,QA,Owner 5,Medium,11/02/2026,2026-02-22,22/02/2026,None
-T-0232,Cedar,QA,Owner 6,Medium,08/01/2026,21/01/2026,2026-01-20,None
+T-0230,Atlas,Backend,Owner 1,Medium,2026-01-09,2026-01-21,20/01/2026,No cause logged
+T-0231,Cedar,QA,Owner 5,Medium,11/02/2026,2026-02-22,22/02/2026,No cause logged
+T-0232,Cedar,QA,Owner 6,Medium,08/01/2026,21/01/2026,2026-01-20,No cause logged
 T-0285,Beacon,QA,Owner 6,Low,2026-01-08,17/01/2026,19/01/2026,Vendor delay
 T-0233,Delta,Backend,Owner 4,High,21/02/2026,02/03/2026,06/03/2026,Vendor delay
-T-0234,Cedar,Design,Owner 12,Medium,2026-01-29,04/02/2026,01/02/2026,None
+T-0234,Cedar,Design,Owner 12,Medium,2026-01-29,04/02/2026,01/02/2026,No cause logged
 T-0235,Beacon,DevOps,Owner 3,High,17/01/2026,2026-01-22,25/01/2026,Client approval
 T-0236,Atlas,Backend,Owner 8,Medium,07/02/2026,2026-02-17,2026-02-21,Resource shortage
-T-0237,Delta,Design,,Medium,2026-01-16,2026-01-23,2026-01-23,None
-T-0238,Delta,Frontend,Owner 1,Low,13/02/2026,2026-02-25,23/02/2026,None
+T-0237,Delta,Design,,Medium,2026-01-16,2026-01-23,2026-01-23,No cause logged
+T-0238,Delta,Frontend,Owner 1,Low,13/02/2026,2026-02-25,23/02/2026,No cause logged
 T-0239,Delta,Backend,Owner 6,High,02/02/2026,15/02/2026,2026-02-18,Vendor delay
-T-0240,Delta,Design,Owner 1,Medium,2026-02-09,2026-02-20,2026-02-19,None
+T-0240,Delta,Design,Owner 1,Medium,2026-02-09,2026-02-20,2026-02-19,No cause logged
 T-0241,Cedar,Design,Owner 5,High,09/02/2026,18/02/2026,20/02/2026,Client approval
 T-0242,Cedar,QA,Owner 10,Medium,08/02/2026,14/02/2026,16/02/2026,Resource shortage
 T-0243,Cedar,Backend,Owner 9,Medium,2026-01-21,2026-02-02,2026-02-05,Vendor delay
@@ -254,228 +254,228 @@ T-0244,Cedar,Frontend,Owner 9,Low,09/01/2026,2026-01-13,17/01/2026,Client approv
 T-0245,Beacon,DevOps,Owner 4,Low,2026-02-17,2026-03-02,04/03/2026,Rework
 T-0246,Delta,Design,,Medium,24/01/2026,31/01/2026,2026-02-02,Rework
 T-0247,Beacon,Backend,Owner 6,Medium,2026-03-15,20/03/2026,2026-03-26,Vendor delay
-T-0248,Atlas,QA,Owner 5,Low,2026-01-02,2026-01-07,08/01/2026,None
-T-0249,Delta,QA,Owner 7,High,15/03/2026,19/03/2026,2026-03-20,None
+T-0248,Atlas,QA,Owner 5,Low,2026-01-02,2026-01-07,08/01/2026,No cause logged
+T-0249,Delta,QA,Owner 7,High,15/03/2026,19/03/2026,2026-03-20,No cause logged
 T-0250,Beacon,DevOps,Owner 9,Low,2026-01-16,25/01/2026,29/01/2026,Client approval
-T-0251,Cedar,Design,Owner 6,Low,05/02/2026,2026-02-19,16/02/2026,None
-T-0252,Beacon,DevOps,Owner 8,Medium,21/02/2026,2026-02-28,2026-02-28,None
+T-0251,Cedar,Design,Owner 6,Low,05/02/2026,2026-02-19,16/02/2026,No cause logged
+T-0252,Beacon,DevOps,Owner 8,Medium,21/02/2026,2026-02-28,2026-02-28,No cause logged
 T-0253,Beacon,Backend,Owner 10,High,2026-02-19,2026-02-28,2026-03-05,Client approval
-T-0254,Beacon,Frontend,Owner 10,High,2026-02-11,17/02/2026,2026-02-17,None
-T-0255,Beacon,Frontend,Owner 7,High,15/02/2026,2026-02-25,2026-02-24,None
-T-0256,Beacon,QA,Owner 6,Medium,16/03/2026,2026-03-26,2026-03-25,None
+T-0254,Beacon,Frontend,Owner 10,High,2026-02-11,17/02/2026,2026-02-17,No cause logged
+T-0255,Beacon,Frontend,Owner 7,High,15/02/2026,2026-02-25,2026-02-24,No cause logged
+T-0256,Beacon,QA,Owner 6,Medium,16/03/2026,2026-03-26,2026-03-25,No cause logged
 T-0257,Atlas,Backend,Owner 1,High,2026-03-01,05/03/2026,09/03/2026,Resource shortage
-T-0258,Atlas,DevOps,Owner 5,High,2026-01-25,2026-01-31,2026-01-31,None
+T-0258,Atlas,DevOps,Owner 5,High,2026-01-25,2026-01-31,2026-01-31,No cause logged
 T-0259,Beacon,Backend,Owner 4,High,2026-02-20,2026-03-06,2026-03-12,Vendor delay
 T-0260,Atlas,DevOps,Owner 11,Low,07/03/2026,15/03/2026,2026-03-19,Resource shortage
-T-0261,Beacon,QA,Owner 8,Low,11/02/2026,2026-02-24,25/02/2026,None
+T-0261,Beacon,QA,Owner 8,Low,11/02/2026,2026-02-24,25/02/2026,No cause logged
 T-0262,Beacon,Backend,Owner 3,Medium,2026-01-30,06/02/2026,2026-02-10,Vendor delay
-T-0263,Atlas,Design,Owner 10,Medium,2026-01-04,08/01/2026,05/01/2026,None
-T-0264,Beacon,Design,Owner 6,Medium,2026-02-11,17/02/2026,2026-02-14,None
-T-0265,Delta,Design,Owner 1,High,2026-03-10,2026-03-23,21/03/2026,None
+T-0263,Atlas,Design,Owner 10,Medium,2026-01-04,08/01/2026,05/01/2026,No cause logged
+T-0264,Beacon,Design,Owner 6,Medium,2026-02-11,17/02/2026,2026-02-14,No cause logged
+T-0265,Delta,Design,Owner 1,High,2026-03-10,2026-03-23,21/03/2026,No cause logged
 T-0266,Beacon,QA,Owner 8,Medium,27/01/2026,2026-02-05,07/02/2026,Rework
 T-0267,Cedar,Backend,Owner 1,Medium,2026-01-29,2026-02-06,11/02/2026,Client approval
-T-0268,Atlas,Backend,Owner 12,Medium,02/01/2026,2026-01-13,2026-01-12,None
-T-0269,Delta,Design,Owner 5,Low,14/01/2026,2026-01-21,2026-01-21,None
+T-0268,Atlas,Backend,Owner 12,Medium,02/01/2026,2026-01-13,2026-01-12,No cause logged
+T-0269,Delta,Design,Owner 5,Low,14/01/2026,2026-01-21,2026-01-21,No cause logged
 T-0270,Delta,DevOps,Owner 12,High,23/01/2026,26/01/2026,2026-01-28,Vendor delay
-T-0271,Cedar,DevOps,Owner 2,Medium,2026-02-02,13/02/2026,11/02/2026,None
+T-0271,Cedar,DevOps,Owner 2,Medium,2026-02-02,13/02/2026,11/02/2026,No cause logged
 T-0272,Cedar,Backend,Owner 5,Low,11/01/2026,25/01/2026,29/01/2026,Vendor delay
 T-0273,Cedar,Frontend,Owner 10,Low,2026-03-04,2026-03-14,2026-03-17,Rework
-T-0274,Cedar,Design,Owner 9,Low,2026-02-09,23/02/2026,2026-02-22,None
-T-0275,Delta,Design,Owner 8,Medium,2026-02-06,2026-02-13,10/02/2026,None
-T-0276,Beacon,Design,Owner 2,Medium,20/02/2026,01/03/2026,01/03/2026,None
-T-0277,Atlas,Frontend,Owner 12,High,14/01/2026,2026-01-28,2026-01-27,None
+T-0274,Cedar,Design,Owner 9,Low,2026-02-09,23/02/2026,2026-02-22,No cause logged
+T-0275,Delta,Design,Owner 8,Medium,2026-02-06,2026-02-13,10/02/2026,No cause logged
+T-0276,Beacon,Design,Owner 2,Medium,20/02/2026,01/03/2026,01/03/2026,No cause logged
+T-0277,Atlas,Frontend,Owner 12,High,14/01/2026,2026-01-28,2026-01-27,No cause logged
 T-0278,Beacon,QA,Owner 3,Medium,31/01/2026,2026-02-08,10/02/2026,Resource shortage
 T-0279,Atlas,Frontend,Owner 5,Medium,2026-01-02,2026-01-11,13/01/2026,Resource shortage
-T-0280,Delta,QA,Owner 12,High,2026-01-07,14/01/2026,11/01/2026,None
-T-0281,Atlas,QA,Owner 6,Medium,2026-01-17,2026-01-31,01/02/2026,None
+T-0280,Delta,QA,Owner 12,High,2026-01-07,14/01/2026,11/01/2026,No cause logged
+T-0281,Atlas,QA,Owner 6,Medium,2026-01-17,2026-01-31,01/02/2026,No cause logged
 T-0282,Atlas,Design,Owner 1,Medium,31/01/2026,06/02/2026,2026-02-08,Rework
-T-0283,Beacon,Frontend,Owner 4,Low,16/03/2026,2026-03-29,29/03/2026,None
+T-0283,Beacon,Frontend,Owner 4,Low,16/03/2026,2026-03-29,29/03/2026,No cause logged
 T-0284,Beacon,DevOps,Owner 8,Medium,2026-03-14,20/03/2026,2026-03-23,Rework
 T-0285,Beacon,QA,Owner 6,Low,2026-01-08,17/01/2026,19/01/2026,Vendor delay
-T-0286,Delta,Backend,Owner 4,Medium,2026-01-16,2026-01-30,31/01/2026,None
+T-0286,Delta,Backend,Owner 4,Medium,2026-01-16,2026-01-30,31/01/2026,No cause logged
 T-0287,Delta,Backend,Owner 1,Medium,2026-01-19,28/01/2026,02/02/2026,Scope change
 T-0288,Cedar,DevOps,Owner 1,Medium,16/02/2026,2026-02-28,2026-03-02,Vendor delay
-T-0289,Beacon,QA,Owner 11,Medium,2026-02-05,10/02/2026,2026-02-10,None
+T-0289,Beacon,QA,Owner 11,Medium,2026-02-05,10/02/2026,2026-02-10,No cause logged
 T-0290,Delta,QA,Owner 2,Medium,26/02/2026,07/03/2026,2026-03-10,Vendor delay
-T-0291,Beacon,DevOps,Owner 3,High,23/01/2026,26/01/2026,24/01/2026,None
+T-0291,Beacon,DevOps,Owner 3,High,23/01/2026,26/01/2026,24/01/2026,No cause logged
 T-0292,Delta,Backend,Owner 2,Medium,11/01/2026,2026-01-14,2026-01-17,Vendor delay
 T-0293,Beacon,Frontend,Owner 2,Medium,2026-01-29,2026-02-06,2026-02-10,Client approval
-T-0400,Atlas,QA,,High,2026-02-02,2026-02-05,04/02/2026,None
-T-0294,Delta,Design,Owner 11,Medium,16/01/2026,2026-01-20,21/01/2026,None
-T-0295,Delta,QA,Owner 11,Medium,14/02/2026,22/02/2026,2026-02-22,None
-T-0296,Cedar,Design,Owner 1,Low,09/03/2026,20/03/2026,2026-03-21,None
+T-0400,Atlas,QA,,High,2026-02-02,2026-02-05,04/02/2026,No cause logged
+T-0294,Delta,Design,Owner 11,Medium,16/01/2026,2026-01-20,21/01/2026,No cause logged
+T-0295,Delta,QA,Owner 11,Medium,14/02/2026,22/02/2026,2026-02-22,No cause logged
+T-0296,Cedar,Design,Owner 1,Low,09/03/2026,20/03/2026,2026-03-21,No cause logged
 T-0297,Cedar,Backend,Owner 7,Medium,19/01/2026,26/01/2026,2026-01-29,Vendor delay
-T-0298,Beacon,Design,Owner 5,High,15/01/2026,19/01/2026,17/01/2026,None
-T-0299,Beacon,Frontend,Owner 11,Medium,2026-02-08,2026-02-22,21/02/2026,None
-T-0300,Atlas,Design,Owner 12,Low,2026-03-01,08/03/2026,2026-03-05,None
+T-0298,Beacon,Design,Owner 5,High,15/01/2026,19/01/2026,17/01/2026,No cause logged
+T-0299,Beacon,Frontend,Owner 11,Medium,2026-02-08,2026-02-22,21/02/2026,No cause logged
+T-0300,Atlas,Design,Owner 12,Low,2026-03-01,08/03/2026,2026-03-05,No cause logged
 T-0301,Cedar,QA,Owner 11,High,2026-02-23,2026-03-03,2026-03-06,Client approval
 T-0302,Beacon,Backend,Owner 4,Medium,2026-03-05,12/03/2026,15/03/2026,Vendor delay
 T-0303,Atlas,Backend,Owner 1,Medium,2026-01-04,2026-01-08,2026-01-12,Client approval
 T-0304,Delta,Backend,Owner 1,Low,2026-01-22,02/02/2026,05/02/2026,Client approval
 T-0305,Delta,Backend,Owner 5,Medium,2026-02-13,26/02/2026,01/03/2026,Vendor delay
-T-0306,Cedar,Design,Owner 2,Low,10/01/2026,2026-01-22,21/01/2026,None
-T-0307,Beacon,DevOps,Owner 2,High,13/03/2026,25/03/2026,2026-03-24,None
+T-0306,Cedar,Design,Owner 2,Low,10/01/2026,2026-01-22,21/01/2026,No cause logged
+T-0307,Beacon,DevOps,Owner 2,High,13/03/2026,25/03/2026,2026-03-24,No cause logged
 T-0308,Delta,QA,Owner 2,High,23/02/2026,2026-03-04,2026-03-07,Client approval
 T-0309,Delta,QA,Owner 8,Medium,2026-03-10,24/03/2026,2026-03-27,Rework
 T-0310,Atlas,Frontend,Owner 6,High,17/01/2026,2026-01-23,26/01/2026,Rework
 T-0387,Delta,DevOps,Owner 12,Low,2026-03-15,18/03/2026,21/03/2026,Client approval
 T-0311,Cedar,Backend,Owner 5,Medium,2026-01-06,10/01/2026,13/01/2026,Vendor delay
 T-0312,Beacon,Frontend,Owner 7,Medium,13/01/2026,2026-01-20,2026-01-22,Resource shortage
-T-0313,Delta,QA,Owner 6,High,2026-03-14,27/03/2026,2026-03-26,None
+T-0313,Delta,QA,Owner 6,High,2026-03-14,27/03/2026,2026-03-26,No cause logged
 T-0314,Delta,DevOps,Owner 11,Medium,2026-01-12,2026-01-20,2026-01-24,Resource shortage
 T-0315,Beacon,Frontend,Owner 10,Medium,07/02/2026,2026-02-19,21/02/2026,Rework
-T-0316,Delta,Design,Owner 2,Medium,2026-02-25,11/03/2026,12/03/2026,None
+T-0316,Delta,Design,Owner 2,Medium,2026-02-25,11/03/2026,12/03/2026,No cause logged
 T-0317,Beacon,Frontend,Owner 8,Medium,01/02/2026,2026-02-09,2026-02-13,Scope change
 T-0318,Atlas,Backend,Owner 3,Medium,30/01/2026,13/02/2026,16/02/2026,Rework
-T-0319,Beacon,Design,Owner 7,Medium,2026-01-08,17/01/2026,2026-01-18,None
-T-0320,Cedar,Frontend,Owner 12,Low,2026-01-01,14/01/2026,2026-01-13,None
-T-0321,Atlas,Frontend,Owner 12,High,2026-01-09,18/01/2026,19/01/2026,None
+T-0319,Beacon,Design,Owner 7,Medium,2026-01-08,17/01/2026,2026-01-18,No cause logged
+T-0320,Cedar,Frontend,Owner 12,Low,2026-01-01,14/01/2026,2026-01-13,No cause logged
+T-0321,Atlas,Frontend,Owner 12,High,2026-01-09,18/01/2026,19/01/2026,No cause logged
 T-0322,Delta,Backend,Owner 4,Low,2026-03-07,15/03/2026,2026-03-19,Rework
-T-0323,Beacon,DevOps,Owner 6,Medium,24/01/2026,07/02/2026,07/02/2026,None
-T-0324,Delta,DevOps,Owner 9,Low,09/03/2026,17/03/2026,2026-03-18,None
-T-0325,Atlas,DevOps,Owner 6,Low,10/02/2026,22/02/2026,2026-02-22,None
+T-0323,Beacon,DevOps,Owner 6,Medium,24/01/2026,07/02/2026,07/02/2026,No cause logged
+T-0324,Delta,DevOps,Owner 9,Low,09/03/2026,17/03/2026,2026-03-18,No cause logged
+T-0325,Atlas,DevOps,Owner 6,Low,10/02/2026,22/02/2026,2026-02-22,No cause logged
 T-0326,Atlas,Backend,Owner 11,Low,22/02/2026,2026-03-03,2026-03-08,Vendor delay
-T-0327,Cedar,QA,Owner 8,High,2026-01-30,2026-02-04,2026-02-04,None
-T-0328,Cedar,Backend,Owner 5,Medium,2026-01-30,2026-02-06,2026-02-06,None
-T-0329,Delta,QA,Owner 10,Low,01/03/2026,11/03/2026,08/03/2026,None
-T-0330,Delta,Backend,Owner 1,Medium,02/02/2026,2026-02-05,2026-02-04,None
+T-0327,Cedar,QA,Owner 8,High,2026-01-30,2026-02-04,2026-02-04,No cause logged
+T-0328,Cedar,Backend,Owner 5,Medium,2026-01-30,2026-02-06,2026-02-06,No cause logged
+T-0329,Delta,QA,Owner 10,Low,01/03/2026,11/03/2026,08/03/2026,No cause logged
+T-0330,Delta,Backend,Owner 1,Medium,02/02/2026,2026-02-05,2026-02-04,No cause logged
 T-0331,Beacon,Backend,Owner 6,Low,2026-03-08,2026-03-16,2026-03-21,Scope change
-T-0332,Beacon,QA,Owner 2,Low,2026-02-12,2026-02-26,26/02/2026,None
-T-0333,Beacon,Backend,Owner 4,Low,2026-01-03,2026-01-06,07/01/2026,None
+T-0332,Beacon,QA,Owner 2,Low,2026-02-12,2026-02-26,26/02/2026,No cause logged
+T-0333,Beacon,Backend,Owner 4,Low,2026-01-03,2026-01-06,07/01/2026,No cause logged
 T-0334,Delta,QA,Owner 4,Medium,12/01/2026,2026-01-18,2026-01-20,Scope change
-T-0335,Beacon,QA,Owner 11,Medium,2026-02-02,14/02/2026,15/02/2026,None
-T-0336,Cedar,Frontend,Owner 11,High,2026-01-30,2026-02-08,2026-02-07,None
-T-0337,Delta,QA,Owner 1,Medium,2026-01-20,23/01/2026,20/01/2026,None
-T-0338,Cedar,Backend,Owner 12,Medium,2026-01-08,13/01/2026,2026-01-14,None
-T-0339,Beacon,QA,Owner 8,Medium,06/02/2026,15/02/2026,2026-02-16,None
-T-0340,Delta,Design,Owner 7,Low,07/01/2026,15/01/2026,13/01/2026,None
+T-0335,Beacon,QA,Owner 11,Medium,2026-02-02,14/02/2026,15/02/2026,No cause logged
+T-0336,Cedar,Frontend,Owner 11,High,2026-01-30,2026-02-08,2026-02-07,No cause logged
+T-0337,Delta,QA,Owner 1,Medium,2026-01-20,23/01/2026,20/01/2026,No cause logged
+T-0338,Cedar,Backend,Owner 12,Medium,2026-01-08,13/01/2026,2026-01-14,No cause logged
+T-0339,Beacon,QA,Owner 8,Medium,06/02/2026,15/02/2026,2026-02-16,No cause logged
+T-0340,Delta,Design,Owner 7,Low,07/01/2026,15/01/2026,13/01/2026,No cause logged
 T-0341,Delta,DevOps,Owner 8,Low,2026-01-18,01/02/2026,03/02/2026,Vendor delay
 T-0342,Beacon,Frontend,Owner 4,Low,2026-02-10,2026-02-19,2026-02-21,Rework
-T-0343,Beacon,DevOps,Owner 5,Low,14/02/2026,23/02/2026,24/02/2026,None
-T-0344,Atlas,Frontend,Owner 10,Medium,2026-01-02,2026-01-08,07/01/2026,None
-T-0345,Cedar,Design,Owner 6,Medium,01/02/2026,2026-02-05,02/02/2026,None
-T-0346,Cedar,Design,Owner 5,Low,26/02/2026,10/03/2026,2026-03-11,None
+T-0343,Beacon,DevOps,Owner 5,Low,14/02/2026,23/02/2026,24/02/2026,No cause logged
+T-0344,Atlas,Frontend,Owner 10,Medium,2026-01-02,2026-01-08,07/01/2026,No cause logged
+T-0345,Cedar,Design,Owner 6,Medium,01/02/2026,2026-02-05,02/02/2026,No cause logged
+T-0346,Cedar,Design,Owner 5,Low,26/02/2026,10/03/2026,2026-03-11,No cause logged
 T-0347,Cedar,QA,Owner 7,High,04/02/2026,2026-02-07,2026-02-10,Rework
 T-0348,Delta,Backend,Owner 4,High,2026-02-19,05/03/2026,11/03/2026,Vendor delay
 T-0349,Atlas,Design,Owner 3,Low,10/03/2026,2026-03-15,17/03/2026,Rework
 T-0350,Cedar,Frontend,Owner 9,Medium,12/01/2026,2026-01-21,2026-01-23,Scope change
-T-0351,Delta,DevOps,Owner 9,Medium,2026-03-03,12/03/2026,11/03/2026,None
+T-0351,Delta,DevOps,Owner 9,Medium,2026-03-03,12/03/2026,11/03/2026,No cause logged
 T-0350,Cedar,Frontend,Owner 9,Medium,12/01/2026,2026-01-21,2026-01-23,Scope change
-T-0352,Beacon,QA,Owner 4,Low,27/01/2026,31/01/2026,2026-01-28,None
-T-0353,Atlas,DevOps,Owner 10,Medium,16/01/2026,29/01/2026,27/01/2026,None
-T-0354,Beacon,DevOps,Owner 9,Low,17/02/2026,2026-02-26,24/02/2026,None
-T-0355,Beacon,Frontend,,High,2026-01-31,05/02/2026,06/02/2026,None
-T-0356,Cedar,DevOps,Owner 6,Low,2026-01-05,19/01/2026,17/01/2026,None
+T-0352,Beacon,QA,Owner 4,Low,27/01/2026,31/01/2026,2026-01-28,No cause logged
+T-0353,Atlas,DevOps,Owner 10,Medium,16/01/2026,29/01/2026,27/01/2026,No cause logged
+T-0354,Beacon,DevOps,Owner 9,Low,17/02/2026,2026-02-26,24/02/2026,No cause logged
+T-0355,Beacon,Frontend,,High,2026-01-31,05/02/2026,06/02/2026,No cause logged
+T-0356,Cedar,DevOps,Owner 6,Low,2026-01-05,19/01/2026,17/01/2026,No cause logged
 T-0357,Atlas,DevOps,Owner 6,Low,2026-02-08,11/02/2026,2026-02-13,Vendor delay
-T-0358,Cedar,DevOps,Owner 11,Medium,2026-01-15,18/01/2026,18/01/2026,None
+T-0358,Cedar,DevOps,Owner 11,Medium,2026-01-15,18/01/2026,18/01/2026,No cause logged
 T-0359,Delta,DevOps,Owner 5,Medium,10/02/2026,2026-02-15,2026-02-17,Rework
-T-0360,Atlas,QA,Owner 2,Medium,08/01/2026,2026-01-20,17/01/2026,None
-T-0361,Delta,QA,Owner 8,Low,2026-02-15,20/02/2026,2026-02-20,None
-T-0362,Delta,Design,Owner 11,Medium,26/02/2026,2026-03-04,2026-03-03,None
-T-0363,Atlas,Design,Owner 4,Medium,22/02/2026,07/03/2026,2026-03-05,None
-T-0364,Beacon,Frontend,Owner 1,Low,20/02/2026,2026-03-04,2026-03-05,None
-T-0365,Beacon,QA,Owner 2,High,2026-03-04,2026-03-12,13/03/2026,None
+T-0360,Atlas,QA,Owner 2,Medium,08/01/2026,2026-01-20,17/01/2026,No cause logged
+T-0361,Delta,QA,Owner 8,Low,2026-02-15,20/02/2026,2026-02-20,No cause logged
+T-0362,Delta,Design,Owner 11,Medium,26/02/2026,2026-03-04,2026-03-03,No cause logged
+T-0363,Atlas,Design,Owner 4,Medium,22/02/2026,07/03/2026,2026-03-05,No cause logged
+T-0364,Beacon,Frontend,Owner 1,Low,20/02/2026,2026-03-04,2026-03-05,No cause logged
+T-0365,Beacon,QA,Owner 2,High,2026-03-04,2026-03-12,13/03/2026,No cause logged
 T-0366,Atlas,Backend,Owner 3,High,15/01/2026,20/01/2026,24/01/2026,Scope change
-T-0367,Beacon,Frontend,Owner 11,Medium,2026-03-17,2026-03-29,28/03/2026,None
+T-0367,Beacon,Frontend,Owner 11,Medium,2026-03-17,2026-03-29,28/03/2026,No cause logged
 T-0368,Beacon,DevOps,Owner 7,Medium,23/02/2026,2026-03-03,2026-03-05,Vendor delay
 T-0369,Beacon,DevOps,Owner 2,Medium,05/03/2026,2026-03-16,2026-03-19,Client approval
-T-0370,Delta,Design,Owner 10,Medium,2026-03-06,2026-03-14,2026-03-14,None
+T-0370,Delta,Design,Owner 10,Medium,2026-03-06,2026-03-14,2026-03-14,No cause logged
 T-0371,Delta,Design,,High,03/02/2026,2026-02-09,2026-02-11,Client approval
 T-0372,Atlas,Backend,Owner 12,Medium,08/03/2026,22/03/2026,2026-03-27,Scope change
-T-0373,Atlas,Backend,Owner 10,Medium,20/01/2026,28/01/2026,2026-01-27,None
-T-0374,Beacon,QA,Owner 4,Medium,2026-02-22,2026-03-08,07/03/2026,None
+T-0373,Atlas,Backend,Owner 10,Medium,20/01/2026,28/01/2026,2026-01-27,No cause logged
+T-0374,Beacon,QA,Owner 4,Medium,2026-02-22,2026-03-08,07/03/2026,No cause logged
 T-0375,Cedar,Frontend,Owner 5,Medium,07/02/2026,14/02/2026,2026-02-17,Rework
-T-0376,Delta,Backend,Owner 2,Medium,2026-01-29,06/02/2026,2026-02-05,None
+T-0376,Delta,Backend,Owner 2,Medium,2026-01-29,06/02/2026,2026-02-05,No cause logged
 T-0377,Atlas,QA,Owner 9,Medium,2026-02-21,26/02/2026,2026-02-28,Scope change
 T-0378,Beacon,Frontend,Owner 6,Low,27/01/2026,2026-02-03,07/02/2026,Resource shortage
-T-0379,Cedar,Backend,Owner 1,Medium,12/02/2026,18/02/2026,2026-02-19,None
+T-0379,Cedar,Backend,Owner 1,Medium,12/02/2026,18/02/2026,2026-02-19,No cause logged
 T-0380,Cedar,Design,Owner 6,Medium,2026-03-07,2026-03-20,23/03/2026,Scope change
-T-0381,Cedar,Design,,Low,05/02/2026,2026-02-18,18/02/2026,None
-T-0102,Atlas,DevOps,Owner 12,Medium,2026-02-08,2026-02-18,2026-02-16,None
+T-0381,Cedar,Design,,Low,05/02/2026,2026-02-18,18/02/2026,No cause logged
+T-0102,Atlas,DevOps,Owner 12,Medium,2026-02-08,2026-02-18,2026-02-16,No cause logged
 T-0382,Atlas,Design,Owner 6,Medium,18/01/2026,2026-01-25,2026-01-28,Rework
 T-0383,Cedar,Design,,Low,2026-02-21,05/03/2026,2026-03-07,Client approval
 T-0384,Beacon,QA,Owner 12,Medium,14/02/2026,23/02/2026,25/02/2026,Vendor delay
-T-0385,Delta,Backend,Owner 6,Medium,2026-01-06,2026-01-18,2026-01-18,None
+T-0385,Delta,Backend,Owner 6,Medium,2026-01-06,2026-01-18,2026-01-18,No cause logged
 T-0386,Cedar,Backend,Owner 12,Low,2026-03-07,17/03/2026,2026-03-23,Vendor delay
 T-0387,Delta,DevOps,Owner 12,Low,2026-03-15,18/03/2026,21/03/2026,Client approval
 T-0388,Atlas,Design,Owner 11,High,24/02/2026,2026-02-28,2026-03-02,Client approval
 T-0389,Delta,QA,Owner 12,Medium,2026-01-29,2026-02-02,2026-02-04,Scope change
-T-0390,Beacon,Frontend,Owner 9,High,22/01/2026,30/01/2026,2026-01-31,None
+T-0390,Beacon,Frontend,Owner 9,High,22/01/2026,30/01/2026,2026-01-31,No cause logged
 T-0391,Beacon,Backend,Owner 4,High,2026-02-27,2026-03-05,11/03/2026,Vendor delay
 T-0392,Atlas,QA,Owner 4,Medium,2026-01-05,10/01/2026,12/01/2026,Client approval
-T-0393,Delta,Frontend,Owner 2,Low,2026-01-22,26/01/2026,24/01/2026,None
-T-0394,Delta,Design,Owner 7,Medium,2026-02-09,21/02/2026,2026-02-21,None
-T-0395,Delta,Backend,Owner 7,Low,2026-01-02,10/01/2026,09/01/2026,None
+T-0393,Delta,Frontend,Owner 2,Low,2026-01-22,26/01/2026,24/01/2026,No cause logged
+T-0394,Delta,Design,Owner 7,Medium,2026-02-09,21/02/2026,2026-02-21,No cause logged
+T-0395,Delta,Backend,Owner 7,Low,2026-01-02,10/01/2026,09/01/2026,No cause logged
 T-0396,Atlas,DevOps,Owner 9,Medium,02/01/2026,2026-01-15,17/01/2026,Vendor delay
 T-0397,Beacon,Backend,Owner 9,High,15/02/2026,27/02/2026,2026-03-01,Vendor delay
 T-0398,Cedar,QA,Owner 7,Medium,03/02/2026,2026-02-14,16/02/2026,Resource shortage
 T-0399,Delta,Frontend,Owner 11,Low,02/01/2026,16/01/2026,20/01/2026,Scope change
-T-0400,Atlas,QA,,High,2026-02-02,2026-02-05,04/02/2026,None
-T-0401,Atlas,Design,Owner 9,Low,2026-01-10,2026-01-16,2026-01-13,None
+T-0400,Atlas,QA,,High,2026-02-02,2026-02-05,04/02/2026,No cause logged
+T-0401,Atlas,Design,Owner 9,Low,2026-01-10,2026-01-16,2026-01-13,No cause logged
 T-0402,Cedar,DevOps,Owner 6,High,2026-01-08,14/01/2026,18/01/2026,Vendor delay
 T-0403,Cedar,Frontend,Owner 5,Medium,2026-01-26,2026-02-01,03/02/2026,Client approval
-T-0404,Delta,Design,Owner 10,Low,2026-02-21,28/02/2026,26/02/2026,None
+T-0404,Delta,Design,Owner 10,Low,2026-02-21,28/02/2026,26/02/2026,No cause logged
 T-0405,Cedar,Design,Owner 2,Low,2026-01-10,14/01/2026,2026-01-16,Client approval
-T-0406,Delta,Design,Owner 11,High,2026-01-16,29/01/2026,2026-01-28,None
+T-0406,Delta,Design,Owner 11,High,2026-01-16,29/01/2026,2026-01-28,No cause logged
 T-0037,Cedar,Backend,Owner 12,Medium,11/01/2026,2026-01-21,24/01/2026,Scope change
 T-0407,Beacon,QA,Owner 10,Low,15/02/2026,2026-02-28,2026-03-02,Resource shortage
-T-0408,Atlas,Backend,Owner 9,Medium,2026-01-17,26/01/2026,2026-01-26,None
+T-0408,Atlas,Backend,Owner 9,Medium,2026-01-17,26/01/2026,2026-01-26,No cause logged
 T-0409,Cedar,QA,Owner 3,Low,26/01/2026,2026-02-02,05/02/2026,Resource shortage
-T-0410,Beacon,QA,Owner 12,Medium,2026-03-08,12/03/2026,2026-03-12,None
-T-0411,Delta,Design,Owner 1,Medium,14/03/2026,18/03/2026,2026-03-17,None
+T-0410,Beacon,QA,Owner 12,Medium,2026-03-08,12/03/2026,2026-03-12,No cause logged
+T-0411,Delta,Design,Owner 1,Medium,14/03/2026,18/03/2026,2026-03-17,No cause logged
 T-0412,Beacon,Backend,Owner 9,Low,16/01/2026,2026-01-21,24/01/2026,Vendor delay
 T-0413,Delta,Backend,Owner 8,Medium,31/01/2026,08/02/2026,2026-02-11,Vendor delay
-T-0414,Delta,Design,Owner 7,Medium,11/02/2026,25/02/2026,2026-02-25,None
-T-0415,Beacon,Backend,Owner 1,Medium,2026-02-02,2026-02-14,2026-02-14,None
+T-0414,Delta,Design,Owner 7,Medium,11/02/2026,25/02/2026,2026-02-25,No cause logged
+T-0415,Beacon,Backend,Owner 1,Medium,2026-02-02,2026-02-14,2026-02-14,No cause logged
 T-0416,Delta,Frontend,Owner 3,High,2026-02-12,15/02/2026,19/02/2026,Scope change
 T-0417,Cedar,Frontend,Owner 4,Medium,15/03/2026,2026-03-24,27/03/2026,Resource shortage
-T-0418,Atlas,Frontend,Owner 5,High,13/03/2026,22/03/2026,2026-03-22,None
+T-0418,Atlas,Frontend,Owner 5,High,13/03/2026,22/03/2026,2026-03-22,No cause logged
 T-0419,Delta,DevOps,Owner 12,Medium,2026-02-26,2026-03-05,2026-03-09,Resource shortage
 T-0420,Delta,Frontend,Owner 4,Low,2026-01-14,20/01/2026,24/01/2026,Client approval
 T-0421,Cedar,QA,Owner 10,High,27/02/2026,12/03/2026,15/03/2026,Resource shortage
-T-0422,Delta,QA,Owner 1,High,15/03/2026,2026-03-26,24/03/2026,None
+T-0422,Delta,QA,Owner 1,High,15/03/2026,2026-03-26,24/03/2026,No cause logged
 T-0423,Atlas,Frontend,Owner 11,Medium,04/01/2026,2026-01-13,17/01/2026,Rework
 T-0424,Atlas,Frontend,Owner 4,Low,17/03/2026,2026-03-29,02/04/2026,Client approval
 T-0425,Delta,Backend,Owner 7,Low,23/02/2026,04/03/2026,2026-03-11,Vendor delay
-T-0426,Atlas,Design,Owner 10,Low,17/01/2026,2026-01-25,2026-01-26,None
+T-0426,Atlas,Design,Owner 10,Low,17/01/2026,2026-01-25,2026-01-26,No cause logged
 T-0427,Delta,Backend,Owner 11,Medium,10/02/2026,2026-02-16,19/02/2026,Vendor delay
 T-0428,Delta,QA,Owner 11,High,2026-02-12,26/02/2026,2026-03-01,Rework
-T-0429,Atlas,Design,Owner 6,High,03/02/2026,2026-02-15,2026-02-13,None
-T-0430,Atlas,DevOps,Owner 1,Low,2026-01-21,29/01/2026,30/01/2026,None
-T-0431,Atlas,QA,Owner 1,Medium,16/03/2026,2026-03-25,26/03/2026,None
-T-0432,Atlas,DevOps,Owner 2,Low,2026-02-28,11/03/2026,2026-03-09,None
-T-0433,Beacon,Design,Owner 5,High,2026-03-02,2026-03-06,2026-03-06,None
+T-0429,Atlas,Design,Owner 6,High,03/02/2026,2026-02-15,2026-02-13,No cause logged
+T-0430,Atlas,DevOps,Owner 1,Low,2026-01-21,29/01/2026,30/01/2026,No cause logged
+T-0431,Atlas,QA,Owner 1,Medium,16/03/2026,2026-03-25,26/03/2026,No cause logged
+T-0432,Atlas,DevOps,Owner 2,Low,2026-02-28,11/03/2026,2026-03-09,No cause logged
+T-0433,Beacon,Design,Owner 5,High,2026-03-02,2026-03-06,2026-03-06,No cause logged
 T-0434,Cedar,Backend,Owner 12,Low,25/02/2026,2026-03-06,2026-03-11,Rework
 T-0435,Beacon,QA,,Medium,17/02/2026,2026-02-20,23/02/2026,Rework
-T-0436,Cedar,QA,Owner 4,Medium,18/01/2026,21/01/2026,21/01/2026,None
-T-0437,Delta,DevOps,,Low,2026-02-10,2026-02-17,2026-02-16,None
+T-0436,Cedar,QA,Owner 4,Medium,18/01/2026,21/01/2026,21/01/2026,No cause logged
+T-0437,Delta,DevOps,,Low,2026-02-10,2026-02-17,2026-02-16,No cause logged
 T-0438,Cedar,QA,Owner 7,High,2026-02-04,2026-02-13,2026-02-16,Rework
-T-0439,Beacon,QA,Owner 12,Low,2026-01-10,21/01/2026,19/01/2026,None
-T-0440,Delta,QA,Owner 5,Medium,2026-01-13,2026-01-16,2026-01-15,None
-T-0441,Cedar,QA,Owner 2,High,10/03/2026,21/03/2026,22/03/2026,None
-T-0442,Beacon,Backend,Owner 3,Medium,2026-01-14,23/01/2026,23/01/2026,None
+T-0439,Beacon,QA,Owner 12,Low,2026-01-10,21/01/2026,19/01/2026,No cause logged
+T-0440,Delta,QA,Owner 5,Medium,2026-01-13,2026-01-16,2026-01-15,No cause logged
+T-0441,Cedar,QA,Owner 2,High,10/03/2026,21/03/2026,22/03/2026,No cause logged
+T-0442,Beacon,Backend,Owner 3,Medium,2026-01-14,23/01/2026,23/01/2026,No cause logged
 T-0443,Beacon,Backend,Owner 3,Medium,22/01/2026,2026-02-02,06/02/2026,Vendor delay
-T-0444,Delta,Design,Owner 1,High,14/02/2026,2026-02-28,27/02/2026,None
-T-0445,Delta,Frontend,Owner 12,Low,01/01/2026,2026-01-10,10/01/2026,None
-T-0446,Atlas,QA,Owner 11,Low,12/03/2026,25/03/2026,24/03/2026,None
-T-0447,Cedar,QA,Owner 10,High,05/03/2026,2026-03-12,2026-03-09,None
-T-0448,Cedar,Design,Owner 7,Low,21/01/2026,2026-01-28,29/01/2026,None
+T-0444,Delta,Design,Owner 1,High,14/02/2026,2026-02-28,27/02/2026,No cause logged
+T-0445,Delta,Frontend,Owner 12,Low,01/01/2026,2026-01-10,10/01/2026,No cause logged
+T-0446,Atlas,QA,Owner 11,Low,12/03/2026,25/03/2026,24/03/2026,No cause logged
+T-0447,Cedar,QA,Owner 10,High,05/03/2026,2026-03-12,2026-03-09,No cause logged
+T-0448,Cedar,Design,Owner 7,Low,21/01/2026,2026-01-28,29/01/2026,No cause logged
 T-0449,Cedar,Frontend,Owner 7,Low,08/01/2026,18/01/2026,21/01/2026,Scope change
-T-0450,Beacon,DevOps,,Medium,2026-01-27,10/02/2026,2026-02-08,None
-T-0451,Beacon,Design,Owner 10,Low,28/01/2026,2026-02-03,04/02/2026,None
-T-0452,Cedar,DevOps,Owner 6,Medium,09/03/2026,18/03/2026,2026-03-16,None
+T-0450,Beacon,DevOps,,Medium,2026-01-27,10/02/2026,2026-02-08,No cause logged
+T-0451,Beacon,Design,Owner 10,Low,28/01/2026,2026-02-03,04/02/2026,No cause logged
+T-0452,Cedar,DevOps,Owner 6,Medium,09/03/2026,18/03/2026,2026-03-16,No cause logged
 T-0383,Cedar,Design,,Low,2026-02-21,05/03/2026,2026-03-07,Client approval
 T-0453,Atlas,Frontend,Owner 11,Medium,14/03/2026,22/03/2026,2026-03-25,Client approval
-T-0454,Beacon,QA,Owner 3,Low,2026-01-17,28/01/2026,25/01/2026,None
-T-0455,Beacon,DevOps,Owner 6,Low,21/02/2026,03/03/2026,04/03/2026,None
+T-0454,Beacon,QA,Owner 3,Low,2026-01-17,28/01/2026,25/01/2026,No cause logged
+T-0455,Beacon,DevOps,Owner 6,Low,21/02/2026,03/03/2026,04/03/2026,No cause logged
 T-0456,Cedar,Backend,Owner 4,Low,2026-02-02,05/02/2026,09/02/2026,Resource shortage
 T-0457,Beacon,DevOps,Owner 10,Low,31/01/2026,2026-02-04,08/02/2026,Client approval
-T-0458,Cedar,QA,Owner 3,Medium,17/01/2026,2026-01-30,28/01/2026,None
-T-0459,Delta,DevOps,,Medium,31/01/2026,2026-02-09,2026-02-07,None
-T-0460,Beacon,DevOps,Owner 7,Medium,22/02/2026,02/03/2026,2026-02-28,None
+T-0458,Cedar,QA,Owner 3,Medium,17/01/2026,2026-01-30,28/01/2026,No cause logged
+T-0459,Delta,DevOps,,Medium,31/01/2026,2026-02-09,2026-02-07,No cause logged
+T-0460,Beacon,DevOps,Owner 7,Medium,22/02/2026,02/03/2026,2026-02-28,No cause logged
 T-0461,Cedar,Frontend,Owner 1,Low,2026-01-19,02/02/2026,2026-02-05,Scope change
-T-0462,Cedar,QA,Owner 11,Medium,16/02/2026,26/02/2026,2026-02-24,None
-T-0463,Cedar,DevOps,Owner 5,Medium,13/02/2026,25/02/2026,2026-02-25,None
-T-0464,Beacon,Backend,Owner 4,Medium,2026-01-10,2026-01-13,2026-01-14,None
+T-0462,Cedar,QA,Owner 11,Medium,16/02/2026,26/02/2026,2026-02-24,No cause logged
+T-0463,Cedar,DevOps,Owner 5,Medium,13/02/2026,25/02/2026,2026-02-25,No cause logged
+T-0464,Beacon,Backend,Owner 4,Medium,2026-01-10,2026-01-13,2026-01-14,No cause logged
 T-0465,Atlas,DevOps,Owner 7,Medium,2026-02-20,03/03/2026,05/03/2026,Resource shortage
 T-0466,Atlas,Frontend,Owner 1,Medium,2026-02-12,20/02/2026,2026-02-24,Resource shortage
