@@ -34,7 +34,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 
 - [x] **T16** FastAPI stub: `/datasets`, `/runs`, `/runs/{id}/stream` replaying scenarios over SSE — Anish (402f958)
 - [x] **T17** LiveDataSource (fetch + EventSource, Last-Event-ID resume) — Anish (b07c040)
-- [ ] **T18** Run sc_01 in live mode against the stub; record a screen capture — Anish
+- [x] **T18** Run sc_01 in live mode against the stub; record a screen capture — Anish (e1b360f; screen capture still to be added)
 - [x] **T19** History page + session persistence — Mirdula (94444b2)
 - [ ] **T20** Sandbox design doc + Dockerfile skeleton (`--network none`, limits) — Anish
 
