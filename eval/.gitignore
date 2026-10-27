@@ -1,0 +1,4 @@
+# Raw downloads and generated messy files are not committed (see datasets.md)
+data/
+__pycache__/
+.pytest_cache/
