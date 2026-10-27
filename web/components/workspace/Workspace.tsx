@@ -1,5 +1,6 @@
 "use client";
 
+import { DataPanel } from "@/components/dataset/DataPanel";
 import { QueryPanel } from "@/components/query/QueryPanel";
 import { RunPanel } from "@/components/run/RunPanel";
 import { useRunStore } from "@/lib/store/runStore";
@@ -11,7 +12,7 @@ export function Workspace() {
 
   return (
     <WorkspaceLayout
-      data={<p className="text-sm text-muted-foreground">Dataset picker, upload and profile appear here.</p>}
+      data={<DataPanel />}
       run={
         <>
           <QueryPanel datasetId={datasetId} />
