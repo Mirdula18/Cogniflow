@@ -1,0 +1,232 @@
+{
+  "frozen": "2026-10-27",
+  "note": "Held-out set for docs/POC_TEST_PLAN.md: 20 questions never used for tuning. Reference answers were computed independently by Arunaw (references_arunaw.json) and Mirdula (references_mirdula.json, committed before comparing) and agree on all 30 questions within tolerance, so no disagreements were logged. Do not edit after the first real run; changes need a new freeze commit noted in POC_TEST_PLAN.md.",
+  "agreed_by": [
+    "Arunaw Rishe M (ARUNAWRISHE)",
+    "Mirdula R (Mirdula18)"
+  ],
+  "questions": [
+    {
+      "id": "q03",
+      "dataset": "bike",
+      "question": "On which date were the most bikes rented? Answer as YYYY-MM-DD.",
+      "type": "text",
+      "tolerance": 0
+    },
+    {
+      "id": "q04",
+      "dataset": "bike",
+      "question": "Which season code (1 to 4 in the data) had the highest average daily rentals?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q05",
+      "dataset": "bike",
+      "question": "On how many days did total rentals exceed 6,000?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q06",
+      "dataset": "bike",
+      "question": "What percentage of days were holidays? Give it to 2 decimal places.",
+      "type": "number",
+      "tolerance": 0.01
+    },
+    {
+      "id": "q09",
+      "dataset": "wine",
+      "question": "Which quality rating is the most common?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q10",
+      "dataset": "wine",
+      "question": "What is the highest alcohol content in the data?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q11",
+      "dataset": "wine",
+      "question": "What is the average pH of wines with quality 5? Give it to 2 decimal places.",
+      "type": "number",
+      "tolerance": 0.01
+    },
+    {
+      "id": "q12",
+      "dataset": "wine",
+      "question": "How many wines have volatile acidity above 1.0?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q15",
+      "dataset": "realestate",
+      "question": "What is the highest house price of unit area?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q16",
+      "dataset": "realestate",
+      "question": "How many houses are 30 years old or older?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q17",
+      "dataset": "realestate",
+      "question": "What is the average house price of unit area for houses with 5 or more convenience stores nearby? Give it to 2 decimal places.",
+      "type": "number",
+      "tolerance": 0.01
+    },
+    {
+      "id": "q18",
+      "dataset": "realestate",
+      "question": "How many houses are within 500 metres of the nearest MRT station?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q21",
+      "dataset": "autompg",
+      "question": "Which car (by car_name) has the best mpg?",
+      "type": "text",
+      "tolerance": 0
+    },
+    {
+      "id": "q22",
+      "dataset": "autompg",
+      "question": "What is the average weight of cars from model year 70? Give it to 2 decimal places.",
+      "type": "number",
+      "tolerance": 0.01
+    },
+    {
+      "id": "q23",
+      "dataset": "autompg",
+      "question": "How many cars have horsepower above 200?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q24",
+      "dataset": "autompg",
+      "question": "Which origin code has the highest average mpg?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q27",
+      "dataset": "energy",
+      "question": "How many buildings have an overall height (X5) of 7?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q28",
+      "dataset": "energy",
+      "question": "What is the average heating load (Y1) of buildings with an overall height (X5) of 3.5? Give it to 2 decimal places.",
+      "type": "number",
+      "tolerance": 0.01
+    },
+    {
+      "id": "q29",
+      "dataset": "energy",
+      "question": "How many buildings have a heating load (Y1) above 30?",
+      "type": "number",
+      "tolerance": 0
+    },
+    {
+      "id": "q30",
+      "dataset": "energy",
+      "question": "What is the average cooling load (Y2) of buildings with a surface area (X2) of 514.5? Give it to 2 decimal places.",
+      "type": "number",
+      "tolerance": 0.01
+    }
+  ],
+  "answers": [
+    {
+      "id": "q03",
+      "answer": "2012-09-15"
+    },
+    {
+      "id": "q04",
+      "answer": 3
+    },
+    {
+      "id": "q05",
+      "answer": 180
+    },
+    {
+      "id": "q06",
+      "answer": 2.87
+    },
+    {
+      "id": "q09",
+      "answer": 5
+    },
+    {
+      "id": "q10",
+      "answer": 14.9
+    },
+    {
+      "id": "q11",
+      "answer": 3.3
+    },
+    {
+      "id": "q12",
+      "answer": 21
+    },
+    {
+      "id": "q15",
+      "answer": 117.5
+    },
+    {
+      "id": "q16",
+      "answer": 95
+    },
+    {
+      "id": "q17",
+      "answer": 46.06
+    },
+    {
+      "id": "q18",
+      "answer": 211
+    },
+    {
+      "id": "q21",
+      "answer": "mazda glc"
+    },
+    {
+      "id": "q22",
+      "answer": 3372.79
+    },
+    {
+      "id": "q23",
+      "answer": 10
+    },
+    {
+      "id": "q24",
+      "answer": 3
+    },
+    {
+      "id": "q27",
+      "answer": 384
+    },
+    {
+      "id": "q28",
+      "answer": 13.34
+    },
+    {
+      "id": "q29",
+      "answer": 201
+    },
+    {
+      "id": "q30",
+      "answer": 29.22
+    }
+  ]
+}
