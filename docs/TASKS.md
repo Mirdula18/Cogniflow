@@ -12,7 +12,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 ## Phase A — foundation (day 1)
 
 - [x] **T01** Scaffold `web/` (Next.js, TS strict, Tailwind, shadcn, ESLint, Vitest) — Joe (23c910c)
-- [ ] **T02** Zod schemas for every type and event in API_CONTRACT.md + tests — Joe
+- [x] **T02** Zod schemas for every type and event in API_CONTRACT.md + tests — Joe (4205ebe)
 - [ ] **T03** `DataSource` interface, `index.ts` mode switch, `.env.example` — Joe
 - [ ] **T04** Design tokens, layout shell, 3-panel workspace, responsive tabs, dark mode — Mirdula
 - [ ] **T05** Seeded synthetic dataset generator + 5 datasets + profile JSON — Arunaw
