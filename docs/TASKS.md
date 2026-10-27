@@ -28,7 +28,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 - [x] **T12** StepTimeline, StepCard, CodeBlock, RetryBadge, Terminal (xterm) — Joe (91c2fe1)
 - [x] **T13** ChartCanvas (Plotly), TableView, metric cards — Mirdula (d4d29c2)
 - [x] **T14** FindingsPanel, VerifiedBadge, number-to-source highlight — Mirdula (b4c6b36)
-- [ ] **T15** Test: every number in each scenario's report exists in its artifacts — Arunaw
+- [x] **T15** Test: every number in each scenario's report exists in its artifacts — Arunaw (beefdaa)
 
 ## Phase C — live-ready (days 3–4)
 
