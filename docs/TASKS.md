@@ -35,7 +35,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 - [ ] **T16** FastAPI stub: `/datasets`, `/runs`, `/runs/{id}/stream` replaying scenarios over SSE — Anish
 - [ ] **T17** LiveDataSource (fetch + EventSource, Last-Event-ID resume) — Anish
 - [ ] **T18** Run sc_01 in live mode against the stub; record a screen capture — Anish
-- [ ] **T19** History page + session persistence — Mirdula
+- [x] **T19** History page + session persistence — Mirdula (94444b2)
 - [ ] **T20** Sandbox design doc + Dockerfile skeleton (`--network none`, limits) — Anish
 
 ## Phase D — PoC evaluation prep (days 4–5)
