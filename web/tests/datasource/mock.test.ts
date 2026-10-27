@@ -69,6 +69,14 @@ describe("MockDataSource", () => {
   });
 
   describe("uploadDataset", () => {
+    it("explains that uploads are not analysed when no demo datasets exist", async () => {
+      const empty = createMockDataSource({ catalog: { datasets: [], scenarios: [] }, sleep: instant });
+      await expect(empty.uploadDataset(new File(["a"], "x.csv"))).rejects.toMatchObject({
+        code: "not_found",
+        message: expect.stringContaining("Demo mode does not analyse uploaded files"),
+      });
+    });
+
     it("maps an accepted file to the closest demo dataset", async () => {
       const file = new File(["a,b\n1,2"], "my_tasks.csv", { type: "text/csv" });
       expect((await source().uploadDataset(file)).id).toBe("ds_fixture_tasks");

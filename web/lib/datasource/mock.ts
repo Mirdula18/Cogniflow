@@ -63,7 +63,12 @@ export function createMockDataSource(options: MockDataSourceOptions = {}): DataS
         throw new DataSourceError("too_large", "Files must be 20 MB or smaller");
       }
       const datasets = catalog().datasets;
-      if (datasets.length === 0) throw new DataSourceError("not_found", "No demo datasets are available");
+      if (datasets.length === 0) {
+        throw new DataSourceError(
+          "not_found",
+          "Demo mode does not analyse uploaded files, and no demo datasets are installed to show instead",
+        );
+      }
       const scored = datasets.map((d) => ({ d, score: similarity(file.name.replace(/[_.-]/g, " "), d.dataset.name.replace(/[_.-]/g, " ")) }));
       const best = scored.reduce((a, b) => (b.score > a.score ? b : a));
       return { ...best.d.dataset };
