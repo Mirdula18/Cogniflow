@@ -22,7 +22,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 - [ ] **T06** Scenario player (async generator honouring `delay_ms`) + MockDataSource — Joe
 - [ ] **T07** Scenarios sc_01–sc_05 JSON, validated by Zod in a test — Arunaw
 - [ ] **T08** Notebook check that every scenario's code produces its shown output — Arunaw
-- [ ] **T09** Event-sourced `runStore` reducer + tests (retry, not_verified paths) — Joe
+- [x] **T09** Event-sourced `runStore` reducer + tests (retry, not_verified paths) — Joe (a41916e)
 - [ ] **T10** DatasetPicker, UploadDropzone (mock accepts file, maps to closest demo), ProfilePanel — Mirdula
 - [ ] **T11** QueryBox + SuggestedQuestions — Joe
 - [ ] **T12** StepTimeline, StepCard, CodeBlock, RetryBadge, Terminal (xterm) — Joe
