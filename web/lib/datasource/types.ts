@@ -42,4 +42,9 @@ export interface DataSource {
   startRun(input: StartRunInput): Promise<StartRunResult>;
   streamRun(runId: string, options?: { signal?: AbortSignal }): AsyncIterable<RunEvent>;
   getRun(runId: string): Promise<Run>;
+  /**
+   * Suggested questions for a dataset. Optional: not part of the REST contract yet,
+   * so adapters without a source for them leave it undefined and the UI shows none.
+   */
+  suggestQuestions?(datasetId: string): Promise<string[]>;
 }
