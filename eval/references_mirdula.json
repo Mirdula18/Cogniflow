@@ -1,0 +1,168 @@
+{
+  "author": "Mirdula R (Mirdula18)",
+  "method": "Independent of Arunaw's answers and script. Clean base = original file minus exact duplicate rows.",
+  "clean_rows": {
+    "bike": 731,
+    "wine": 1359,
+    "realestate": 414,
+    "autompg": 398,
+    "energy": 768
+  },
+  "boundary_notes": {
+    "q12": "2 row(s) exactly on the threshold",
+    "q23": "1 row(s) exactly on the threshold",
+    "q29": "1 row(s) exactly on the threshold"
+  },
+  "answers": [
+    {
+      "id": "q01",
+      "answer": 2049576,
+      "how": "sum of cnt where dteday is in 2012"
+    },
+    {
+      "id": "q02",
+      "answer": 36452,
+      "how": "sum of casual where dteday is in July 2011"
+    },
+    {
+      "id": "q03",
+      "answer": "2012-09-15",
+      "how": "dteday of the row with the highest cnt (unique)"
+    },
+    {
+      "id": "q04",
+      "answer": 3,
+      "how": "season with the highest mean cnt"
+    },
+    {
+      "id": "q05",
+      "answer": 180,
+      "how": "days with cnt strictly greater than 6000"
+    },
+    {
+      "id": "q06",
+      "answer": 2.87,
+      "how": "share of rows with holiday == 1, x100, rounded to 2 dp"
+    },
+    {
+      "id": "q07",
+      "answer": 184,
+      "how": "rows with quality >= 7"
+    },
+    {
+      "id": "q08",
+      "answer": 12.16,
+      "how": "mean alcohol where quality == 8"
+    },
+    {
+      "id": "q09",
+      "answer": 5,
+      "how": "most frequent quality value"
+    },
+    {
+      "id": "q10",
+      "answer": 14.9,
+      "how": "max alcohol"
+    },
+    {
+      "id": "q11",
+      "answer": 3.3,
+      "how": "mean pH where quality == 5"
+    },
+    {
+      "id": "q12",
+      "answer": 21,
+      "how": "rows with volatile acidity strictly above 1.0"
+    },
+    {
+      "id": "q13",
+      "answer": 414,
+      "how": "row count"
+    },
+    {
+      "id": "q14",
+      "answer": 37.98,
+      "how": "mean of Y house price of unit area"
+    },
+    {
+      "id": "q15",
+      "answer": 117.5,
+      "how": "max of Y house price of unit area"
+    },
+    {
+      "id": "q16",
+      "answer": 95,
+      "how": "rows with X2 house age >= 30"
+    },
+    {
+      "id": "q17",
+      "answer": 46.06,
+      "how": "mean Y where X4 convenience stores >= 5"
+    },
+    {
+      "id": "q18",
+      "answer": 211,
+      "how": "rows with X3 MRT distance <= 500 m"
+    },
+    {
+      "id": "q19",
+      "answer": 29.29,
+      "how": "mean mpg where cylinders == 4"
+    },
+    {
+      "id": "q20",
+      "answer": 103,
+      "how": "rows with cylinders == 8"
+    },
+    {
+      "id": "q21",
+      "answer": "mazda glc",
+      "how": "car_name of the row with the highest mpg (unique)"
+    },
+    {
+      "id": "q22",
+      "answer": 3372.79,
+      "how": "mean weight where model_year == 70"
+    },
+    {
+      "id": "q23",
+      "answer": 10,
+      "how": "rows with horsepower strictly above 200 ('?' treated as blank)"
+    },
+    {
+      "id": "q24",
+      "answer": 3,
+      "how": "origin with the highest mean mpg"
+    },
+    {
+      "id": "q25",
+      "answer": 22.31,
+      "how": "mean Y1"
+    },
+    {
+      "id": "q26",
+      "answer": 48.03,
+      "how": "max Y2"
+    },
+    {
+      "id": "q27",
+      "answer": 384,
+      "how": "rows with X5 == 7"
+    },
+    {
+      "id": "q28",
+      "answer": 13.34,
+      "how": "mean Y1 where X5 == 3.5"
+    },
+    {
+      "id": "q29",
+      "answer": 201,
+      "how": "rows with Y1 strictly above 30"
+    },
+    {
+      "id": "q30",
+      "answer": 29.22,
+      "how": "mean Y2 where X2 == 514.5"
+    }
+  ]
+}
