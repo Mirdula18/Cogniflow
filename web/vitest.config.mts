@@ -4,6 +4,8 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   plugins: [react()],
+  // Tests never need Tailwind; an inline config stops Vite loading postcss.config.mjs for imported CSS.
+  css: { postcss: {} },
   resolve: {
     alias: { "@": fileURLToPath(new URL("./", import.meta.url)) },
   },

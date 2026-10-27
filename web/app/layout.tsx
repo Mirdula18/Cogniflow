@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { AppHeader } from "@/components/layout/AppHeader";
+import { themeInitScript } from "@/components/layout/theme";
 import "./globals.css";
 
 const inter = Inter({
@@ -23,8 +25,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="antialiased">
+    // The inline theme script adds the `dark` class before hydration.
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
+      <body className="flex min-h-screen flex-col antialiased">
+        <a
+          href="#main"
+          className="sr-only rounded-md bg-primary px-3 py-2 text-primary-foreground focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50"
+        >
+          Skip to main content
+        </a>
+        <AppHeader />
         {children}
       </body>
     </html>
