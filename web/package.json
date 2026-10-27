@@ -9,7 +9,12 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "mock:registry": "node scripts/gen-mock-registry.mjs",
+    "predev": "npm run mock:registry",
+    "prebuild": "npm run mock:registry",
+    "pretest": "npm run mock:registry",
+    "pretypecheck": "npm run mock:registry"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

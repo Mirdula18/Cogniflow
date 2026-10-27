@@ -19,7 +19,7 @@ Each member runs their own tasks (with or without the coding agent) on their own
 
 ## Phase B — mock end-to-end (days 2–3)
 
-- [ ] **T06** Scenario player (async generator honouring `delay_ms`) + MockDataSource — Joe
+- [x] **T06** Scenario player (async generator honouring `delay_ms`) + MockDataSource — Joe (9b8f949)
 - [ ] **T07** Scenarios sc_01–sc_05 JSON, validated by Zod in a test — Arunaw
 - [ ] **T08** Notebook check that every scenario's code produces its shown output — Arunaw
 - [x] **T09** Event-sourced `runStore` reducer + tests (retry, not_verified paths) — Joe (a41916e)

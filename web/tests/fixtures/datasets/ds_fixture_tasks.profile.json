@@ -1,0 +1,18 @@
+{
+  "dataset_id": "ds_fixture_tasks",
+  "name": "fixture_tasks.csv",
+  "rows": 40,
+  "duplicates": 2,
+  "columns": [
+    { "name": "task_id", "dtype": "string", "nulls": 0, "unique": 38, "sample": ["T-001", "T-002", "T-003"], "issues": ["2 duplicate rows"] },
+    { "name": "team", "dtype": "string", "nulls": 0, "unique": 2, "sample": ["A", "B", "A"], "issues": [] },
+    { "name": "owner", "dtype": "string", "nulls": 3, "unique": 9, "sample": ["Owner 1", null, "Owner 4"], "issues": ["3 blank owners"] },
+    { "name": "due", "dtype": "mixed", "nulls": 0, "unique": 31, "sample": ["03/02/2026", "2026-02-05", "11/02/2026"], "issues": ["Mixed date formats"] },
+    { "name": "budget", "dtype": "string", "nulls": 0, "unique": 12, "sample": ["1,500", "2,000", "750"], "issues": ["Numbers stored as text"] }
+  ],
+  "head": [
+    { "task_id": "T-001", "team": "A", "owner": "Owner 1", "due": "03/02/2026", "budget": "1,500" },
+    { "task_id": "T-002", "team": "B", "owner": null, "due": "2026-02-05", "budget": "2,000" },
+    { "task_id": "T-003", "team": "A", "owner": "Owner 4", "due": "11/02/2026", "budget": "750" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "scenario_id": "fx_retry",
+  "dataset_id": "ds_fixture_tasks",
+  "question": "What is the total budget?",
+  "events": [
+    { "seq": 1, "type": "run_started", "delay_ms": 0, "question": "What is the total budget?" },
+    { "seq": 2, "type": "plan", "delay_ms": 500, "steps": [
+      { "id": "s1", "goal": "Turn budget text into numbers" },
+      { "id": "s2", "goal": "Add up the budget" }
+    ] },
+    { "seq": 3, "type": "step_started", "delay_ms": 300, "step_id": "s1", "attempt": 1 },
+    { "seq": 4, "type": "code", "delay_ms": 400, "step_id": "s1", "attempt": 1, "language": "python",
+      "source": "df['budget'] = df['budget'].astype(float)" },
+    { "seq": 5, "type": "error", "delay_ms": 400, "step_id": "s1", "attempt": 1, "error_type": "ValueError",
+      "message": "could not convert string to float: '1,500'" },
+    { "seq": 6, "type": "retry", "delay_ms": 300, "step_id": "s1", "next_attempt": 2, "reason": "Remove thousands separators before converting" },
+    { "seq": 7, "type": "step_started", "delay_ms": 300, "step_id": "s1", "attempt": 2 },
+    { "seq": 8, "type": "code", "delay_ms": 400, "step_id": "s1", "attempt": 2, "language": "python",
+      "source": "df['budget'] = df['budget'].str.replace(',', '').astype(float)\nprint(df['budget'].dtype)" },
+    { "seq": 9, "type": "stdout", "delay_ms": 300, "step_id": "s1", "text": "float64" },
+    { "seq": 10, "type": "step_finished", "delay_ms": 200, "step_id": "s1", "status": "ok" },
+    { "seq": 11, "type": "step_started", "delay_ms": 300, "step_id": "s2", "attempt": 1 },
+    { "seq": 12, "type": "code", "delay_ms": 400, "step_id": "s2", "attempt": 1, "language": "python",
+      "source": "total = df['budget'].sum()\nprint(f'Total budget: {total:.0f}')" },
+    { "seq": 13, "type": "stdout", "delay_ms": 300, "step_id": "s2", "text": "Total budget: 45000" },
+    { "seq": 14, "type": "artifact", "delay_ms": 300, "step_id": "s2", "kind": "metric", "title": "Total budget",
+      "payload": { "name": "total_budget", "value": 45000 } },
+    { "seq": 15, "type": "step_finished", "delay_ms": 200, "step_id": "s2", "status": "ok" },
+    { "seq": 16, "type": "report", "delay_ms": 400, "markdown": "The total budget is **45000**.", "cited_metrics": ["total_budget"] },
+    { "seq": 17, "type": "run_finished", "delay_ms": 200, "status": "succeeded" }
+  ]
+}
