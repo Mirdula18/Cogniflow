@@ -17,6 +17,23 @@ const eslintConfig = [
     },
   },
   {
+    // CLAUDE.md rule 1: UI reaches data only through hooks -> lib/datasource.
+    files: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              group: ["@/lib/mock", "@/lib/mock/**", "@/lib/datasource/mock", "@/lib/datasource/live"],
+              message: "Components must use hooks (useRun, useDatasets) and lib/datasource, never mock data or adapters directly.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
     ignores: [
       "node_modules/**",
       ".next/**",
