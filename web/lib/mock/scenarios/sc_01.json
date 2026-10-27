@@ -1,0 +1,682 @@
+{
+ "scenario_id": "sc_01",
+ "dataset_id": "ds_delivery",
+ "question": "Why did delivery slip last month?",
+ "events": [
+  {
+   "seq": 1,
+   "type": "run_started",
+   "delay_ms": 0,
+   "question": "Why did delivery slip last month?"
+  },
+  {
+   "seq": 2,
+   "type": "profile",
+   "delay_ms": 500,
+   "profile": {
+    "dataset_id": "ds_delivery",
+    "rows": 480,
+    "duplicates": 14,
+    "columns": [
+     {
+      "name": "task_id",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 466,
+      "sample": [
+       "T-0001",
+       "T-0002",
+       "T-0003"
+      ],
+      "issues": [
+       "14 duplicate rows"
+      ]
+     },
+     {
+      "name": "project",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 4,
+      "sample": [
+       "Atlas",
+       "Cedar",
+       "Atlas"
+      ],
+      "issues": []
+     },
+     {
+      "name": "team",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 5,
+      "sample": [
+       "QA",
+       "DevOps",
+       "Frontend"
+      ],
+      "issues": []
+     },
+     {
+      "name": "owner",
+      "dtype": "string",
+      "nulls": 22,
+      "unique": 12,
+      "sample": [
+       "Owner 4",
+       "Owner 8",
+       "Owner 7"
+      ],
+      "issues": [
+       "22 blank owners"
+      ]
+     },
+     {
+      "name": "priority",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 3,
+      "sample": [
+       "Medium",
+       "Low",
+       "Low"
+      ],
+      "issues": []
+     },
+     {
+      "name": "planned_start",
+      "dtype": "mixed",
+      "nulls": 0,
+      "unique": 144,
+      "sample": [
+       "04/02/2026",
+       "2026-02-26",
+       "2026-01-03"
+      ],
+      "issues": [
+       "Mixed date formats (DD/MM/YYYY and YYYY-MM-DD)"
+      ]
+     },
+     {
+      "name": "planned_end",
+      "dtype": "mixed",
+      "nulls": 0,
+      "unique": 151,
+      "sample": [
+       "2026-02-17",
+       "04/03/2026",
+       "09/01/2026"
+      ],
+      "issues": [
+       "Mixed date formats (DD/MM/YYYY and YYYY-MM-DD)"
+      ]
+     },
+     {
+      "name": "actual_end",
+      "dtype": "mixed",
+      "nulls": 0,
+      "unique": 160,
+      "sample": [
+       "2026-02-18",
+       "2026-03-03",
+       "2026-01-07"
+      ],
+      "issues": [
+       "Mixed date formats (DD/MM/YYYY and YYYY-MM-DD)"
+      ]
+     },
+     {
+      "name": "delay_cause",
+      "dtype": "string",
+      "nulls": 0,
+      "unique": 6,
+      "sample": [
+       "No cause logged",
+       "No cause logged",
+       "No cause logged"
+      ],
+      "issues": []
+     }
+    ],
+    "head": [
+     {
+      "task_id": "T-0001",
+      "project": "Atlas",
+      "team": "QA",
+      "owner": "Owner 4",
+      "priority": "Medium",
+      "planned_start": "04/02/2026",
+      "planned_end": "2026-02-17",
+      "actual_end": "2026-02-18",
+      "delay_cause": "No cause logged"
+     },
+     {
+      "task_id": "T-0002",
+      "project": "Cedar",
+      "team": "DevOps",
+      "owner": "Owner 8",
+      "priority": "Low",
+      "planned_start": "2026-02-26",
+      "planned_end": "04/03/2026",
+      "actual_end": "2026-03-03",
+      "delay_cause": "No cause logged"
+     },
+     {
+      "task_id": "T-0003",
+      "project": "Atlas",
+      "team": "Frontend",
+      "owner": "Owner 7",
+      "priority": "Low",
+      "planned_start": "2026-01-03",
+      "planned_end": "09/01/2026",
+      "actual_end": "2026-01-07",
+      "delay_cause": "No cause logged"
+     },
+     {
+      "task_id": "T-0004",
+      "project": "Atlas",
+      "team": "DevOps",
+      "owner": "Owner 8",
+      "priority": "Low",
+      "planned_start": "25/01/2026",
+      "planned_end": "2026-02-02",
+      "actual_end": "2026-01-31",
+      "delay_cause": "No cause logged"
+     },
+     {
+      "task_id": "T-0005",
+      "project": "Beacon",
+      "team": "QA",
+      "owner": "Owner 1",
+      "priority": "Medium",
+      "planned_start": "07/03/2026",
+      "planned_end": "16/03/2026",
+      "actual_end": "14/03/2026",
+      "delay_cause": "No cause logged"
+     }
+    ]
+   }
+  },
+  {
+   "seq": 3,
+   "type": "plan",
+   "delay_ms": 600,
+   "steps": [
+    {
+     "id": "s1",
+     "goal": "Clean dates and remove duplicate tasks"
+    },
+    {
+     "id": "s2",
+     "goal": "Measure delay by team for the last month"
+    },
+    {
+     "id": "s3",
+     "goal": "Find the top delay causes"
+    },
+    {
+     "id": "s4",
+     "goal": "Chart average delay by team"
+    }
+   ]
+  },
+  {
+   "seq": 4,
+   "type": "step_started",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "attempt": 1
+  },
+  {
+   "seq": 5,
+   "type": "code",
+   "delay_ms": 800,
+   "step_id": "s1",
+   "attempt": 1,
+   "language": "python",
+   "source": "def parse_dates(s):\n    iso = pd.to_datetime(s, format='%Y-%m-%d', errors='coerce')\n    dmy = pd.to_datetime(s, format='%d/%m/%Y', errors='coerce')\n    return iso.fillna(dmy)\n\nbefore = len(df)\ndf = df.drop_duplicates()\nfor col in ['planned_start', 'planned_end', 'actual_end']:\n    df[col] = parse_dates(df[col])\ndf['delay_days'] = (df['actual_end'] - df['planned_end']).dt.days\nprint(f\"Removed {before - len(df)} duplicate rows, {len(df)} tasks left\")\nprint(f\"Dates that could not be read: {int(df[['planned_start', 'planned_end', 'actual_end']].isna().sum().sum())}\")"
+  },
+  {
+   "seq": 6,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "text": "Removed 14 duplicate rows, 466 tasks left"
+  },
+  {
+   "seq": 7,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s1",
+   "text": "Dates that could not be read: 0"
+  },
+  {
+   "seq": 8,
+   "type": "step_finished",
+   "delay_ms": 250,
+   "step_id": "s1",
+   "status": "ok"
+  },
+  {
+   "seq": 9,
+   "type": "step_started",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "attempt": 1
+  },
+  {
+   "seq": 10,
+   "type": "code",
+   "delay_ms": 800,
+   "step_id": "s2",
+   "attempt": 1,
+   "language": "python",
+   "source": "df['month'] = df['planned_end'].dt.to_period('M')\nlast = df[df['month'] == df['month'].max()]\nearlier = df[df['month'] < df['month'].max()]\nby_team = pd.DataFrame({\n    'tasks': last.groupby('team').size(),\n    'avg_delay_last': last.groupby('team')['delay_days'].mean(),\n    'avg_delay_earlier': earlier.groupby('team')['delay_days'].mean(),\n}).round(1).sort_values('avg_delay_last', ascending=False)\nprint(f\"Last month in the data: {df['month'].max()}, {len(last)} tasks\")\nprint(by_team.to_string())\nprint(f\"Average delay: {last['delay_days'].mean():.1f} days last month, {earlier['delay_days'].mean():.1f} days before\")"
+  },
+  {
+   "seq": 11,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "Last month in the data: 2026-03, 148 tasks"
+  },
+  {
+   "seq": 12,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "          tasks  avg_delay_last  avg_delay_earlier"
+  },
+  {
+   "seq": 13,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "team"
+  },
+  {
+   "seq": 14,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "Backend      27             5.2                2.2"
+  },
+  {
+   "seq": 15,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "Frontend     24             1.4                1.7"
+  },
+  {
+   "seq": 16,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "DevOps       29             0.7                0.5"
+  },
+  {
+   "seq": 17,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "Design       32             0.4               -0.4"
+  },
+  {
+   "seq": 18,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "QA           36             0.0                0.0"
+  },
+  {
+   "seq": 19,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s2",
+   "text": "Average delay: 1.4 days last month, 0.8 days before"
+  },
+  {
+   "seq": 20,
+   "type": "artifact",
+   "delay_ms": 400,
+   "step_id": "s2",
+   "kind": "metric",
+   "title": "Average delay last month",
+   "payload": {
+    "name": "avg_delay_last_month",
+    "value": 1.4,
+    "unit": "days"
+   }
+  },
+  {
+   "seq": 21,
+   "type": "artifact",
+   "delay_ms": 400,
+   "step_id": "s2",
+   "kind": "metric",
+   "title": "Average delay in earlier months",
+   "payload": {
+    "name": "avg_delay_earlier_months",
+    "value": 0.8,
+    "unit": "days"
+   }
+  },
+  {
+   "seq": 22,
+   "type": "artifact",
+   "delay_ms": 400,
+   "step_id": "s2",
+   "kind": "table",
+   "title": "Delay by team",
+   "payload": {
+    "columns": [
+     "Team",
+     "Tasks last month",
+     "Avg delay last month (days)",
+     "Avg delay earlier (days)"
+    ],
+    "rows": [
+     [
+      "Backend",
+      27,
+      5.2,
+      2.2
+     ],
+     [
+      "Frontend",
+      24,
+      1.4,
+      1.7
+     ],
+     [
+      "DevOps",
+      29,
+      0.7,
+      0.5
+     ],
+     [
+      "Design",
+      32,
+      0.4,
+      -0.4
+     ],
+     [
+      "QA",
+      36,
+      0.0,
+      0.0
+     ]
+    ]
+   }
+  },
+  {
+   "seq": 23,
+   "type": "step_finished",
+   "delay_ms": 250,
+   "step_id": "s2",
+   "status": "ok"
+  },
+  {
+   "seq": 24,
+   "type": "step_started",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "attempt": 1
+  },
+  {
+   "seq": 25,
+   "type": "code",
+   "delay_ms": 800,
+   "step_id": "s3",
+   "attempt": 1,
+   "language": "python",
+   "source": "late = last[last['delay_cause'] != 'No cause logged']\ncauses = late.groupby('delay_cause').agg(tasks=('task_id', 'count'), delay_days=('delay_days', 'sum'))\ncauses['share_pct'] = (causes['delay_days'] / causes['delay_days'].sum() * 100).round(1)\ncauses = causes.sort_values('delay_days', ascending=False)\nprint(f\"{len(late)} of {len(last)} tasks last month have a recorded delay cause\")\nprint(causes.to_string())"
+  },
+  {
+   "seq": 26,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "70 of 148 tasks last month have a recorded delay cause"
+  },
+  {
+   "seq": 27,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "                   tasks  delay_days  share_pct"
+  },
+  {
+   "seq": 28,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "delay_cause"
+  },
+  {
+   "seq": 29,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Vendor delay          22         109       41.8"
+  },
+  {
+   "seq": 30,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Rework                15          44       16.9"
+  },
+  {
+   "seq": 31,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Client approval       15          42       16.1"
+  },
+  {
+   "seq": 32,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Scope change           8          35       13.4"
+  },
+  {
+   "seq": 33,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s3",
+   "text": "Resource shortage     10          31       11.9"
+  },
+  {
+   "seq": 34,
+   "type": "artifact",
+   "delay_ms": 400,
+   "step_id": "s3",
+   "kind": "table",
+   "title": "Delay causes last month",
+   "payload": {
+    "columns": [
+     "Cause",
+     "Tasks",
+     "Delay days",
+     "Share of delay days (%)"
+    ],
+    "rows": [
+     [
+      "Vendor delay",
+      22,
+      109,
+      41.8
+     ],
+     [
+      "Rework",
+      15,
+      44,
+      16.9
+     ],
+     [
+      "Client approval",
+      15,
+      42,
+      16.1
+     ],
+     [
+      "Scope change",
+      8,
+      35,
+      13.4
+     ],
+     [
+      "Resource shortage",
+      10,
+      31,
+      11.9
+     ]
+    ]
+   }
+  },
+  {
+   "seq": 35,
+   "type": "step_finished",
+   "delay_ms": 250,
+   "step_id": "s3",
+   "status": "ok"
+  },
+  {
+   "seq": 36,
+   "type": "step_started",
+   "delay_ms": 300,
+   "step_id": "s4",
+   "attempt": 1
+  },
+  {
+   "seq": 37,
+   "type": "code",
+   "delay_ms": 800,
+   "step_id": "s4",
+   "attempt": 1,
+   "language": "python",
+   "source": "print(by_team['avg_delay_last'].to_string())"
+  },
+  {
+   "seq": 38,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s4",
+   "text": "team"
+  },
+  {
+   "seq": 39,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s4",
+   "text": "Backend     5.2"
+  },
+  {
+   "seq": 40,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s4",
+   "text": "Frontend    1.4"
+  },
+  {
+   "seq": 41,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s4",
+   "text": "DevOps      0.7"
+  },
+  {
+   "seq": 42,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s4",
+   "text": "Design      0.4"
+  },
+  {
+   "seq": 43,
+   "type": "stdout",
+   "delay_ms": 300,
+   "step_id": "s4",
+   "text": "QA          0.0"
+  },
+  {
+   "seq": 44,
+   "type": "artifact",
+   "delay_ms": 400,
+   "step_id": "s4",
+   "kind": "chart",
+   "title": "Average delay by team, last month",
+   "payload": {
+    "data": [
+     {
+      "type": "bar",
+      "x": [
+       "Backend",
+       "Frontend",
+       "DevOps",
+       "Design",
+       "QA"
+      ],
+      "y": [
+       5.2,
+       1.4,
+       0.7,
+       0.4,
+       0.0
+      ],
+      "text": [
+       "5.2",
+       "1.4",
+       "0.7",
+       "0.4",
+       "0.0"
+      ],
+      "textposition": "outside"
+     }
+    ],
+    "layout": {
+     "title": {
+      "text": "Average delay by team, last month"
+     },
+     "xaxis": {
+      "title": {
+       "text": "Team"
+      }
+     },
+     "yaxis": {
+      "title": {
+       "text": "Average delay (days)"
+      }
+     }
+    }
+   }
+  },
+  {
+   "seq": 45,
+   "type": "step_finished",
+   "delay_ms": 250,
+   "step_id": "s4",
+   "status": "ok"
+  },
+  {
+   "seq": 46,
+   "type": "report",
+   "delay_ms": 700,
+   "markdown": "Delivery slipped most in **Backend**, which finished tasks **5.2** days late on average last month (**2.2** days earlier).\n\n- All teams: **1.4** days late last month, against **0.8** days before.\n- Top recorded cause: **Vendor delay**, with **22** tasks and **41.8%** of delay days.",
+   "cited_metrics": [
+    "avg_delay_last_month",
+    "avg_delay_earlier_months",
+    "Delay by team",
+    "Delay causes last month"
+   ]
+  },
+  {
+   "seq": 47,
+   "type": "run_finished",
+   "delay_ms": 300,
+   "status": "succeeded"
+  }
+ ]
+}
